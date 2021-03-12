@@ -1,0 +1,30 @@
+/* Read More Button */
+.more-link {
+	display: inline-block;
+	padding: 0.6rem 1rem;
+	@include color(--button-text-color);
+	@include background(--button-color);
+	@include font-size(15);
+}
+
+.more-link:link,
+.more-link:visited {
+	@include color(--button-text-color);
+	text-decoration: none;
+	transition: all 0.15s ease;
+}
+
+.more-link:hover,
+.more-link:active,
+.more-link:focus {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+}
+
+.more-link:focus {
+	outline: -webkit-focus-ring-color auto 1px;
+}
+
+.more-link::after {
+	content: " \00BB";
+}

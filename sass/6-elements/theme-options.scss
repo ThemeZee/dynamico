@@ -1,0 +1,25 @@
+/* Wide Theme layout */
+body.wide-theme-layout .site {
+	max-width: 100%;
+
+	.header-main,
+	.site-content,
+	.site-footer {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header-main {
+		max-width: $contentFullwidth;
+	}
+
+	.site-content,
+	.site-footer {
+		max-width: $themeWidth;
+	}
+}
+
+/* Hide Elements in Customizer for instant live preview */
+.credit-link-hidden .site-info .credit-link {
+	display: none;
+}

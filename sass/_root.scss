@@ -1,0 +1,70 @@
+:root {
+
+	// Block Editor Colors
+	@include variable(--primary-color, $themeColors);
+	@include variable(--secondary-color, $themeColors);
+	@include variable(--tertiary-color, $themeColors);
+	@include variable(--accent-color, $themeColors);
+	@include variable(--contrast-color, $themeColors);
+	@include variable(--highlight-color, $themeColors);
+	@include variable(--light-gray-color, $themeColors);
+	@include variable(--gray-color, $themeColors);
+	@include variable(--dark-gray-color, $themeColors);
+
+	// Text Colors
+	@include variable(--text-color, $themeColors);
+	@include variable(--medium-text-color, $themeColors);
+	@include variable(--light-text-color, $themeColors);
+	@include variable(--medium-border-color, $themeColors);
+	@include variable(--light-border-color, $themeColors);
+
+	// Links and Buttons
+	@include variable(--link-color, $themeColors);
+	@include variable(--link-hover-color, $themeColors);
+	@include variable(--button-color, $themeColors);
+	@include variable(--button-text-color, $themeColors);
+	@include variable(--button-hover-color, $themeColors);
+	@include variable(--button-hover-text-color, $themeColors);
+
+	// Header
+	@include variable(--header-background-color, $themeColors);
+	@include variable(--header-text-color, $themeColors);
+	@include variable(--header-text-hover-color, $themeColors);
+	@include variable(--header-border-color, $themeColors);
+
+	// Posts
+	@include variable(--title-color, $themeColors);
+	@include variable(--title-hover-color, $themeColors);
+	@include variable(--post-meta-background-color, $themeColors);
+	@include variable(--comments-background-color, $themeColors);
+
+	// Widgets
+	@include variable(--widget-title-color, $themeColors);
+	@include variable(--widget-title-hover-color, $themeColors);
+	@include variable(--widget-background-color, $themeColors);
+
+	// Footer
+	@include variable(--footer-background-color, $themeColors);
+	@include variable(--footer-text-color, $themeColors);
+	@include variable(--footer-link-color, $themeColors);
+	@include variable(--footer-link-hover-color, $themeColors);
+	@include variable(--footer-border-color, $themeColors);
+
+	// Theme Fonts
+	@include variable(--text-font, $themeFonts);
+	@include variable(--title-font, $themeFonts);
+	@include variable(--navi-font, $themeFonts);
+	@include variable(--widget-title-font, $themeFonts);
+
+	// Typography Styling
+	@include variable(--title-font-weight, $fontWeight);
+	@include variable(--navi-font-weight, $fontWeight);
+	@include variable(--widget-title-font-weight, $fontWeight);
+
+	@include variable(--title-text-transform, $textTransform);
+	@include variable(--navi-text-transform, $textTransform);
+	@include variable(--widget-title-text-transform, $textTransform);
+
+	@include variable(--text-line-height, $lineHeight);
+	@include variable(--title-line-height, $lineHeight);
+}

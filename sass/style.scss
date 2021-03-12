@@ -1,0 +1,191 @@
+/*
+Theme Name: Dynamico
+Theme URI: https://themezee.com/themes/dynamico/
+Author: ThemeZee
+Author URI: https://themezee.com/
+Description: Dynamico is a sleek and modern Blogging & Magazine WordPress Theme, carefully designed for writers using the Gutenberg Block Editor. The theme supports several blog layouts, extensive post settings and various page templates. It is also AMP-ready and accessible. Start your blog now!
+Version: 1.0.4
+Requires at least: 5.2
+Tested up to: 5.6
+Requires PHP: 5.6
+AMP: true
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dynamico
+Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Dynamico is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# - CSS Variables
+# - Normalize
+# - Typography
+# - Elements
+# - Forms
+# - Accessibility
+# - Alignments
+# - Layout Structure
+# - Header
+# - Navigation
+# - Posts and pages
+# - Footer
+# - Media
+# - Blocks
+# - Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# - CSS Variables
+--------------------------------------------------------------*/
+@import "_mixins";
+@import "_variables";
+@import "_root";
+
+/*--------------------------------------------------------------
+# - Normalize
+--------------------------------------------------------------*/
+@import "1-setup/normalize";
+
+/*--------------------------------------------------------------
+# - Typography
+--------------------------------------------------------------*/
+@import "1-setup/typography";
+
+/*--------------------------------------------------------------
+# - Elements
+--------------------------------------------------------------*/
+@import "1-setup/elements";
+
+/*--------------------------------------------------------------
+# - Forms
+--------------------------------------------------------------*/
+@import "1-setup/forms";
+
+/*--------------------------------------------------------------
+# - Accessibility
+--------------------------------------------------------------*/
+@import "1-setup/accessibility";
+
+/*--------------------------------------------------------------
+# - Alignments
+--------------------------------------------------------------*/
+@import "1-setup/alignments";
+
+/*--------------------------------------------------------------
+# - Site Layout
+--------------------------------------------------------------*/
+@import "2-layout/site";
+
+/*--------------------------------------------------------------
+# - Header
+--------------------------------------------------------------*/
+@import "2-layout/header";
+
+/*--------------------------------------------------------------
+# - Navigation
+--------------------------------------------------------------*/
+@import "2-layout/navigation";
+
+/*--------------------------------------------------------------
+# - Sidebar
+--------------------------------------------------------------*/
+@import "2-layout/sidebar";
+
+/*--------------------------------------------------------------
+# - Single Posts and pages
+--------------------------------------------------------------*/
+@import "3-content/content";
+@import "3-content/post-image";
+@import "3-content/entry-meta";
+@import "3-content/more-link";
+@import "3-content/post-navigation";
+@import "3-content/page-templates";
+
+/*--------------------------------------------------------------
+# - Archives and Blog Layouts
+--------------------------------------------------------------*/
+@import "4-archives/archives";
+@import "4-archives/blog-layouts";
+@import "4-archives/pagination";
+
+/*--------------------------------------------------------------
+# - Blocks
+--------------------------------------------------------------*/
+@import "5-blocks/alignments";
+@import "5-blocks/formatting-blocks";
+@import "5-blocks/media-blocks";
+@import "5-blocks/container-blocks";
+@import "5-blocks/colors";
+@import "5-blocks/font-sizes";
+
+/*--------------------------------------------------------------
+# - Widgets
+--------------------------------------------------------------*/
+@import "6-elements/widgets";
+
+/*--------------------------------------------------------------
+# - Comments
+--------------------------------------------------------------*/
+@import "6-elements/comments";
+
+/*--------------------------------------------------------------
+# - Media
+--------------------------------------------------------------*/
+@import "6-elements/media";
+
+/*--------------------------------------------------------------
+# - Footer
+--------------------------------------------------------------*/
+@import "2-layout/footer";
+
+/*--------------------------------------------------------------
+# - Plugins
+--------------------------------------------------------------*/
+@import "9-plugins/breadcrumbs";
+@import "9-plugins/magazine-blocks";
+@import "9-plugins/related-posts";
+@import "9-plugins/widget-bundle";
+
+/*--------------------------------------------------------------
+# - Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## - Media Queries for Typography
+--------------------------------------------------------------*/
+@import "7-media-queries/mq-typography";
+
+/*--------------------------------------------------------------
+## - Media Queries for Layout
+--------------------------------------------------------------*/
+@import "7-media-queries/mq-layout";
+
+/*--------------------------------------------------------------
+## - Media Queries for Navigation
+--------------------------------------------------------------*/
+@import "7-media-queries/mq-navigation";
+
+/*--------------------------------------------------------------
+## - Media Queries for Blocks
+--------------------------------------------------------------*/
+@import "7-media-queries/mq-blocks";
+
+/*--------------------------------------------------------------
+## - Media Queries for Media
+--------------------------------------------------------------*/
+@import "7-media-queries/mq-media";
+
+/*--------------------------------------------------------------
+# - Theme Options
+--------------------------------------------------------------*/
+@import "6-elements/theme-options";

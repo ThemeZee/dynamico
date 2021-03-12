@@ -1,0 +1,181 @@
+@media only screen and (min-width: 480px) {
+	.site-header,
+	.site-container {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.header-main {
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.site-content {
+		padding: 1.5rem 1.5rem 1px;
+	}
+
+	.site-footer {
+		padding: 1.5rem;
+	}
+
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.post-navigation,
+	.pagination,
+	.widget,
+	.comments-area,
+	.themezee-related-posts {
+		margin-bottom: 1.5rem;
+	}
+
+	.entry-header,
+	.post-image {
+		margin-bottom: 0.75rem;
+	}
+
+	.entry-tags {
+		margin-top: 1.5rem;
+	}
+
+	.post-navigation .nav-links {
+		display: flex;
+	}
+
+	.post-navigation .nav-links .nav-previous,
+	.post-navigation .nav-links .nav-next {
+		margin: 0;
+		width: 50%;
+	}
+
+	.post-navigation .nav-links .nav-previous {
+		padding-right: 1rem;
+	}
+
+	.post-navigation .nav-links .nav-next {
+		padding-left: 1rem;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.site-header,
+	.site-container {
+		padding-left: 1.75rem;
+		padding-right: 1.75rem;
+	}
+
+	.header-main {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.site-content {
+		padding: 1.75rem 1.75rem 1px;
+	}
+
+	.site-footer {
+		padding: 1.75rem;
+	}
+
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.post-navigation,
+	.pagination,
+	.widget,
+	.comments-area,
+	.themezee-related-posts {
+		margin-bottom: 1.75rem;
+	}
+
+	.entry-header,
+	.post-image {
+		margin-bottom: 1rem;
+	}
+
+	.entry-tags {
+		margin-top: 1.75rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.site-header,
+	.site-container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.header-main {
+		padding-top: 1.75rem;
+		padding-bottom: 1.75rem;
+	}
+
+	.site-content {
+		padding: 2rem 2rem 1px;
+	}
+
+	.site-footer {
+		padding: 2rem;
+	}
+
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.post-navigation,
+	.pagination,
+	.widget,
+	.comments-area,
+	.themezee-related-posts {
+		margin-bottom: 2rem;
+	}
+
+	.entry-header,
+	.post-image {
+		margin-bottom: 1.25rem;
+	}
+
+	.entry-tags {
+		margin-top: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.site-header,
+	.site-container {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+
+	.header-main {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.site-content {
+		padding: 2.5rem 2.5rem 1px;
+	}
+
+	.site-footer {
+		padding: 2.5rem;
+	}
+
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.post-navigation,
+	.pagination,
+	.widget,
+	.comments-area,
+	.themezee-related-posts {
+		margin-bottom: 2.5rem;
+	}
+
+	.entry-header,
+	.post-image {
+		margin-bottom: 1.5rem;
+	}
+
+	.entry-tags {
+		margin-top: 2.5rem;
+	}
+}

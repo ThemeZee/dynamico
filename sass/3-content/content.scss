@@ -1,0 +1,47 @@
+.type-post,
+.type-page,
+.type-attachment {
+	margin: 0 0 1.25rem;
+	padding: 0;
+}
+
+.sticky {
+	padding-left: 2rem;
+	border-left: 5px solid;
+	@include border-color(--title-color);
+}
+
+/* Entry Header */
+.entry-header {
+	margin-bottom: 0.5rem;
+}
+
+.entry-title {
+	margin: 0;
+	padding: 0;
+	@include color(--title-color);
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	@include font-size(24);
+	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
+	@include line-height(--title-line-height);
+}
+
+.entry-title a:link,
+.entry-title a:visited {
+	@include color(--title-color);
+	text-decoration: none;
+	transition: all 0.15s ease;
+}
+
+.entry-title a:hover,
+.entry-title a:active {
+	@include color(--title-hover-color);
+}
+
+/* Entry Content */
+.entry-content {
+	@include font-size(17);
+}

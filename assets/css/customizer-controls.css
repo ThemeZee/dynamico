@@ -1,0 +1,68 @@
+/*
+ * Customizer Controls CSS
+ *
+ * Adjusts styling for theme option controls in the Customizer
+ *
+ * @package Dynamico
+ */
+
+/* Settings */
+#customize-control-dynamico_theme_options-site_title {
+	margin-bottom: 6px;
+}
+
+#customize-control-dynamico_theme_options-site_description,
+#customize-control-dynamico_theme_options-blog_content {
+	margin-bottom: 16px;
+}
+
+#customize-control-dynamico_theme_options-theme_layout,
+#customize-control-dynamico_theme_options-header_layout,
+#customize-control-dynamico_theme_options-blog_layout,
+#customize-control-dynamico_theme_options-excerpt_length,
+#customize-control-dynamico_theme_options-excerpt_more_text,
+#customize-control-dynamico_theme_options-read_more_link,
+#customize-control-dynamico_posts_per_page_setting,
+#customize-control-dynamico_theme_options-theme_links,
+#customize-control-dynamico_theme_options-pro_version,
+#customize-control-dynamico_theme_options-magazine_blocks {
+	margin-bottom: 24px;
+}
+
+#customize-control-dynamico_theme_options-blog_content {
+	padding: 0;
+}
+
+#customize-control-dynamico_theme_options-retina_logo_title,
+#customize-control-dynamico_theme_options-post_details_blog,
+#customize-control-dynamico_theme_options-post_details_single,
+#customize-control-dynamico_theme_options-single_post,
+#customize-control-dynamico_theme_options-featured_images,
+#customize-control-dynamico_theme_options-footer_text {
+	margin-bottom: 0;
+}
+
+#customize-control-dynamico_theme_options-post_details_blog,
+#customize-control-dynamico_theme_options-post_details_single,
+#customize-control-dynamico_theme_options-single_post {
+	margin-top: 16px;
+}
+
+#customize-control-dynamico_theme_options-meta_date,
+#customize-control-dynamico_theme_options-meta_author,
+#customize-control-dynamico_theme_options-meta_comments,
+#customize-control-dynamico_theme_options-meta_categories,
+#customize-control-dynamico_theme_options-single_meta_date,
+#customize-control-dynamico_theme_options-single_meta_author,
+#customize-control-dynamico_theme_options-single_meta_comments,
+#customize-control-dynamico_theme_options-single_meta_categories,
+#customize-control-dynamico_theme_options-meta_tags,
+#customize-control-dynamico_theme_options-post_navigation,
+#customize-control-dynamico_theme_options-post_image_archives,
+#customize-control-dynamico_theme_options-post_image_single {
+	margin-bottom: 2px;
+}
+
+#customize-control-dynamico_theme_options-footer_text textarea {
+	height: 4em;
+}

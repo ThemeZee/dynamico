@@ -1,0 +1,107 @@
+// Theme Width.
+$themeWidth: 1240px;
+
+// Content Width.
+$contentWidth: 800px;
+$wideBlockWidth: 960px;
+
+// Fullwidth Template.
+$contentFullwidth: 1160px;
+$wideBlockFullwidth: 1320px;
+
+// Theme Colors
+$themeColors: (
+
+	// Block Editor Colors
+	--primary-color                  : #2a4861,
+	--secondary-color                : #5d7b94,
+	--tertiary-color                 : #90aec7,
+	--accent-color                   : #60945d,
+	--contrast-color                 : #e63e4c,
+	--highlight-color                : #915d94,
+	--light-gray-color               : #ededef,
+	--gray-color                     : #84848f,
+	--dark-gray-color                : #24242f,
+
+	// Text Colors
+	--text-color                     : rgba(0, 0, 0, 0.9),
+	--medium-text-color              : rgba(0, 0, 0, 0.7),
+	--light-text-color               : rgba(0, 0, 0, 0.5),
+	--medium-border-color            : rgba(0, 0, 0, 0.3),
+	--light-border-color             : rgba(0, 0, 0, 0.1),
+
+	// Links and Buttons
+	--link-color                     : #5d7b94,
+	--link-hover-color               : #2a4861,
+	--button-color                   : #2a4861,
+	--button-text-color              : #fff,
+	--button-hover-color             : #5d7b94,
+	--button-hover-text-color        : #fff,
+
+	// Header Bar
+	--header-bar-background-color    : #2a4861,
+	--header-bar-text-color          : #fff,
+	--header-bar-text-hover-color    : rgba(255, 255, 255, 0.5),
+	--header-bar-border-color        : rgba(255, 255, 255, 0.1),
+
+	// Header
+	--header-background-color        : #2a4861,
+	--header-text-color              : #fff,
+	--header-text-hover-color        : rgba(255, 255, 255, 0.5),
+	--header-border-color            : rgba(255, 255, 255, 0.1),
+
+	// Posts
+	--title-color                    : #2a4861,
+	--title-hover-color              : #5d7b94,
+	--post-meta-background-color     : #ededef,
+	--comments-background-color      : #ededef,
+
+	// Widgets
+	--widget-title-color             : #2a4861,
+	--widget-title-hover-color       : #5d7b94,
+	--widget-background-color        : #ededef,
+
+	// Footer Widgets
+	--footer-widgets-background-color: #2a4861,
+	--footer-widgets-text-color      : #fff,
+	--footer-widgets-link-color      : rgba(255, 255, 255, 0.6),
+	--footer-widgets-link-hover-color: #fff,
+	--footer-widgets-border-color    : rgba(255, 255, 255, 0.1),
+
+	// Footer
+	--footer-background-color        : #2a4861,
+	--footer-text-color              : rgba(255, 255, 255, 0.6),
+	--footer-link-color              : #fff,
+	--footer-link-hover-color        : rgba(255, 255, 255, 0.6),
+	--footer-border-color            : rgba(255, 255, 255, 0.1),
+);
+
+// Theme Fonts
+$baseFont: "Barlow", arial, helvetica, sans-serif;
+$titleFont: "Barlow", arial, helvetica, sans-serif;
+$themeFonts: (
+	--text-font: $baseFont,
+	--title-font: $titleFont,
+	--navi-font: $titleFont,
+	--widget-title-font: $titleFont,
+);
+
+// Font Weight.
+$fontWeight: (
+	--title-font-weight: bold,
+	--navi-font-weight: normal,
+	--widget-title-font-weight: bold,
+);
+
+// Text Transform.
+$textTransform: (
+	--title-text-transform: none,
+	--navi-text-transform: none,
+	--widget-title-text-transform: none,
+);
+
+// Line Height.
+$lineHeight: (
+	--text-line-height : 1.75,
+	--title-line-height : 1.4,
+);

@@ -1,0 +1,49 @@
+/* Fullwidth Page Template */
+body.page-template-template-fullwidth,
+body.page-template-template-fullwidth-no-title {
+	.site-content .site-main {
+		max-width: $contentFullwidth;
+
+		.entry-content > .alignwide {
+			max-width: $wideBlockFullwidth;
+		}
+
+		.entry-content > .alignwide,
+		.entry-content > .alignfull {
+
+			> [class*="__inner-container"] > * {
+				max-width: $contentFullwidth;
+
+				&.alignwide {
+					max-width: $wideBlockFullwidth;
+				}
+
+				&.alignfull {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+/* Adjust Wide Blocks */
+@media only screen and (min-width: 960px) {
+	body.page-template-template-fullwidth,
+	body.page-template-template-fullwidth-no-title {
+		.entry-content > .alignwide {
+			margin-left: calc(-100vw / 2 + 100% / 2);
+			margin-right: calc(-100vw / 2 + 100% / 2);
+		}
+	}
+}
+
+@media only screen and ( min-width: calc( #{$themeWidth} ) ) {
+	body.page-template-template-fullwidth,
+	body.page-template-template-fullwidth-no-title {
+		.entry-content > .alignwide {
+			margin-left: calc(100% / 2 - #{$wideBlockFullwidth} / 2);
+			margin-right: calc(100% / 2 - #{$wideBlockFullwidth} / 2);
+			max-width: $wideBlockFullwidth;
+		}
+	}
+}

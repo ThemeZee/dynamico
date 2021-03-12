@@ -1,0 +1,125 @@
+.entry-meta {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 1rem 0 0;
+	@include font-size(15);
+}
+
+.entry-meta a:link,
+.entry-meta a:visited {
+	text-decoration: none;
+}
+
+.entry-meta a:hover,
+.entry-meta a:active {
+	text-decoration: underline;
+}
+
+.entry-meta .updated:not(.published) {
+	display: none;
+}
+
+@media only screen and (min-width: 360px) {
+	.entry-meta {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.entry-meta > span {
+		padding-bottom: 2px;
+	}
+
+	.entry-meta > span::after {
+		display: inline-block;
+		margin: 0 0.5rem;
+		@include color(--light-text-color);
+		content: "\002F";
+	}
+
+	.entry-meta .entry-comments::after {
+		margin: 0;
+		content: "";
+	}
+}
+
+/* Entry Categories */
+.entry-categories {
+	margin-right: 1rem;
+}
+
+.entry-categories ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.entry-categories ul li {
+	margin: 0;
+}
+
+.entry-categories a {
+	display: inline-block;
+	margin: 0 2px 2px 0;
+	padding: 0.1em 0.6em;
+	text-decoration: none;
+	@include background(--post-meta-background-color);
+}
+
+/* Entry Tags */
+.entry-tags {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1.25rem 0 0;
+	align-items: center;
+	@include font-size(14);
+}
+
+.entry-tags a {
+	margin: 0 2px 2px 0;
+	padding: 0.1em 0.6em;
+	text-decoration: none;
+}
+
+.entry-tags a:link,
+.entry-tags a:visited {
+	@include color(--button-text-color);
+	@include background(--button-color);
+	transition: all 0.15s ease;
+}
+
+.entry-tags a:hover,
+.entry-tags a:active,
+.entry-tags a:focus {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+}
+
+/* Hide post meta if they are deactivated in settings */
+body.date-hidden .type-post .entry-meta .posted-on,
+body.author-hidden .type-post .entry-meta .posted-by,
+body.comments-hidden .type-post .entry-meta .entry-comments,
+body.categories-hidden .type-post .entry-categories,
+body.tags-hidden.single-post .type-post .entry-tags,
+body.post-navigation-hidden.single-post .post-navigation {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+}
+
+body.author-hidden .type-post .entry-meta .posted-by::after,
+body.date-hidden .type-post .entry-meta .posted-on::after,
+body.comments-hidden .type-post .entry-meta .posted-by::after,
+body.author-hidden.comments-hidden .type-post .entry-meta .posted-on::after,
+body.date-hidden.comments-hidden .type-post .entry-meta .posted-by::after {
+	margin: 0;
+	content: "";
+}
+
+body.date-hidden.author-hidden.categories-hidden.comments-hidden .type-post .entry-meta {
+	display: none;
+}

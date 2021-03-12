@@ -1,0 +1,97 @@
+@media only screen and (min-width: 640px) {
+	.site-title {
+		@include font-size(28);
+	}
+
+	.site-description {
+		@include font-size(15);
+	}
+
+	.entry-title {
+		@include font-size(28);
+	}
+
+	.entry-content {
+		@include font-size(17);
+	}
+
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.entry-meta,
+	.more-link,
+	.pagination {
+		@include font-size(16);
+	}
+
+	.entry-tags,
+	.comment-meta .comment-metadata,
+	.comment .reply,
+	.comment-form .logged-in-as,
+	.comment-reply-title small a,
+	.site-footer {
+		@include font-size(15);
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.site-title {
+		@include font-size(32);
+	}
+
+	.site-description {
+		@include font-size(16);
+	}
+
+	.entry-title {
+		@include font-size(32);
+	}
+
+	.entry-content {
+		@include font-size(18);
+	}
+
+	.archive-header .archive-title,
+	.search-header .search-title {
+		@include font-size(22);
+	}
+
+	.archive-header .archive-description,
+	.comment {
+		@include font-size(17);
+	}
+
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.entry-meta,
+	.more-link,
+	.pagination {
+		@include font-size(17);
+	}
+
+	.entry-tags,
+	.comment-meta .comment-metadata,
+	.comment .reply,
+	.comment-form .logged-in-as,
+	.comment-reply-title small a,
+	.site-footer {
+		@include font-size(16);
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.site-title {
+		@include font-size(36);
+	}
+
+	.entry-title {
+		@include font-size(36);
+	}
+
+	.entry-content {
+		@include font-size(19);
+	}
+}

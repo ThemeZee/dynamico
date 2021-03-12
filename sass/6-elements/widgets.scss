@@ -1,0 +1,46 @@
+.widget {
+	margin: 0 0 1.25rem;
+	padding: 0;
+
+	.widget-title {
+		margin: 0 0 1rem;
+		padding: 0;
+		@include color(--widget-title-color);
+		-ms-word-wrap: break-word;
+		word-wrap: break-word;
+		@include font-size(20);
+		@include font-family(--widget-title-font);
+		@include font-weight(--widget-title-font-weight);
+		@include text-transform(--widget-title-text-transform);
+		@include line-height(--title-line-height);
+	}
+
+	ul a:link,
+	ul a:visited,
+	ol a:link,
+	ol a:visited,
+	.tagcloud a:link,
+	.tagcloud a:visited,
+	.menu-navigation-container > ul a:link,
+	.menu-navigation-container > ul a:visited {
+		text-decoration: none;
+	}
+
+	ul a:hover,
+	ul a:active,
+	ol a:hover,
+	ol a:active,
+	.tagcloud a:hover,
+	.tagcloud a:active,
+	.menu-navigation-container > ul a:hover,
+	.menu-navigation-container > ul a:active {
+		text-decoration: underline;
+	}
+
+	.textwidget > *:last-child,
+	.menu-navigation-container > ul,
+	ul:last-child,
+	ol:last-child {
+		margin-bottom: 0;
+	}
+}

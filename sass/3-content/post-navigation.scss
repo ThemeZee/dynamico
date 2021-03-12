@@ -1,0 +1,49 @@
+/* Post Navigation */
+.post-navigation {
+	margin: 0 0 1.5rem;
+}
+
+.post-navigation .nav-links .nav-previous,
+.post-navigation .nav-links .nav-next {
+	word-wrap: break-word;
+}
+
+.post-navigation .nav-links .nav-next {
+	margin-top: 1.25rem;
+	text-align: right;
+}
+
+/* Post Navigation Link Styling */
+.post-navigation .nav-links a:link,
+.post-navigation .nav-links a:visited {
+	@include color(--light-text-color);
+	text-decoration: none;
+}
+
+.post-navigation .nav-links .entry-title {
+	@include font-size(20);
+}
+
+.post-navigation .nav-links a:link .entry-title,
+.post-navigation .nav-links a:visited .entry-title {
+	@include color(--title-color);
+}
+
+.post-navigation .nav-links a:hover .entry-title,
+.post-navigation .nav-links a:active .entry-title {
+	@include color(--title-hover-color);
+}
+
+.post-navigation .nav-links .nav-link-text {
+	display: block;
+}
+
+.post-navigation .nav-links .nav-previous .nav-link-text::before {
+	margin-right: 5px;
+	content: "\00AB";
+}
+
+.post-navigation .nav-links .nav-next .nav-link-text::after {
+	margin-left: 5px;
+	content: "\00BB";
+}

@@ -1,0 +1,90 @@
+.sidebar {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $contentWidth;
+
+	.widget {
+		padding: 1.5rem;
+		@include background(--widget-background-color);
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.sidebar {
+		.widget {
+			padding: 2rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 880px) {
+	.has-sidebar {
+		.site-content {
+			display: flex;
+
+			.site-main,
+			.sidebar {
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			.site-main {
+				flex-basis: 70%;
+			}
+
+			.sidebar {
+				max-width: 100%;
+				min-width: 300px;
+				padding-left: 1.75rem;
+				flex-grow: 1;
+				flex-basis: 30%;
+			}
+		}
+	}
+
+	.sidebar-left.has-sidebar .site-content,
+	.page-template-template-sidebar-left.has-sidebar .site-content,
+	.page-template-template-sidebar-left-no-title.has-sidebar .site-content {
+		.site-main {
+			order: 2;
+		}
+
+		.sidebar {
+			order: 1;
+			padding-left: 0;
+			padding-right: 1.75rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.has-sidebar {
+		.site-content {
+			.sidebar {
+				padding-left: 2rem;
+			}
+		}
+	}
+
+	.sidebar-left.has-sidebar .site-content .sidebar,
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar,
+	.page-template-template-sidebar-left-no-title.has-sidebar .site-content .sidebar {
+		padding-right: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.has-sidebar {
+		.site-content {
+			.sidebar {
+				padding-left: 2.5rem;
+			}
+		}
+	}
+
+	.sidebar-left.has-sidebar .site-content .sidebar,
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar,
+	.page-template-template-sidebar-left-no-title.has-sidebar .site-content .sidebar {
+		padding-right: 2.5rem;
+	}
+}

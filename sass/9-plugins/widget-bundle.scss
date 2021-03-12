@@ -1,0 +1,178 @@
+/* ThemeZee Widget Bundle Plugin */
+.tzwb-posts-list {
+	margin: 0;
+	padding: 0;
+}
+
+.tzwb-posts-list li {
+	margin: 0;
+	list-style: none;
+}
+
+.tzwb-posts-list .tzwb-excerpt p {
+	margin: 0;
+	padding: 0;
+}
+
+.tzwb-posts-list li.tzwb-has-thumbnail {
+	margin: 0;
+	padding: 0.75rem 0;
+	overflow: hidden;
+}
+
+.tzwb-posts-list .wp-post-image {
+	float: left;
+	margin: 0 1rem 0 0;
+	max-width: 55px;
+	height: auto;
+}
+
+.tzwb-posts-list .tzwb-entry-meta {
+	margin: 0;
+	@include font-size(14);
+	@include color(--light-text-color);
+}
+
+.tzwb-posts-list .tzwb-entry-meta span:last-child::after {
+	display: none;
+}
+
+.tzwb-posts-list .tzwb-entry-meta a:link,
+.tzwb-posts-list .tzwb-entry-meta a:visited {
+	@include color(--light-text-color);
+	text-decoration: none;
+}
+
+.tzwb-posts-list .tzwb-entry-meta a:hover,
+.tzwb-posts-list .tzwb-entry-meta a:active {
+	@include color(--text-color);
+}
+
+/* Comments List */
+.tzwb-comments-list {
+	margin: 0;
+	padding: 0;
+}
+
+.tzwb-comments-list li {
+	overflow: hidden;
+	margin: 0;
+	list-style: none;
+}
+
+.tzwb-comments-list li.tzwb-has-avatar {
+	padding: 0.75rem 0;
+}
+
+.tzwb-comments-list .avatar {
+	float: left;
+	margin: 0 1rem 0 0;
+}
+
+.tzwb-comments-list .tzwb-comment-content {
+	font-style: italic;
+}
+
+.tzwb-comments-list .tzwb-comment-date {
+	@include color(--light-text-color);
+	@include font-size(14);
+}
+
+/* Tabbed Content Widget */
+.tzwb-tabbed-content .tzwb-tabnavi-wrap {
+	margin: 0;
+	padding: 0;
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-flow: row wrap;
+	list-style: none;
+	list-style-position: outside;
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi li {
+	margin: 2px 2px 0 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi li a {
+	display: block;
+	margin: 0;
+	padding: 0.4rem 0.65rem;
+	@include color(--button-text-color);
+	@include background(--button-color);
+	@include font-size(15);
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi li a:link,
+.tzwb-tabbed-content .tzwb-tabnavi li a:visited {
+	@include color(--button-text-color);
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi li a:hover,
+.tzwb-tabbed-content .tzwb-tabnavi li a:active {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+	text-decoration: none;
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi li a.current-tab {
+	text-decoration: underline;
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi li a:focus {
+	outline: none;
+}
+
+.tzwb-tabbed-content .tzwb-tabcontent {
+	margin: 1.5rem 0 0 0;
+	padding: 0;
+}
+
+/* Social Icons Widget */
+.tzwb-social-icons .social-icons-menu {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+.tzwb-social-icons .social-icons-menu li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+.tzwb-social-icons .social-icons-menu li a {
+	display: block;
+	margin: 2px 2px 0 0;
+	padding: 0.5rem 0.75rem 0.75rem;
+	@include background(--button-color);
+}
+
+.tzwb-social-icons .social-icons-menu li a:hover,
+.tzwb-social-icons .social-icons-menu li a:active {
+	@include background(--button-hover-color);
+	text-decoration: none;
+}
+
+.tzwb-social-icons .social-icons-menu li a .icon {
+	margin: 0;
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	@include fill(--button-text-color);
+}
+
+.tzwb-social-icons .social-icons-menu li a:hover .icon,
+.tzwb-social-icons .social-icons-menu li a:active .icon {
+	@include fill(--button-hover-text-color);
+}

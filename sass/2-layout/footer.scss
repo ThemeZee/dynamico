@@ -1,0 +1,91 @@
+.footer-wrap {
+	@include color(--footer-text-color);
+	@include background(--footer-background-color);
+}
+
+.site-footer {
+	@include font-size(14);
+}
+
+.site-footer a:link,
+.site-footer a:visited {
+	@include color(--footer-link-color);
+	text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:active {
+	text-decoration: underline;
+}
+
+.site-footer input[type="text"],
+.site-footer input[type="email"],
+.site-footer input[type="url"],
+.site-footer input[type="password"],
+.site-footer input[type="search"],
+.site-footer input[type="submit"],
+.site-footer textarea {
+	border: 1px solid;
+	@include border-color(--footer-border-color);
+	@include color(--footer-link-hover-color);
+}
+
+.site-footer input[type="text"]:focus,
+.site-footer input[type="email"]:focus,
+.site-footer input[type="url"]:focus,
+.site-footer input[type="password"]:focus,
+.site-footer input[type="search"]:focus,
+.site-footer textarea:focus {
+	@include color(--footer-text-color);
+}
+
+.site-footer button,
+.site-footer input[type="button"],
+.site-footer input[type="reset"],
+.site-footer input[type="submit"] {
+	@include color(--footer-link-hover-color);
+}
+
+.site-footer button:hover,
+.site-footer input[type="button"]:hover,
+.site-footer input[type="reset"]:hover,
+.site-footer input[type="submit"]:hover,
+.site-footer button:focus,
+.site-footer input[type="button"]:focus,
+.site-footer input[type="reset"]:focus,
+.site-footer input[type="submit"]:focus,
+.site-footer button:active,
+.site-footer input[type="button"]:active,
+.site-footer input[type="reset"]:active,
+.site-footer input[type="submit"]:active {
+	@include color(--footer-border-color);
+}
+
+/* Footer Widgets */
+.site-info .widget {
+	margin-bottom: 1.5rem;
+
+	.widget-title {
+		@include color(--footer-text-color);
+		font-weight: normal;
+	}
+
+	.tzwb-posts-list .tzwb-entry-meta,
+	.tzwb-posts-list .tzwb-entry-meta span::after,
+	.tzwb-posts-list .tzwb-entry-meta a:link,
+	.tzwb-posts-list .tzwb-entry-meta a:visited,
+	.tzwb-comments-list .tzwb-comment-date {
+		@include color(--footer-link-hover-color);
+	}
+
+	.tzwb-posts-list .tzwb-entry-meta a:hover,
+	.tzwb-posts-list .tzwb-entry-meta a:active {
+		@include color(--footer-text-color);
+	}
+}
+
+/* Footer Line */
+.site-info .footer-text,
+.site-info .credit-link {
+	display: block;
+}
