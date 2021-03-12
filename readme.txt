@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/dynamico/
 Contributors: themezee
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
-Tested up to: 5.6
+Tested up to: 5.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,21 +22,6 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 3. Go to https://themezee.com/en/docs/dynamico-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
-
-= 1.0.4 - 2021-02-16 =
-* added support for ThemeZee Breadcrumbs plugin
-* added support for ThemeZee Related Posts plugin
-
-= 1.0.3 - 2021-01-11 =
-* fixed No Sidebar post template
-
-= 1.0.2 - 2020-12-16 =
-* added focus styling for Read More buttons and Tags
-* changed escaping of SVG icons attribute
-* fixed secondary menu script loading
-
-= 1.0.1 - 2020-11-26 =
-* added theme screenshot
 
 = 1.0 - 2020-11-12 =
 * Initial Release

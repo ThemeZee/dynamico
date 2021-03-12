@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dynamico\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2020-12-22 19:50+0100\n"
+"POT-Creation-Date: 2021-03-12 17:05+0100\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -48,11 +48,11 @@ msgstr ""
 msgid "Main Navigation"
 msgstr ""
 
-#: functions.php:117 inc/addons.php:130 inc/addons.php:131
+#: functions.php:117 inc/addons.php:138 inc/addons.php:139
 msgid "Expand child menu"
 msgstr ""
 
-#: functions.php:118 inc/addons.php:130 inc/addons.php:131
+#: functions.php:118 inc/addons.php:138 inc/addons.php:139
 msgid "Collapse child menu"
 msgstr ""
 
