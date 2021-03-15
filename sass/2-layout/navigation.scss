@@ -1,3 +1,9 @@
+.primary-navigation-wrap {
+	position: relative;
+	margin-top: -1px;
+	@include background(--navi-background-color);
+}
+
 .primary-navigation {
 	position: relative;
 	width: 100%;
@@ -6,7 +12,7 @@
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
-	@include color(--header-text-color);
+	@include color(--navi-color);
 	list-style: none;
 	@include font-size(17);
 	@include font-family(--navi-font);
@@ -15,16 +21,12 @@
 }
 
 .main-navigation > ul {
-	margin-top: 1.5rem;
-	margin-bottom: 1rem;
-	border-top: 1px solid;
-	@include border-color(--header-text-color);
+	border-top: 1px solid #fff;
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
 .main-navigation ul,
 .main-navigation .menu-item-has-children > a > .icon,
-.main-navigation .page_item_has_children > a > .icon,
 .main-navigation ul a > .icon {
 	display: none;
 }
@@ -42,16 +44,16 @@
 .main-navigation ul a {
 	display: block;
 	margin: 0;
-	padding: 1rem;
+	padding: 1em 1.5em;
 	border-bottom: 1px solid;
-	@include border-color(--header-border-color);
+	@include border-color(--navi-border-color);
 	text-decoration: none;
 }
 
 .main-navigation ul a,
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
-	@include color(--header-text-color);
+	@include color(--navi-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
 }
@@ -59,17 +61,16 @@
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
 .main-navigation ul a:focus {
-	@include color(--header-text-hover-color);
+	@include color(--navi-hover-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
-	text-decoration: underline;
+	@include background(--navi-current-color);
 }
 
 /* Submenus */
 .main-navigation ul ul {
-	@include font-size(16);
-	@include background(--header-background-color);
+	@include font-size(14);
 }
 
 .is-amp-page .main-navigation ul button.toggled-on + ul,
@@ -78,27 +79,25 @@
 }
 
 .main-navigation ul ul a {
-	padding-left: 2rem;
+	padding-left: 3em;
 }
 
 .main-navigation ul ul ul a {
-	padding-left: 4rem;
+	padding-left: 4.5em;
 }
 
 .main-navigation ul ul ul ul a {
-	padding-left: 6rem;
+	padding-left: 6em;
 }
 
 /* Main Navigation Toggle */
 .primary-menu-toggle {
 	display: flex;
-	align-items: center;
 	margin: 0;
-	margin-left: auto;
-	padding: 1rem;
+	padding: 1em;
 	border: none;
 	background: none;
-	@include color(--header-text-color);
+	@include color(--navi-color);
 	text-decoration: none;
 	@include font-size(17);
 	@include font-family(--navi-font);
@@ -106,6 +105,7 @@
 	@include text-transform(--navi-text-transform);
 	text-align: left;
 	transition: all 0.15s ease;
+	align-items: center;
 }
 
 .primary-menu-toggle .menu-toggle-text {
@@ -114,29 +114,29 @@
 
 .primary-menu-toggle:focus {
 	outline: thin dotted;
-	@include color(--header-text-color);
+	@include color(--navi-color);
 	background: none;
 }
 
 .primary-menu-toggle:hover,
 .primary-menu-toggle:active {
-	@include color(--header-text-hover-color);
+	@include color(--navi-hover-color);
 	background: none;
 	cursor: pointer;
 }
 
 .primary-menu-toggle .icon {
 	margin: 0;
-	width: 28px;
-	height: 28px;
+	width: 24px;
+	height: 24px;
 	vertical-align: top;
-	@include fill(--header-text-color);
+	@include fill(--navi-color);
 	transition: fill 0.15s ease;
 }
 
 .primary-menu-toggle:hover .icon,
 .primary-menu-toggle:active .icon {
-	@include fill(--header-text-hover-color);
+	@include fill(--navi-hover-color);
 }
 
 .primary-menu-toggle[aria-expanded="true"] .icon-menu,
@@ -154,14 +154,14 @@
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1.1rem 1.5rem;
+	padding: 1em 1.5em;
 	background: none;
 	border: none;
 }
 
 .main-navigation .dropdown-toggle:focus {
 	outline: thin dotted;
-	@include color(--header-text-color);
+	@include color(--navi-color);
 	background: none;
 }
 
@@ -171,18 +171,18 @@
 }
 
 .main-navigation .dropdown-toggle .icon {
-	margin: 0.35em 0 0;
-	width: 20px;
-	height: 20px;
+	margin: 0.2em 0 0;
+	width: 24px;
+	height: 24px;
 	vertical-align: top;
-	@include fill(--header-text-color);
+	@include fill(--navi-color);
 	transition: fill 0.15s ease;
 }
 
 .main-navigation .dropdown-toggle:hover .icon,
 .main-navigation .dropdown-toggle:active .icon,
 .main-navigation .dropdown-toggle:focus .icon {
-	@include fill(--header-text-hover-color);
+	@include fill(--navi-hover-color);
 }
 
 .main-navigation .dropdown-toggle.toggled-on .icon {
@@ -192,10 +192,10 @@
 }
 
 .main-navigation ul ul .dropdown-toggle {
-	padding: 1rem 1.2rem;
+	padding: 0.8em 1.25em;
 }
 
 .main-navigation ul ul .dropdown-toggle .icon {
-	width: 18px;
-	height: 18px;
+	width: 20px;
+	height: 20px;
 }

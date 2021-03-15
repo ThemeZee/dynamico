@@ -32,6 +32,13 @@
 	@include variable(--header-text-hover-color, $themeColors);
 	@include variable(--header-border-color, $themeColors);
 
+	// Navigation
+	@include variable(--navi-background-color, $themeColors);
+	@include variable(--navi-color, $themeColors);
+	@include variable(--navi-hover-color, $themeColors);
+	@include variable(--navi-border-color, $themeColors);
+	@include variable(--navi-current-color, $themeColors);
+
 	// Posts
 	@include variable(--title-color, $themeColors);
 	@include variable(--title-hover-color, $themeColors);

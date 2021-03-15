@@ -37,9 +37,11 @@
 
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 
-				<?php get_template_part( 'template-parts/header/site', 'navigation' ); ?>
+				<?php get_template_part( 'template-parts/header/header', 'widgets' ); ?>
 
 			</div><!-- .header-main -->
+
+			<?php get_template_part( 'template-parts/header/site', 'navigation' ); ?>
 
 		</header><!-- #masthead -->
 

@@ -8,7 +8,7 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #2a4861;
+	--primary-color: #e84747;
 	--secondary-color: #5d7b94;
 	--tertiary-color: #90aec7;
 	--accent-color: #60945d;
@@ -22,24 +22,29 @@
 	--light-text-color: rgba(0, 0, 0, 0.5);
 	--medium-border-color: rgba(0, 0, 0, 0.3);
 	--light-border-color: rgba(0, 0, 0, 0.1);
-	--link-color: #5d7b94;
-	--link-hover-color: #2a4861;
-	--button-color: #2a4861;
+	--link-color: #e84747;
+	--link-hover-color: #e84747;
+	--button-color: #e84747;
 	--button-text-color: #fff;
-	--button-hover-color: #5d7b94;
+	--button-hover-color: #333;
 	--button-hover-text-color: #fff;
-	--header-background-color: #2a4861;
-	--header-text-color: #fff;
-	--header-text-hover-color: rgba(255, 255, 255, 0.5);
-	--header-border-color: rgba(255, 255, 255, 0.1);
-	--title-color: #2a4861;
-	--title-hover-color: #5d7b94;
+	--header-background-color: #fff;
+	--header-text-color: #333;
+	--header-text-hover-color: rgba(0, 0, 0, 0.5);
+	--header-border-color: rgba(0, 0, 0, 0.1);
+	--navi-background-color: #333;
+	--navi-color: #fff;
+	--navi-hover-color: rgba(255, 255, 255, 0.5);
+	--navi-border-color: rgba(255, 255, 255, 0.1);
+	--navi-current-color: rgba(255, 255, 255, 0.075);
+	--title-color: #333;
+	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;
 	--comments-background-color: #ededef;
 	--widget-title-color: #2a4861;
 	--widget-title-hover-color: #5d7b94;
 	--widget-background-color: #ededef;
-	--footer-background-color: #2a4861;
+	--footer-background-color: #333;
 	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
 	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
@@ -49,11 +54,11 @@
 	--navi-font: "Barlow", arial, helvetica, sans-serif;
 	--widget-title-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font-weight: bold;
-	--navi-font-weight: normal;
-	--widget-title-font-weight: bold;
+	--navi-font-weight: bold;
+	--widget-title-font-weight: normal;
 	--title-text-transform: none;
-	--navi-text-transform: none;
-	--widget-title-text-transform: none;
+	--navi-text-transform: uppercase;
+	--widget-title-text-transform: uppercase;
 	--text-line-height: 1.75;
 	--title-line-height: 1.4;
 }
@@ -62,15 +67,15 @@
 # - Layout
 --------------------------------------------------------------*/
 .wp-block {
-	max-width: 800px;
+	max-width: 880px;
 }
 
 .wp-block[data-align="wide"] {
-	max-width: 960px;
+	max-width: 1040px;
 }
 
 .wp-block[data-align="full"] {
-	max-width: 1240px;
+	max-width: 1340px;
 }
 
 /* Fullwidth Template */
@@ -80,7 +85,7 @@
 
 .dynamico-fullwidth-page-layout .wp-block[data-align="wide"],
 .dynamico-fullwidth-page-layout .wp-block[data-align="full"] {
-	max-width: 1240px;
+	max-width: 1340px;
 }
 
 /* Wide Theme Layout */
@@ -95,7 +100,7 @@
 
 /* Centered Theme Layout */
 .dynamico-centered-theme-layout .editor-styles-wrapper {
-	max-width: 1240px;
+	max-width: 1340px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
@@ -103,7 +108,7 @@
 
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
-	color: #2a4861;
+	color: #333;
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
@@ -196,7 +201,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 }
 
 .editor-styles-wrapper a {
-	color: #5d7b94;
+	color: #e84747;
 	color: var(--link-color);
 }
 
@@ -255,7 +260,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	clear: both;
 	margin-top: 1em;
 	margin-bottom: 0.75em;
-	color: #2a4861;
+	color: #333;
 	color: var(--title-color);
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
@@ -533,13 +538,13 @@ p.has-background {
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
-	background-color: #2a4861;
+	background-color: #e84747;
 	background-color: var(--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
-	background-color: #5d7b94;
+	background-color: #333;
 	background-color: var(--button-hover-color);
 }
 
@@ -760,7 +765,7 @@ p.has-background {
 /* Block Text Colors */
 .has-primary-color,
 .wp-block-button__link.has-primary-color {
-	color: #2a4861;
+	color: #e84747;
 	color: var(--primary-color);
 }
 
@@ -819,7 +824,7 @@ p.has-background {
 /* Block Background Colors */
 .has-primary-background-color,
 .has-primary-background-color[class] {
-	background-color: #2a4861;
+	background-color: #e84747;
 	background-color: var(--primary-color);
 }
 
@@ -1020,7 +1025,7 @@ p.has-background {
 	margin-top: 0;
 	margin-bottom: 0.25rem;
 	padding: 0;
-	color: #2a4861;
+	color: #333;
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
@@ -1035,7 +1040,7 @@ p.has-background {
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:link,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:visited {
-	color: #2a4861;
+	color: #333;
 	color: var(--title-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
@@ -1043,7 +1048,7 @@ p.has-background {
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:active {
-	color: #5d7b94;
+	color: #e84747;
 	color: var(--title-hover-color);
 }
 
@@ -1108,7 +1113,7 @@ p.has-background {
 	padding: 0.6em 1.2em;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #2a4861;
+	background-color: #e84747;
 	background-color: var(--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -1126,7 +1131,7 @@ p.has-background {
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #5d7b94;
+	background-color: #333;
 	background-color: var(--button-hover-color);
 }
 

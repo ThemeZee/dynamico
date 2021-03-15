@@ -1,11 +1,11 @@
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 30em) {
 	.primary-menu-toggle .menu-toggle-text {
-		display: block;
-		margin-left: 0.75rem;
+		display: inline-block;
+		margin-left: 0.75em;
 	}
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 60em) {
 	.primary-menu-toggle,
 	.main-navigation .dropdown-toggle {
 		display: none;
@@ -30,22 +30,12 @@
 		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
 		margin: 0;
-		border: none;
+		border-bottom: none;
 	}
 
-	.main-navigation > ul > li {
-		padding: 0.8rem 1rem;
-	}
-
+	.main-navigation > ul,
 	.main-navigation > ul > li > a {
-		padding: 0.2rem 0;
 		border: none;
-		border-bottom: 3px solid transparent;
-	}
-
-	.main-navigation > ul > li.current-menu-item > a {
-		text-decoration: none;
-		@include border-color(--header-text-color);
 	}
 
 	/* Dropdown Menus */
@@ -54,15 +44,15 @@
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
-		padding: 0.5rem 0;
-		border-top: 1px solid;
-		@include border-color(--header-text-color);
+		border-top: 1px solid #fff;
+		border-top: 1px solid var(--page-background-color);
+		@include background(--navi-background-color);
 	}
 
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
-		right: 0;
-		left: auto;
+		right: auto;
+		left: 0;
 	}
 
 	.main-navigation ul ul li a {
@@ -71,53 +61,46 @@
 
 	.main-navigation ul ul ul {
 		left: -999em;
+		margin-top: -1px;
 		top: 0;
-		margin-top: -0.5rem;
-		border: none;
-		border-right: 1px solid;
-		@include border-color(--header-text-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
 	.main-navigation ul ul li.focus > ul {
-		right: 100%;
-		left: auto;
+		right: auto;
+		left: 100%;
 	}
 
 	.main-navigation ul ul li a,
 	.main-navigation ul ul ul li a,
 	.main-navigation ul ul ul ul li a {
-		padding: 0.75rem 1.25rem;
-		border: none;
+		padding: 1em;
 	}
 
 	/* Dropdown Icons */
-	.main-navigation .menu-item-has-children > a > .icon,
-	.main-navigation .page_item_has_children > a > .icon {
+	.main-navigation .menu-item-has-children > a > .icon {
 		position: relative;
 		display: inline-block;
 		left: 0.5rem;
 		top: 0.1rem;
 		width: 14px;
 		height: 14px;
-		@include fill(--header-text-color);
+		@include fill(--navi-color);
 		transition: fill 0.15s ease;
 	}
 
-	.main-navigation ul ul .menu-item-has-children > a > .icon,
-	.main-navigation ul ul .page_item_has_children > a > .icon {
+	.main-navigation ul ul .menu-item-has-children > a > .icon {
 		position: absolute;
 		left: auto;
 		right: 1em;
 		top: 50%;
-		margin-top: -0.4rem;
+		margin-top: -0.5rem;
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
 	}
 
-	.main-navigation ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		@include fill(--header-text-hover-color);
+	.main-navigation ul .menu-item-has-children > a:hover > .icon {
+		@include fill(--navi-hover-color);
 	}
 }

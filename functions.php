@@ -36,7 +36,7 @@ function dynamico_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 800, 440, true );
+	set_post_thumbnail_size( 880, 320, true );
 
 	// Add image size for posts with the Horizontal Blog layout enabled.
 	add_image_size( 'dynamico-horizontal-list-post', 400, 400, true );

@@ -41,10 +41,10 @@
 		.post-wrapper {
 			display: flex;
 			flex-wrap: wrap;
-			margin-right: -1.75rem;
+			margin-right: -1.5rem;
 
 			.type-post {
-				padding-right: 1.75rem;
+				padding-right: 1.5rem;
 				width: 50%;
 
 				.entry-header,
@@ -73,32 +73,7 @@
 	}
 }
 
-@media only screen and (min-width: 960px) {
-	.blog-layout-two-column-grid,
-	.blog-layout-three-column-grid {
-		.post-wrapper {
-			margin-right: -2rem;
-
-			.type-post {
-				padding-right: 2rem;
-			}
-		}
-	}
-}
-
 @media only screen and (min-width: 1280px) {
-	.blog-layout-two-column-grid,
-	.blog-layout-three-column-grid {
-		.post-wrapper {
-			margin-right: -2.5rem;
-
-			.type-post {
-				padding-right: 2.5rem;
-				margin-bottom: 2.5rem;
-			}
-		}
-	}
-
 	.blog-layout-horizontal-list,
 	.blog-layout-two-column-grid {
 		.post-wrapper {

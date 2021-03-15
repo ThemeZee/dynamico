@@ -9,30 +9,36 @@
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-	<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" <?php dynamico_amp_menu_toggle(); ?>>
-		<?php
-		echo dynamico_get_svg( 'menu' );
-		echo dynamico_get_svg( 'close' );
-		?>
-		<span class="menu-toggle-text"><?php esc_html_e( 'Menu', 'dynamico' ); ?></span>
-	</button>
+	<div id="main-navigation-wrap" class="primary-navigation-wrap">
 
-	<div class="primary-navigation">
+		<?php do_action( 'dynamico_header_search' ); ?>
 
-		<nav id="site-navigation" class="main-navigation" <?php dynamico_amp_menu_is_toggled(); ?> role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'dynamico' ); ?>">
-
+		<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" <?php dynamico_amp_menu_toggle(); ?>>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'menu_id'        => 'primary-menu',
-					'container'      => false,
-				)
-			);
+			echo dynamico_get_svg( 'menu' );
+			echo dynamico_get_svg( 'close' );
 			?>
-		</nav><!-- #site-navigation -->
+			<span class="menu-toggle-text"><?php esc_html_e( 'Menu', 'dynamico' ); ?></span>
+		</button>
 
-	</div><!-- .primary-navigation -->
+		<div class="primary-navigation">
+
+			<nav id="site-navigation" class="main-navigation" <?php dynamico_amp_menu_is_toggled(); ?> role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'dynamico' ); ?>">
+
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'menu_id'        => 'primary-menu',
+						'container'      => false,
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+
+		</div><!-- .primary-navigation -->
+
+	</div>
 
 <?php endif; ?>
 
