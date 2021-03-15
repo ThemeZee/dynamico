@@ -81,9 +81,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;
 	--comments-background-color: #ededef;
-	--widget-title-color: #2a4861;
-	--widget-title-hover-color: #5d7b94;
-	--widget-background-color: #ededef;
+	--content-border-color: rgba(0, 0, 0, 0.1);
+	--widget-title-background-color: #333;
+	--widget-title-text-color: #fff;
+	--widget-border-color: rgba(0, 0, 0, 0.1);
 	--footer-background-color: #333;
 	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
@@ -1093,7 +1094,13 @@ body.site-description-hidden .site-header .site-description {
 @media only screen and (min-width: 480px) {
 	.sidebar .widget {
 		padding: 1.5rem;
-		border: 1px solid #ddd;
+		border: 1px solid;
+		border-color: rgba(0, 0, 0, 0.1);
+		border-color: var(--widget-border-color);
+	}
+
+	.sidebar .widget .widget-title {
+		margin: -0.5rem -0.5rem 1rem;
 	}
 }
 
@@ -2181,13 +2188,15 @@ p.has-background {
 
 .widget .widget-title {
 	margin: 0 0 1rem;
-	padding: 0;
-	color: #2a4861;
-	color: var(--widget-title-color);
+	padding: 0.5rem 1rem;
+	color: #fff;
+	color: var(--widget-title-text-color);
+	background-color: #333;
+	background-color: var(--widget-title-background-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-size: 20px;
-	font-size: 1.25rem;
+	font-size: 16px;
+	font-size: 1rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--widget-title-font);
 	font-weight: normal;
@@ -3498,7 +3507,9 @@ figcaption,
 	.comments-area,
 	.themezee-related-posts {
 		padding: 1.5rem;
-		border: 1px solid #ddd;
+		border: 1px solid;
+		border-color: rgba(0, 0, 0, 0.1);
+		border-color: var(--content-border-color);
 		margin-bottom: 1.5rem;
 	}
 

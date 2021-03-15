@@ -62,11 +62,12 @@ $themeColors: (
 	--title-hover-color              : #e84747,
 	--post-meta-background-color     : #ededef,
 	--comments-background-color      : #ededef,
+	--content-border-color           : rgba(0, 0, 0, 0.1),
 
 	// Widgets
-	--widget-title-color             : #2a4861,
-	--widget-title-hover-color       : #5d7b94,
-	--widget-background-color        : #ededef,
+	--widget-title-background-color  : #333,
+	--widget-title-text-color        : #fff,
+	--widget-border-color            : rgba(0, 0, 0, 0.1),
 
 	// Footer Widgets
 	--footer-widgets-background-color: #333,

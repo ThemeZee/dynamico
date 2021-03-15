@@ -19,7 +19,8 @@
 	.comments-area,
 	.themezee-related-posts {
 		padding: 1.5rem;
-		border: 1px solid #ddd;
+		border: 1px solid;
+		@include border-color(--content-border-color);
 		margin-bottom: 1.5rem;
 	}
 

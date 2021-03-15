@@ -41,9 +41,10 @@
 	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;
 	--comments-background-color: #ededef;
-	--widget-title-color: #2a4861;
-	--widget-title-hover-color: #5d7b94;
-	--widget-background-color: #ededef;
+	--content-border-color: rgba(0, 0, 0, 0.1);
+	--widget-title-background-color: #333;
+	--widget-title-text-color: #fff;
+	--widget-border-color: rgba(0, 0, 0, 0.1);
 	--footer-background-color: #333;
 	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
