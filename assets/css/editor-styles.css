@@ -49,10 +49,10 @@
 	--footer-link-color: #fff;
 	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
 	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: "Barlow", arial, helvetica, sans-serif;
-	--title-font: "Barlow", arial, helvetica, sans-serif;
-	--navi-font: "Barlow", arial, helvetica, sans-serif;
-	--widget-title-font: "Barlow", arial, helvetica, sans-serif;
+	--text-font: "Ubuntu", arial, helvetica, sans-serif;
+	--title-font: "Fira Sans", arial, helvetica, sans-serif;
+	--navi-font: "Fira Sans", arial, helvetica, sans-serif;
+	--widget-title-font: "Ubuntu", arial, helvetica, sans-serif;
 	--title-font-weight: bold;
 	--navi-font-weight: bold;
 	--widget-title-font-weight: normal;
@@ -112,7 +112,7 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -160,7 +160,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
 	line-height: var(--text-line-height);
@@ -262,7 +262,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	margin-bottom: 0.75em;
 	color: #333;
 	color: var(--title-color);
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	line-height: 1.4;
 	line-height: var(--title-line-height);
@@ -334,7 +334,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	display: block;
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--text-color);
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-size: 16px;
 	font-size: 1rem;
@@ -1029,7 +1029,7 @@ p.has-background {
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);

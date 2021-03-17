@@ -89,10 +89,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-link-color: #fff;
 	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
 	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: "Barlow", arial, helvetica, sans-serif;
-	--title-font: "Barlow", arial, helvetica, sans-serif;
-	--navi-font: "Barlow", arial, helvetica, sans-serif;
-	--widget-title-font: "Barlow", arial, helvetica, sans-serif;
+	--text-font: "Ubuntu", arial, helvetica, sans-serif;
+	--title-font: "Fira Sans", arial, helvetica, sans-serif;
+	--navi-font: "Fira Sans", arial, helvetica, sans-serif;
+	--widget-title-font: "Ubuntu", arial, helvetica, sans-serif;
 	--title-font-weight: bold;
 	--navi-font-weight: bold;
 	--widget-title-font-weight: normal;
@@ -290,7 +290,7 @@ textarea {
 	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
 	line-height: var(--text-line-height);
@@ -307,7 +307,7 @@ h6 {
 	margin-bottom: 0.75em;
 	color: #333;
 	color: var(--title-color);
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -446,7 +446,7 @@ blockquote cite {
 	display: block;
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--text-color);
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-size: 16px;
 	font-size: 1rem;
@@ -797,7 +797,7 @@ textarea {
 	text-decoration: none;
 	font-size: 28px;
 	font-size: 1.75rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -876,7 +876,7 @@ body.site-description-hidden .site-header .site-description {
 	list-style: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
 	font-weight: bold;
 	font-weight: var(--navi-font-weight);
@@ -971,7 +971,7 @@ body.site-description-hidden .site-header .site-description {
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
 	font-weight: bold;
 	font-weight: var(--navi-font-weight);
@@ -1172,7 +1172,7 @@ body.site-description-hidden .site-header .site-description {
 	word-wrap: break-word;
 	font-size: 20px;
 	font-size: 1.25rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -1497,7 +1497,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 .search-header .search-title {
 	font-size: 20px;
 	font-size: 1.25rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);
@@ -2192,7 +2192,7 @@ p.has-background {
 	word-wrap: break-word;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
 	font-family: var(--widget-title-font);
 	font-weight: normal;
 	font-weight: var(--widget-title-font-weight);
@@ -2250,7 +2250,7 @@ p.has-background {
 	margin: 0 0 1.5rem;
 	color: #333;
 	color: var(--title-color);
-	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
 	font-weight: var(--title-font-weight);

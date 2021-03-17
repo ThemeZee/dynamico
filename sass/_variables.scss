@@ -84,13 +84,13 @@ $themeColors: (
 );
 
 // Theme Fonts
-$baseFont: "Barlow", arial, helvetica, sans-serif;
-$titleFont: "Barlow", arial, helvetica, sans-serif;
+$baseFont: "Ubuntu", arial, helvetica, sans-serif;
+$titleFont: "Fira Sans", arial, helvetica, sans-serif;
 $themeFonts: (
 	--text-font: $baseFont,
 	--title-font: $titleFont,
 	--navi-font: $titleFont,
-	--widget-title-font: $titleFont,
+	--widget-title-font: $baseFont,
 );
 
 // Font Weight.

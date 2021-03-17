@@ -155,7 +155,8 @@ add_action( 'enqueue_block_editor_assets', 'dynamico_theme_fonts', 1 );
  */
 function dynamico_get_fonts_url() {
 	$font_families = array(
-		'Barlow:400,400italic,700,700italic',
+		'Ubuntu:400,400italic,700,700italic',
+		'Fira Sans:400,400italic,700,700italic',
 	);
 
 	$query_args = array(
