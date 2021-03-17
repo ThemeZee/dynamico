@@ -70,8 +70,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--button-hover-text-color: #fff;
 	--header-background-color: #fff;
 	--header-text-color: #333;
-	--header-text-hover-color: rgba(0, 0, 0, 0.5);
-	--header-border-color: rgba(0, 0, 0, 0.1);
+	--site-title-color: #e84747;
+	--site-title-hover-color: #333;
 	--navi-background-color: #333;
 	--navi-color: #fff;
 	--navi-hover-color: rgba(255, 255, 255, 0.5);
@@ -793,11 +793,11 @@ textarea {
 .site-title {
 	margin: 0;
 	padding: 0;
-	color: #333;
-	color: var(--header-text-color);
+	color: #e84747;
+	color: var(--site-title-color);
 	text-decoration: none;
-	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 28px;
+	font-size: 1.75rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
@@ -810,15 +810,15 @@ textarea {
 
 .site-title a:link,
 .site-title a:visited {
-	color: #333;
-	color: var(--header-text-color);
+	color: #e84747;
+	color: var(--site-title-color);
 	transition: all 0.15s ease;
 }
 
 .site-title a:hover,
 .site-title a:active {
-	color: rgba(0, 0, 0, 0.5);
-	color: var(--header-text-hover-color);
+	color: #333;
+	color: var(--site-title-hover-color);
 }
 
 .site-description {
@@ -1171,8 +1171,8 @@ body.site-description-hidden .site-header .site-description {
 	color: var(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 20px;
+	font-size: 1.25rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
@@ -2184,15 +2184,15 @@ p.has-background {
 
 .widget .widget-title {
 	margin: 0 0 1rem;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 0.75rem;
 	color: #fff;
 	color: var(--widget-title-text-color);
 	background-color: #333;
 	background-color: var(--widget-title-background-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--widget-title-font);
 	font-weight: normal;
@@ -3366,8 +3366,8 @@ figcaption,
 --------------------------------------------------------------*/
 @media only screen and (min-width: 640px) {
 	.site-title {
-		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 32px;
+		font-size: 2rem;
 	}
 
 	.site-description {
@@ -3376,13 +3376,8 @@ figcaption,
 	}
 
 	.entry-title {
-		font-size: 28px;
-		font-size: 1.75rem;
-	}
-
-	.entry-content {
-		font-size: 17px;
-		font-size: 1.0625rem;
+		font-size: 24px;
+		font-size: 1.5rem;
 	}
 
 	button,
@@ -3409,8 +3404,8 @@ figcaption,
 
 @media only screen and (min-width: 960px) {
 	.site-title {
-		font-size: 32px;
-		font-size: 2rem;
+		font-size: 36px;
+		font-size: 2.25rem;
 	}
 
 	.site-description {
@@ -3419,8 +3414,8 @@ figcaption,
 	}
 
 	.entry-title {
-		font-size: 32px;
-		font-size: 2rem;
+		font-size: 28px;
+		font-size: 1.75rem;
 	}
 
 	.entry-content {
@@ -3464,18 +3459,13 @@ figcaption,
 
 @media only screen and (min-width: 1280px) {
 	.site-title {
-		font-size: 36px;
-		font-size: 2.25rem;
+		font-size: 40px;
+		font-size: 2.5rem;
 	}
 
 	.entry-title {
-		font-size: 36px;
-		font-size: 2.25rem;
-	}
-
-	.entry-content {
-		font-size: 19px;
-		font-size: 1.1875rem;
+		font-size: 32px;
+		font-size: 2rem;
 	}
 }
 
@@ -3546,11 +3536,6 @@ figcaption,
 		padding: 1.5rem 1.75rem;
 	}
 
-	.entry-header,
-	.post-image {
-		margin-bottom: 1rem;
-	}
-
 	.entry-tags {
 		margin-top: 1.75rem;
 	}
@@ -3563,7 +3548,7 @@ figcaption,
 
 	.entry-header,
 	.post-image {
-		margin-bottom: 1.25rem;
+		margin-bottom: 1rem;
 	}
 
 	.entry-tags {
@@ -3574,11 +3559,6 @@ figcaption,
 @media only screen and (min-width: 1280px) {
 	.header-main {
 		padding: 2rem 2.5rem;
-	}
-
-	.entry-header,
-	.post-image {
-		margin-bottom: 1.5rem;
 	}
 
 	.entry-tags {

@@ -41,9 +41,9 @@
 .site-title {
 	margin: 0;
 	padding: 0;
-	@include color(--header-text-color);
+	@include color(--site-title-color);
 	text-decoration: none;
-	@include font-size(24);
+	@include font-size(28);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
@@ -52,13 +52,13 @@
 
 .site-title a:link,
 .site-title a:visited {
-	@include color(--header-text-color);
+	@include color(--site-title-color);
 	transition: all 0.15s ease;
 }
 
 .site-title a:hover,
 .site-title a:active {
-	@include color(--header-text-hover-color);
+	@include color(--site-title-hover-color);
 }
 
 .site-description {

@@ -22,7 +22,7 @@
 	@include color(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	@include font-size(24);
+	@include font-size(20);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);

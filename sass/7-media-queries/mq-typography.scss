@@ -1,6 +1,6 @@
 @media only screen and (min-width: 640px) {
 	.site-title {
-		@include font-size(28);
+		@include font-size(32);
 	}
 
 	.site-description {
@@ -8,11 +8,7 @@
 	}
 
 	.entry-title {
-		@include font-size(28);
-	}
-
-	.entry-content {
-		@include font-size(17);
+		@include font-size(24);
 	}
 
 	button,
@@ -37,7 +33,7 @@
 
 @media only screen and (min-width: 960px) {
 	.site-title {
-		@include font-size(32);
+		@include font-size(36);
 	}
 
 	.site-description {
@@ -45,7 +41,7 @@
 	}
 
 	.entry-title {
-		@include font-size(32);
+		@include font-size(28);
 	}
 
 	.entry-content {
@@ -84,14 +80,10 @@
 
 @media only screen and (min-width: 1280px) {
 	.site-title {
-		@include font-size(36);
+		@include font-size(40);
 	}
 
 	.entry-title {
-		@include font-size(36);
-	}
-
-	.entry-content {
-		@include font-size(19);
+		@include font-size(32);
 	}
 }
