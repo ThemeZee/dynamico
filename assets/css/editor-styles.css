@@ -40,7 +40,6 @@
 	--title-color: #333;
 	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;
-	--comments-background-color: #ededef;
 	--content-border-color: rgba(0, 0, 0, 0.1);
 	--widget-title-background-color: #333;
 	--widget-title-text-color: #fff;
@@ -68,11 +67,11 @@
 # - Layout
 --------------------------------------------------------------*/
 .wp-block {
-	max-width: 880px;
+	max-width: 900px;
 }
 
 .wp-block[data-align="wide"] {
-	max-width: 1040px;
+	max-width: 1060px;
 }
 
 .wp-block[data-align="full"] {

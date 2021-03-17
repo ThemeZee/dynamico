@@ -80,7 +80,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-color: #333;
 	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;
-	--comments-background-color: #ededef;
 	--content-border-color: rgba(0, 0, 0, 0.1);
 	--widget-title-background-color: #333;
 	--widget-title-text-color: #fff;
@@ -474,7 +473,7 @@ ol {
 }
 
 ul {
-	list-style: square;
+	list-style: circle;
 }
 
 ol {
@@ -739,7 +738,7 @@ textarea {
 .site-main {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 880px;
+	max-width: 900px;
 }
 
 .site-footer {
@@ -757,7 +756,7 @@ textarea {
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 1rem 1.25rem;
+	padding: 1.25rem;
 }
 
 /* Site Logo */
@@ -1088,7 +1087,7 @@ body.site-description-hidden .site-header .site-description {
 .sidebar {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 880px;
+	max-width: 900px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -1684,7 +1683,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 /* Wide and Full aligned Blocks */
 .entry-content > .alignwide {
-	max-width: 1040px;
+	max-width: 1060px;
 }
 
 .entry-content > .alignfull {
@@ -1701,12 +1700,12 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 .entry-content > .alignfull > [class*="__inner-container"] > * {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 880px;
+	max-width: 900px;
 }
 
 .entry-content > .alignwide > [class*="__inner-container"] > *.alignwide,
 .entry-content > .alignfull > [class*="__inner-container"] > *.alignwide {
-	max-width: 1040px;
+	max-width: 1060px;
 }
 
 .entry-content > .alignwide > [class*="__inner-container"] > *.alignfull,
@@ -2203,6 +2202,11 @@ p.has-background {
 	line-height: var(--title-line-height);
 }
 
+.widget ul {
+	margin-top: 1.25rem;
+	margin-left: -0.5rem;
+}
+
 .widget ul a:link,
 .widget ul a:visited,
 .widget ol a:link,
@@ -2237,15 +2241,7 @@ p.has-background {
 --------------------------------------------------------------*/
 .comments-area {
 	margin: 0 0 1.25rem;
-	padding: 1.5rem;
-	background-color: #ededef;
-	background-color: var(--comments-background-color);
-}
-
-@media only screen and (min-width: 480px) {
-	.comments-area {
-		padding: 2rem;
-	}
+	padding: 0;
 }
 
 /* Comment Header */
@@ -3474,7 +3470,7 @@ figcaption,
 --------------------------------------------------------------*/
 @media only screen and (min-width: 480px) {
 	.header-main {
-		padding: 1.25rem 1.5rem;
+		padding: 1.5rem;
 	}
 
 	.site-content {
@@ -3533,7 +3529,7 @@ figcaption,
 
 @media only screen and (min-width: 640px) {
 	.header-main {
-		padding: 1.5rem 1.75rem;
+		padding: 2rem;
 	}
 
 	.entry-tags {
@@ -3543,7 +3539,7 @@ figcaption,
 
 @media only screen and (min-width: 960px) {
 	.header-main {
-		padding: 1.75rem 2rem;
+		padding: 2.25rem 2.5rem;
 	}
 
 	.entry-header,
@@ -3558,7 +3554,7 @@ figcaption,
 
 @media only screen and (min-width: 1280px) {
 	.header-main {
-		padding: 2rem 2.5rem;
+		padding: 2.5rem 3rem;
 	}
 
 	.entry-tags {

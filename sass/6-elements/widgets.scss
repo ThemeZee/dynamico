@@ -16,6 +16,11 @@
 		@include line-height(--title-line-height);
 	}
 
+	ul {
+		margin-top: 1.25rem;
+		margin-left: -0.5rem;
+	}
+
 	ul a:link,
 	ul a:visited,
 	ol a:link,

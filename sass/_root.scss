@@ -43,7 +43,6 @@
 	@include variable(--title-color, $themeColors);
 	@include variable(--title-hover-color, $themeColors);
 	@include variable(--post-meta-background-color, $themeColors);
-	@include variable(--comments-background-color, $themeColors);
 	@include variable(--content-border-color, $themeColors);
 
 	// Widgets

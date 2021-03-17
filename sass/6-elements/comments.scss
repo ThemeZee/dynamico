@@ -1,13 +1,6 @@
 .comments-area {
 	margin: 0 0 1.25rem;
-	padding: 1.5rem;
-	@include background(--comments-background-color);
-}
-
-@media only screen and (min-width: 480px) {
-	.comments-area {
-		padding: 2rem;
-	}
+	padding: 0;
 }
 
 /* Comment Header */
