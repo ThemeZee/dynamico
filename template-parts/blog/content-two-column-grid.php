@@ -7,20 +7,24 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="post-column">
 
-	<?php dynamico_post_image_archives(); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="post-header entry-header">
+		<?php dynamico_post_image_archives(); ?>
 
-		<?php dynamico_entry_categories(); ?>
+		<header class="post-header entry-header">
 
-		<?php the_title( sprintf( '<h2 class="post-title entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<?php dynamico_entry_categories(); ?>
 
-		<?php dynamico_entry_meta(); ?>
+			<?php the_title( sprintf( '<h2 class="post-title entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-	</header><!-- .entry-header -->
+			<?php dynamico_entry_meta(); ?>
 
-	<?php get_template_part( 'template-parts/entry/entry', esc_html( dynamico_get_option( 'blog_content' ) ) ); ?>
+		</header><!-- .entry-header -->
 
-</article>
+		<?php get_template_part( 'template-parts/entry/entry', esc_html( dynamico_get_option( 'blog_content' ) ) ); ?>
+
+	</article>
+
+</div>

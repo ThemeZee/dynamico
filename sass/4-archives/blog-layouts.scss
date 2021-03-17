@@ -43,7 +43,8 @@
 			flex-wrap: wrap;
 			margin-right: -1.5rem;
 
-			.type-post {
+			.post-column {
+				display: flex;
 				padding-right: 1.5rem;
 				width: 50%;
 
@@ -105,14 +106,9 @@
 
 	.blog-layout-three-column-grid {
 		.post-wrapper {
-			.type-post {
+			.post-column {
 				width: 33.3333333333333%;
 			}
 		}
 	}
-}
-
-.blog-layout-two-column-grid .post-wrapper .type-post.sticky,
-.blog-layout-three-column-grid .post-wrapper .type-post.sticky {
-	width: 100%;
 }
