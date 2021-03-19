@@ -247,24 +247,6 @@ if ( ! function_exists( 'dynamico_entry_author' ) ) :
 endif;
 
 
-if ( ! function_exists( 'dynamico_entry_categories' ) ) :
-	/**
-	 * Displays the post categories
-	 */
-	function dynamico_entry_categories() {
-
-		// Return early if post has no category.
-		if ( ! has_category() ) {
-			return;
-		}
-
-		$categories = get_the_category_list( '' );
-
-		return '<div class="entry-categories"> ' . $categories . '</div>';
-	}
-endif;
-
-
 if ( ! function_exists( 'dynamico_entry_comments' ) ) :
 	/**
 	 * Displays the post comments
@@ -295,13 +277,31 @@ if ( ! function_exists( 'dynamico_entry_comments' ) ) :
 endif;
 
 
+if ( ! function_exists( 'dynamico_entry_categories' ) ) :
+	/**
+	 * Displays the post categories
+	 */
+	function dynamico_entry_categories() {
+
+		// Return early if post has no category.
+		if ( ! has_category() ) {
+			return;
+		}
+
+		$categories = get_the_category_list( '' );
+
+		echo '<div class="entry-categories"> ' . $categories . '</div>';
+	}
+endif;
+
+
 if ( ! function_exists( 'dynamico_entry_tags' ) ) :
 	/**
 	 * Displays the post tags on single post view
 	 */
 	function dynamico_entry_tags() {
 		// Get tags.
-		$tag_list = get_the_tag_list( sprintf( '<span class="entry-tags-label screen-reader-text">%s</span>', esc_html__( 'Tags', 'dynamico' ) ) );
+		$tag_list = get_the_tag_list( sprintf( '<span class="entry-tags-label">%s </span>', esc_html__( 'Tagged with', 'dynamico' ) ), ', ' );
 
 		// Display tags.
 		if ( $tag_list ) :

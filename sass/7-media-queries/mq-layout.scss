@@ -73,10 +73,6 @@
 	.site-content {
 		padding: 2rem 2rem 0.5rem;
 	}
-
-	.entry-tags {
-		margin-top: 1.75rem;
-	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -93,8 +89,9 @@
 		margin-bottom: 1rem;
 	}
 
-	.entry-tags {
-		margin-top: 2rem;
+	.entry-tags,
+	.entry-categories {
+		margin-top: 1.5rem;
 	}
 }
 
@@ -105,9 +102,5 @@
 
 	.site-content {
 		padding: 3rem 3rem 1.5rem;
-	}
-
-	.entry-tags {
-		margin-top: 2.5rem;
 	}
 }

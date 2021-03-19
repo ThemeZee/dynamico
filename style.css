@@ -58,8 +58,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--gray-color: #84848f;
 	--dark-gray-color: #24242f;
 	--text-color: rgba(0, 0, 0, 0.9);
-	--medium-text-color: rgba(0, 0, 0, 0.7);
-	--light-text-color: rgba(0, 0, 0, 0.5);
+	--medium-text-color: rgba(0, 0, 0, 0.6);
+	--light-text-color: rgba(0, 0, 0, 0.4);
 	--medium-border-color: rgba(0, 0, 0, 0.3);
 	--light-border-color: rgba(0, 0, 0, 0.1);
 	--link-color: #e84747;
@@ -433,7 +433,7 @@ blockquote {
 	border-left: 5px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--light-border-color);
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -602,7 +602,7 @@ textarea {
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--light-border-color);
 	background: none;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.6);
 	color: var(--medium-text-color);
 }
 
@@ -1225,7 +1225,7 @@ article .entry-header .entry-title {
 	flex-wrap: wrap;
 	flex-direction: column;
 	margin: 0;
-	padding: 0.5rem 0.75rem;
+	padding: 0.6rem 1rem;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	background-color: #ededef;
@@ -1234,6 +1234,8 @@ article .entry-header .entry-title {
 
 .entry-meta a:link,
 .entry-meta a:visited {
+	color: rgba(0, 0, 0, 0.6);
+	color: var(--medium-text-color);
 	text-decoration: none;
 }
 
@@ -1259,9 +1261,9 @@ article .entry-header .entry-title {
 	.entry-meta > span::after {
 		display: inline-block;
 		margin: 0 0.5rem;
-		color: rgba(0, 0, 0, 0.5);
+		color: rgba(0, 0, 0, 0.4);
 		color: var(--light-text-color);
-		content: "\002F";
+		content: "\007c";
 	}
 
 	.entry-meta .entry-comments::after {
@@ -1272,7 +1274,9 @@ article .entry-header .entry-title {
 
 /* Entry Categories */
 .entry-categories {
-	margin-right: 1rem;
+	margin: 1.25rem 0 0;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .entry-categories ul {
@@ -1289,43 +1293,34 @@ article .entry-header .entry-title {
 
 .entry-categories a {
 	display: inline-block;
-	margin: 0 2px 2px 0;
-	padding: 0.1em 0.6em;
+	margin: 0 1px 1px 0;
+	padding: 0.4rem 0.8rem;
 	text-decoration: none;
 }
 
-/* Entry Tags */
-.entry-tags {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 1.25rem 0 0;
-	align-items: center;
-	font-size: 14px;
-	font-size: 0.875rem;
-}
-
-.entry-tags a {
-	margin: 0 2px 2px 0;
-	padding: 0.1em 0.6em;
-	text-decoration: none;
-}
-
-.entry-tags a:link,
-.entry-tags a:visited {
-	color: #fff;
-	color: var(--button-text-color);
-	background-color: #e84747;
-	background-color: var(--button-color);
-	transition: all 0.15s ease;
-}
-
-.entry-tags a:hover,
-.entry-tags a:active,
-.entry-tags a:focus {
+.entry-categories a:link,
+.entry-categories a:visited {
 	color: #fff;
 	color: var(--button-hover-text-color);
 	background-color: #333;
 	background-color: var(--button-hover-color);
+	transition: all 0.15s ease;
+}
+
+.entry-categories a:hover,
+.entry-categories a:active,
+.entry-categories a:focus {
+	color: #fff;
+	color: var(--button-text-color);
+	background-color: #e84747;
+	background-color: var(--button-color);
+}
+
+/* Entry Tags */
+.entry-tags {
+	margin: 1.25rem 0 0;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 /* Hide post meta if they are deactivated in settings */
@@ -1410,7 +1405,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .type-post .ent
 /* Post Navigation Link Styling */
 .post-navigation .nav-links a:link,
 .post-navigation .nav-links a:visited {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	text-decoration: none;
 }
@@ -1980,7 +1975,7 @@ p.has-background {
 
 .wp-block-latest-posts__post-date,
 .wp-block-latest-posts__post-author {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -2269,7 +2264,7 @@ p.has-background {
 	margin-top: 0.3em;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 }
 
@@ -2279,7 +2274,7 @@ p.has-background {
 
 .comment-meta .comment-metadata a:link,
 .comment-meta .comment-metadata a:visited {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	text-decoration: none;
 }
@@ -2461,7 +2456,7 @@ figcaption,
 .wp-block-table figcaption {
 	font-size: 16px;
 	font-size: 1rem;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.6);
 	color: var(--medium-text-color);
 }
 
@@ -2531,7 +2526,7 @@ figcaption,
 	margin: 0.5rem 0 0;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 }
 
@@ -3143,7 +3138,7 @@ figcaption,
 	margin: 0;
 	font-size: 14px;
 	font-size: 0.875rem;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 }
 
@@ -3153,7 +3148,7 @@ figcaption,
 
 .tzwb-posts-list .tzwb-entry-meta a:link,
 .tzwb-posts-list .tzwb-entry-meta a:visited {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	text-decoration: none;
 }
@@ -3190,7 +3185,7 @@ figcaption,
 }
 
 .tzwb-comments-list .tzwb-comment-date {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -3368,6 +3363,7 @@ figcaption,
 		font-size: 1rem;
 	}
 
+	.entry-categories,
 	.entry-tags,
 	.comment-meta .comment-metadata,
 	.comment .reply,
@@ -3468,10 +3464,6 @@ figcaption,
 	.site-content {
 		padding: 2rem 2rem 0.5rem;
 	}
-
-	.entry-tags {
-		margin-top: 1.75rem;
-	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -3488,8 +3480,9 @@ figcaption,
 		margin-bottom: 1rem;
 	}
 
-	.entry-tags {
-		margin-top: 2rem;
+	.entry-tags,
+	.entry-categories {
+		margin-top: 1.5rem;
 	}
 }
 
@@ -3500,10 +3493,6 @@ figcaption,
 
 	.site-content {
 		padding: 3rem 3rem 1.5rem;
-	}
-
-	.entry-tags {
-		margin-top: 2.5rem;
 	}
 }
 

@@ -3,13 +3,14 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	margin: 0;
-	padding: 0.5rem 0.75rem;
+	padding: 0.6rem 1rem;
 	@include font-size(15);
 	@include background(--post-meta-background-color);
 }
 
 .entry-meta a:link,
 .entry-meta a:visited {
+	@include color(--medium-text-color);
 	text-decoration: none;
 }
 
@@ -36,7 +37,7 @@
 		display: inline-block;
 		margin: 0 0.5rem;
 		@include color(--light-text-color);
-		content: "\002F";
+		content: "\007c";
 	}
 
 	.entry-meta .entry-comments::after {
@@ -47,7 +48,8 @@
 
 /* Entry Categories */
 .entry-categories {
-	margin-right: 1rem;
+	margin: 1.25rem 0 0;
+	@include font-size(14);
 }
 
 .entry-categories ul {
@@ -64,38 +66,29 @@
 
 .entry-categories a {
 	display: inline-block;
-	margin: 0 2px 2px 0;
-	padding: 0.1em 0.6em;
+	margin: 0 1px 1px 0;
+	padding: 0.4rem 0.8rem;
 	text-decoration: none;
+}
+
+.entry-categories a:link,
+.entry-categories a:visited {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+	transition: all 0.15s ease;
+}
+
+.entry-categories a:hover,
+.entry-categories a:active,
+.entry-categories a:focus {
+	@include color(--button-text-color);
+	@include background(--button-color);
 }
 
 /* Entry Tags */
 .entry-tags {
-	display: flex;
-	flex-wrap: wrap;
 	margin: 1.25rem 0 0;
-	align-items: center;
 	@include font-size(14);
-}
-
-.entry-tags a {
-	margin: 0 2px 2px 0;
-	padding: 0.1em 0.6em;
-	text-decoration: none;
-}
-
-.entry-tags a:link,
-.entry-tags a:visited {
-	@include color(--button-text-color);
-	@include background(--button-color);
-	transition: all 0.15s ease;
-}
-
-.entry-tags a:hover,
-.entry-tags a:active,
-.entry-tags a:focus {
-	@include color(--button-hover-text-color);
-	@include background(--button-hover-color);
 }
 
 /* Hide post meta if they are deactivated in settings */

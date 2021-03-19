@@ -58,7 +58,7 @@ function dynamico_default_options() {
 		'blog_content'           => 'excerpt',
 		'excerpt_length'         => 25,
 		'excerpt_more_text'      => '[...]',
-		'read_more_link'         => esc_html__( 'Continue reading', 'dynamico' ),
+		'read_more_link'         => esc_html__( 'Read more', 'dynamico' ),
 		'meta_date'              => true,
 		'meta_author'            => false,
 		'meta_comments'          => false,

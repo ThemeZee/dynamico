@@ -18,8 +18,8 @@
 	--gray-color: #84848f;
 	--dark-gray-color: #24242f;
 	--text-color: rgba(0, 0, 0, 0.9);
-	--medium-text-color: rgba(0, 0, 0, 0.7);
-	--light-text-color: rgba(0, 0, 0, 0.5);
+	--medium-text-color: rgba(0, 0, 0, 0.6);
+	--light-text-color: rgba(0, 0, 0, 0.4);
 	--medium-border-color: rgba(0, 0, 0, 0.3);
 	--light-border-color: rgba(0, 0, 0, 0.1);
 	--link-color: #e84747;
@@ -317,7 +317,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	border-left: 5px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--light-border-color);
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -417,7 +417,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	margin-bottom: 1.5rem;
 	font-size: 16px;
 	font-size: 1rem;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.6);
 	color: var(--medium-text-color);
 }
 
@@ -714,7 +714,7 @@ p.has-background {
 
 .wp-block-latest-posts__post-date,
 .wp-block-latest-posts__post-author {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1065,7 +1065,7 @@ p.has-background {
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta {
 	margin: 0.5rem 0 0;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -1074,7 +1074,7 @@ p.has-background {
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta > .tz-meta-field::after {
 	display: inline-block;
 	margin: 0 1rem;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	content: "\2013";
 }
@@ -1085,7 +1085,7 @@ p.has-background {
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:link,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:visited {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.4);
 	color: var(--light-text-color);
 	text-decoration: none;
 }
