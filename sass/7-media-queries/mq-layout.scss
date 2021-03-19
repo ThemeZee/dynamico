@@ -3,7 +3,8 @@
 		padding: 1.5rem;
 	}
 
-	.site-content {
+	.site-content,
+	.has-sidebar .site-content {
 		padding: 1.5rem 1.5rem 1px;
 	}
 
@@ -16,16 +17,24 @@
 	.type-attachment,
 	.post-navigation,
 	.pagination,
+	.widget,
 	.comments-area,
 	.themezee-related-posts {
-		padding: 1.5rem;
-		border: 1px solid;
-		@include border-color(--content-border-color);
 		margin-bottom: 1.5rem;
 	}
 
-	.widget {
-		margin-bottom: 1.5rem;
+	.has-sidebar {
+		.type-post,
+		.type-page,
+		.type-attachment,
+		.post-navigation,
+		.pagination,
+		.comments-area,
+		.themezee-related-posts {
+			padding: 1.5rem;
+			border: 1px solid;
+			@include border-color(--content-border-color);
+		}
 	}
 
 	.entry-header,
@@ -61,6 +70,10 @@
 		padding: 2rem;
 	}
 
+	.site-content {
+		padding: 2rem 2rem 0.5rem;
+	}
+
 	.entry-tags {
 		margin-top: 1.75rem;
 	}
@@ -69,6 +82,10 @@
 @media only screen and (min-width: 960px) {
 	.header-main {
 		padding: 2.25rem 2.5rem;
+	}
+
+	.site-content {
+		padding: 2.5rem 2.5rem 1rem;
 	}
 
 	.entry-header,
@@ -84,6 +101,10 @@
 @media only screen and (min-width: 1280px) {
 	.header-main {
 		padding: 2.5rem 3rem;
+	}
+
+	.site-content {
+		padding: 3rem 3rem 1.5rem;
 	}
 
 	.entry-tags {

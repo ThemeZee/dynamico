@@ -14,7 +14,7 @@
 	padding: 0;
 	@include color(--navi-color);
 	list-style: none;
-	@include font-size(17);
+	@include font-size(16);
 	@include font-family(--navi-font);
 	@include font-weight(--navi-font-weight);
 	@include text-transform(--navi-text-transform);

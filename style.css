@@ -874,8 +874,8 @@ body.site-description-hidden .site-header .site-description {
 	color: #fff;
 	color: var(--navi-color);
 	list-style: none;
-	font-size: 17px;
-	font-size: 1.0625rem;
+	font-size: 16px;
+	font-size: 1rem;
 	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
 	font-weight: bold;
@@ -3366,35 +3366,9 @@ figcaption,
 		font-size: 2rem;
 	}
 
-	.site-description {
-		font-size: 15px;
-		font-size: 0.9375rem;
-	}
-
 	.entry-title {
 		font-size: 24px;
 		font-size: 1.5rem;
-	}
-
-	button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"],
-	.entry-meta,
-	.more-link,
-	.pagination {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
-	.entry-tags,
-	.comment-meta .comment-metadata,
-	.comment .reply,
-	.comment-form .logged-in-as,
-	.comment-reply-title small a,
-	.site-footer {
-		font-size: 15px;
-		font-size: 0.9375rem;
 	}
 }
 
@@ -3405,8 +3379,8 @@ figcaption,
 	}
 
 	.site-description {
-		font-size: 16px;
-		font-size: 1rem;
+		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 
 	.entry-title {
@@ -3438,8 +3412,8 @@ figcaption,
 	.entry-meta,
 	.more-link,
 	.pagination {
-		font-size: 17px;
-		font-size: 1.0625rem;
+		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	.entry-tags,
@@ -3448,8 +3422,8 @@ figcaption,
 	.comment-form .logged-in-as,
 	.comment-reply-title small a,
 	.site-footer {
-		font-size: 16px;
-		font-size: 1rem;
+		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 }
 
@@ -3473,7 +3447,8 @@ figcaption,
 		padding: 1.5rem;
 	}
 
-	.site-content {
+	.site-content,
+	.has-sidebar .site-content {
 		padding: 1.5rem 1.5rem 1px;
 	}
 
@@ -3486,17 +3461,23 @@ figcaption,
 	.type-attachment,
 	.post-navigation,
 	.pagination,
+	.widget,
 	.comments-area,
 	.themezee-related-posts {
+		margin-bottom: 1.5rem;
+	}
+
+	.has-sidebar .type-post,
+	.has-sidebar .type-page,
+	.has-sidebar .type-attachment,
+	.has-sidebar .post-navigation,
+	.has-sidebar .pagination,
+	.has-sidebar .comments-area,
+	.has-sidebar .themezee-related-posts {
 		padding: 1.5rem;
 		border: 1px solid;
 		border-color: rgba(0, 0, 0, 0.1);
 		border-color: var(--content-border-color);
-		margin-bottom: 1.5rem;
-	}
-
-	.widget {
-		margin-bottom: 1.5rem;
 	}
 
 	.entry-header,
@@ -3532,6 +3513,10 @@ figcaption,
 		padding: 2rem;
 	}
 
+	.site-content {
+		padding: 2rem 2rem 0.5rem;
+	}
+
 	.entry-tags {
 		margin-top: 1.75rem;
 	}
@@ -3540,6 +3525,10 @@ figcaption,
 @media only screen and (min-width: 960px) {
 	.header-main {
 		padding: 2.25rem 2.5rem;
+	}
+
+	.site-content {
+		padding: 2.5rem 2.5rem 1rem;
 	}
 
 	.entry-header,
@@ -3555,6 +3544,10 @@ figcaption,
 @media only screen and (min-width: 1280px) {
 	.header-main {
 		padding: 2.5rem 3rem;
+	}
+
+	.site-content {
+		padding: 3rem 3rem 1.5rem;
 	}
 
 	.entry-tags {
