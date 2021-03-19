@@ -4,7 +4,7 @@
 	}
 
 	.entry-title {
-		@include font-size(24);
+		@include font-size(22);
 	}
 }
 
@@ -18,11 +18,11 @@
 	}
 
 	.entry-title {
-		@include font-size(28);
+		@include font-size(24);
 	}
 
 	.entry-content {
-		@include font-size(18);
+		@include font-size(17);
 	}
 
 	.archive-header .archive-title,
@@ -61,6 +61,6 @@
 	}
 
 	.entry-title {
-		@include font-size(32);
+		@include font-size(28);
 	}
 }

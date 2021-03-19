@@ -1182,6 +1182,13 @@ body.site-description-hidden .site-header .site-description {
 	line-height: var(--title-line-height);
 }
 
+article .entry-header .entry-title {
+	padding-bottom: 0.5rem;
+	border-bottom: 5px solid;
+	border-color: #333;
+	border-color: var(--title-color);
+}
+
 .entry-title a:link,
 .entry-title a:visited {
 	color: #333;
@@ -1198,8 +1205,8 @@ body.site-description-hidden .site-header .site-description {
 
 /* Entry Content */
 .entry-content {
-	font-size: 17px;
-	font-size: 1.0625rem;
+	font-size: 16px;
+	font-size: 1rem;
 }
 
 /* Featured Images */
@@ -1217,9 +1224,12 @@ body.site-description-hidden .site-header .site-description {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	margin: 1rem 0 0;
+	margin: 0;
+	padding: 0.5rem 0.75rem;
 	font-size: 15px;
 	font-size: 0.9375rem;
+	background-color: #ededef;
+	background-color: var(--post-meta-background-color);
 }
 
 .entry-meta a:link,
@@ -1282,8 +1292,6 @@ body.site-description-hidden .site-header .site-description {
 	margin: 0 2px 2px 0;
 	padding: 0.1em 0.6em;
 	text-decoration: none;
-	background-color: #ededef;
-	background-color: var(--post-meta-background-color);
 }
 
 /* Entry Tags */
@@ -1535,24 +1543,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 	}
 
 	.blog-layout-horizontal-list .post-wrapper .type-post .entry-title {
-		font-size: 22px;
-		font-size: 1.375rem;
-	}
-
-	.blog-layout-horizontal-list .post-wrapper .type-post .entry-content {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
-	.blog-layout-horizontal-list .post-wrapper .type-post .entry-meta,
-	.blog-layout-horizontal-list .post-wrapper .type-post .more-link {
-		font-size: 15px;
-		font-size: 0.9375rem;
-	}
-
-	.blog-layout-horizontal-list .post-wrapper .type-post .entry-tags {
-		font-size: 14px;
-		font-size: 0.875rem;
+		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 	.blog-layout-two-column-grid .post-wrapper,
@@ -1578,28 +1570,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 	.blog-layout-two-column-grid .post-wrapper .post-column .entry-title,
 	.blog-layout-three-column-grid .post-wrapper .post-column .entry-title {
-		font-size: 22px;
-		font-size: 1.375rem;
-	}
-
-	.blog-layout-two-column-grid .post-wrapper .post-column .entry-content,
-	.blog-layout-three-column-grid .post-wrapper .post-column .entry-content {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
-	.blog-layout-two-column-grid .post-wrapper .post-column .entry-meta,
-	.blog-layout-two-column-grid .post-wrapper .post-column .more-link,
-	.blog-layout-three-column-grid .post-wrapper .post-column .entry-meta,
-	.blog-layout-three-column-grid .post-wrapper .post-column .more-link {
-		font-size: 15px;
-		font-size: 0.9375rem;
-	}
-
-	.blog-layout-two-column-grid .post-wrapper .post-column .entry-tags,
-	.blog-layout-three-column-grid .post-wrapper .post-column .entry-tags {
-		font-size: 14px;
-		font-size: 0.875rem;
+		font-size: 20px;
+		font-size: 1.25rem;
 	}
 }
 
@@ -1613,28 +1585,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 	.blog-layout-horizontal-list .post-wrapper .type-post .entry-title,
 	.blog-layout-two-column-grid .post-wrapper .type-post .entry-title {
-		font-size: 24px;
-		font-size: 1.5rem;
-	}
-
-	.blog-layout-horizontal-list .post-wrapper .type-post .entry-content,
-	.blog-layout-two-column-grid .post-wrapper .type-post .entry-content {
-		font-size: 17px;
-		font-size: 1.0625rem;
-	}
-
-	.blog-layout-horizontal-list .post-wrapper .type-post .entry-meta,
-	.blog-layout-horizontal-list .post-wrapper .type-post .more-link,
-	.blog-layout-two-column-grid .post-wrapper .type-post .entry-meta,
-	.blog-layout-two-column-grid .post-wrapper .type-post .more-link {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
-	.blog-layout-horizontal-list .post-wrapper .type-post .entry-tags,
-	.blog-layout-two-column-grid .post-wrapper .type-post .entry-tags {
-		font-size: 15px;
-		font-size: 0.9375rem;
+		font-size: 22px;
+		font-size: 1.375rem;
 	}
 
 	.blog-layout-three-column-grid .post-wrapper .post-column {
@@ -3367,8 +3319,8 @@ figcaption,
 	}
 
 	.entry-title {
-		font-size: 24px;
-		font-size: 1.5rem;
+		font-size: 22px;
+		font-size: 1.375rem;
 	}
 }
 
@@ -3384,13 +3336,13 @@ figcaption,
 	}
 
 	.entry-title {
-		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 24px;
+		font-size: 1.5rem;
 	}
 
 	.entry-content {
-		font-size: 18px;
-		font-size: 1.125rem;
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 
 	.archive-header .archive-title,
@@ -3434,8 +3386,8 @@ figcaption,
 	}
 
 	.entry-title {
-		font-size: 32px;
-		font-size: 2rem;
+		font-size: 28px;
+		font-size: 1.75rem;
 	}
 }
 

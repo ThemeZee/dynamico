@@ -195,8 +195,7 @@ if ( ! function_exists( 'dynamico_entry_meta' ) ) :
 	 */
 	function dynamico_entry_meta() {
 
-		$postmeta  = dynamico_entry_categories();
-		$postmeta .= dynamico_entry_date();
+		$postmeta  = dynamico_entry_date();
 		$postmeta .= dynamico_entry_author();
 		$postmeta .= dynamico_entry_comments();
 

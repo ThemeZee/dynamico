@@ -2,8 +2,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	margin: 1rem 0 0;
+	margin: 0;
+	padding: 0.5rem 0.75rem;
 	@include font-size(15);
+	@include background(--post-meta-background-color);
 }
 
 .entry-meta a:link,
@@ -65,7 +67,6 @@
 	margin: 0 2px 2px 0;
 	padding: 0.1em 0.6em;
 	text-decoration: none;
-	@include background(--post-meta-background-color);
 }
 
 /* Entry Tags */
