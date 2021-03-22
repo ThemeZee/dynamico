@@ -73,10 +73,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--site-title-color: #e84747;
 	--site-title-hover-color: #333;
 	--navi-background-color: #333;
-	--navi-color: #fff;
-	--navi-hover-color: rgba(255, 255, 255, 0.5);
-	--navi-border-color: rgba(255, 255, 255, 0.1);
-	--navi-current-color: rgba(255, 255, 255, 0.075);
+	--navi-text-color: #fff;
+	--navi-hover-color: #e84747;
+	--navi-hover-text-color: #fff;
+	--navi-border-color: #fff;
+	--submenu-background-color: #fff;
+	--submenu-text-color: #333;
+	--submenu-border-color: rgba(0, 0, 0, 0.5);
 	--title-color: #333;
 	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;
@@ -872,7 +875,7 @@ body.site-description-hidden .site-header .site-description {
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	color: var(--navi-color);
+	color: var(--navi-text-color);
 	list-style: none;
 	font-size: 16px;
 	font-size: 1rem;
@@ -885,7 +888,9 @@ body.site-description-hidden .site-header .site-description {
 }
 
 .main-navigation > ul {
-	border-top: 1px solid #fff;
+	border-top: 1px solid;
+	color: #fff;
+	color: var(--navi-border-color);
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
@@ -908,9 +913,9 @@ body.site-description-hidden .site-header .site-description {
 .main-navigation ul a {
 	display: block;
 	margin: 0;
-	padding: 1em 1.5em;
+	padding: 1.15rem 1.5rem;
 	border-bottom: 1px solid;
-	border-color: rgba(255, 255, 255, 0.1);
+	border-color: #fff;
 	border-color: var(--navi-border-color);
 	text-decoration: none;
 }
@@ -919,7 +924,7 @@ body.site-description-hidden .site-header .site-description {
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
 	color: #fff;
-	color: var(--navi-color);
+	color: var(--navi-text-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
 }
@@ -927,19 +932,23 @@ body.site-description-hidden .site-header .site-description {
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
 .main-navigation ul a:focus {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--navi-hover-color);
+	color: #fff;
+	color: var(--navi-hover-text-color);
+	background-color: #e84747;
+	background-color: var(--navi-hover-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
-	background-color: rgba(255, 255, 255, 0.075);
-	background-color: var(--navi-current-color);
+	text-decoration: underline;
 }
 
 /* Submenus */
 .main-navigation ul ul {
+	padding: 1rem;
 	font-size: 14px;
 	font-size: 0.875rem;
+	background-color: #fff;
+	background-color: var(--submenu-background-color);
 }
 
 .is-amp-page .main-navigation ul button.toggled-on + ul,
@@ -948,29 +957,38 @@ body.site-description-hidden .site-header .site-description {
 }
 
 .main-navigation ul ul a {
-	padding-left: 3em;
+	padding: 0.75rem 1rem;
+	border-color: rgba(0, 0, 0, 0.5);
+	border-color: var(--submenu-border-color);
 }
 
-.main-navigation ul ul ul a {
-	padding-left: 4.5em;
+.main-navigation ul ul a:link,
+.main-navigation ul ul a:visited {
+	color: #333;
+	color: var(--submenu-text-color);
 }
 
-.main-navigation ul ul ul ul a {
-	padding-left: 6em;
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a:active,
+.main-navigation ul ul a:focus {
+	color: #fff;
+	color: var(--navi-hover-text-color);
+	background-color: #e84747;
+	background-color: var(--navi-hover-color);
 }
 
 /* Main Navigation Toggle */
 .primary-menu-toggle {
 	display: flex;
 	margin: 0;
-	padding: 1em;
+	padding: 1.15rem 1.5rem;
 	border: none;
 	background: none;
 	color: #fff;
-	color: var(--navi-color);
+	color: var(--navi-text-color);
 	text-decoration: none;
-	font-size: 17px;
-	font-size: 1.0625rem;
+	font-size: 16px;
+	font-size: 1rem;
 	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
 	font-weight: bold;
@@ -989,15 +1007,16 @@ body.site-description-hidden .site-header .site-description {
 .primary-menu-toggle:focus {
 	outline: thin dotted;
 	color: #fff;
-	color: var(--navi-color);
+	color: var(--navi-text-color);
 	background: none;
 }
 
 .primary-menu-toggle:hover,
 .primary-menu-toggle:active {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--navi-hover-color);
-	background: none;
+	color: #fff;
+	color: var(--navi-hover-text-color);
+	background-color: #e84747;
+	background-color: var(--navi-hover-color);
 	cursor: pointer;
 }
 
@@ -1007,14 +1026,14 @@ body.site-description-hidden .site-header .site-description {
 	height: 24px;
 	vertical-align: top;
 	fill: #fff;
-	fill: var(--navi-color);
+	fill: var(--navi-text-color);
 	transition: fill 0.15s ease;
 }
 
 .primary-menu-toggle:hover .icon,
 .primary-menu-toggle:active .icon {
-	fill: rgba(255, 255, 255, 0.5);
-	fill: var(--navi-hover-color);
+	fill: #fff;
+	fill: var(--navi-hover-text-color);
 }
 
 .primary-menu-toggle[aria-expanded="true"] .icon-menu,
@@ -1032,7 +1051,11 @@ body.site-description-hidden .site-header .site-description {
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1em 1.5em;
+	padding: 1.15rem 1.5rem;
+	font-size: 16px;
+	font-size: 1rem;
+	color: #fff;
+	color: var(--navi-text-color);
 	background: none;
 	border: none;
 }
@@ -1040,13 +1063,16 @@ body.site-description-hidden .site-header .site-description {
 .main-navigation .dropdown-toggle:focus {
 	outline: thin dotted;
 	color: #fff;
-	color: var(--navi-color);
+	color: var(--navi-text-color);
 	background: none;
 }
 
 .main-navigation .dropdown-toggle:hover,
 .main-navigation .dropdown-toggle:active {
-	background: none;
+	color: #fff;
+	color: var(--navi-hover-text-color);
+	background-color: #e84747;
+	background-color: var(--navi-hover-color);
 }
 
 .main-navigation .dropdown-toggle .icon {
@@ -1054,16 +1080,14 @@ body.site-description-hidden .site-header .site-description {
 	width: 24px;
 	height: 24px;
 	vertical-align: top;
-	fill: #fff;
-	fill: var(--navi-color);
+	fill: currentColor;
 	transition: fill 0.15s ease;
 }
 
 .main-navigation .dropdown-toggle:hover .icon,
 .main-navigation .dropdown-toggle:active .icon,
 .main-navigation .dropdown-toggle:focus .icon {
-	fill: rgba(255, 255, 255, 0.5);
-	fill: var(--navi-hover-color);
+	fill: currentColor;
 }
 
 .main-navigation .dropdown-toggle.toggled-on .icon {
@@ -1073,7 +1097,24 @@ body.site-description-hidden .site-header .site-description {
 }
 
 .main-navigation ul ul .dropdown-toggle {
-	padding: 0.8em 1.25em;
+	padding: 0.75rem 1rem;
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: #333;
+	color: var(--submenu-text-color);
+}
+
+.main-navigation ul ul .dropdown-toggle:focus {
+	color: #333;
+	color: var(--submenu-text-color);
+}
+
+.main-navigation ul ul .dropdown-toggle:hover,
+.main-navigation ul ul .dropdown-toggle:active {
+	color: #fff;
+	color: var(--navi-hover-text-color);
+	background-color: #e84747;
+	background-color: var(--navi-hover-color);
 }
 
 .main-navigation ul ul .dropdown-toggle .icon {
@@ -3566,10 +3607,8 @@ figcaption,
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
-		border-top: 1px solid #fff;
-		border-top: 1px solid var(--page-background-color);
-		background-color: #333;
-		background-color: var(--navi-background-color);
+		padding: 0;
+		box-shadow: 0 0 2px #444;
 	}
 
 	.main-navigation ul li:hover > ul,
@@ -3580,6 +3619,7 @@ figcaption,
 
 	.main-navigation ul ul li a {
 		width: 16rem;
+		border: none;
 	}
 
 	.main-navigation ul ul ul {
@@ -3597,7 +3637,7 @@ figcaption,
 	.main-navigation ul ul li a,
 	.main-navigation ul ul ul li a,
 	.main-navigation ul ul ul ul li a {
-		padding: 1em;
+		padding: 0.75rem 1rem;
 	}
 
 	/* Dropdown Icons */
@@ -3605,11 +3645,11 @@ figcaption,
 		position: relative;
 		display: inline-block;
 		left: 0.5rem;
-		top: 0.1rem;
-		width: 14px;
-		height: 14px;
+		top: 0.05rem;
+		width: 12px;
+		height: 12px;
 		fill: #fff;
-		fill: var(--navi-color);
+		fill: var(--navi-text-color);
 		transition: fill 0.15s ease;
 	}
 
@@ -3618,15 +3658,17 @@ figcaption,
 		left: auto;
 		right: 1em;
 		top: 50%;
-		margin-top: -0.5rem;
+		margin-top: -0.35rem;
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
+		fill: #333;
+		fill: var(--submenu-text-color);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon {
-		fill: rgba(255, 255, 255, 0.5);
-		fill: var(--navi-hover-color);
+		fill: #fff;
+		fill: var(--navi-hover-text-color);
 	}
 }
 

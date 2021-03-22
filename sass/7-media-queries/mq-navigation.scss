@@ -44,9 +44,8 @@
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
-		border-top: 1px solid #fff;
-		border-top: 1px solid var(--page-background-color);
-		@include background(--navi-background-color);
+		padding: 0;
+		box-shadow: 0 0 2px #444;
 	}
 
 	.main-navigation ul li:hover > ul,
@@ -57,6 +56,7 @@
 
 	.main-navigation ul ul li a {
 		width: 16rem;
+		border: none;
 	}
 
 	.main-navigation ul ul ul {
@@ -74,7 +74,7 @@
 	.main-navigation ul ul li a,
 	.main-navigation ul ul ul li a,
 	.main-navigation ul ul ul ul li a {
-		padding: 1em;
+		padding: 0.75rem 1rem;
 	}
 
 	/* Dropdown Icons */
@@ -82,10 +82,10 @@
 		position: relative;
 		display: inline-block;
 		left: 0.5rem;
-		top: 0.1rem;
-		width: 14px;
-		height: 14px;
-		@include fill(--navi-color);
+		top: 0.05rem;
+		width: 12px;
+		height: 12px;
+		@include fill(--navi-text-color);
 		transition: fill 0.15s ease;
 	}
 
@@ -94,13 +94,14 @@
 		left: auto;
 		right: 1em;
 		top: 50%;
-		margin-top: -0.5rem;
+		margin-top: -0.35rem;
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
+		@include fill(--submenu-text-color);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon {
-		@include fill(--navi-hover-color);
+		@include fill(--navi-hover-text-color);
 	}
 }

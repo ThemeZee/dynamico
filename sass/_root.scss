@@ -34,10 +34,13 @@
 
 	// Navigation
 	@include variable(--navi-background-color, $themeColors);
-	@include variable(--navi-color, $themeColors);
+	@include variable(--navi-text-color, $themeColors);
 	@include variable(--navi-hover-color, $themeColors);
+	@include variable(--navi-hover-text-color, $themeColors);
 	@include variable(--navi-border-color, $themeColors);
-	@include variable(--navi-current-color, $themeColors);
+	@include variable(--submenu-background-color, $themeColors);
+	@include variable(--submenu-text-color, $themeColors);
+	@include variable(--submenu-border-color, $themeColors);
 
 	// Posts
 	@include variable(--title-color, $themeColors);

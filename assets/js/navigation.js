@@ -114,7 +114,7 @@
 	}
 
 	// Init Main Navigation.
-	initNavigation( '.header-main', '.main-navigation' );
+	initNavigation( '.primary-navigation-wrap', '.main-navigation' );
 
 	// Init Top Navigation.
 	initNavigation( '.header-bar', '.top-navigation' );

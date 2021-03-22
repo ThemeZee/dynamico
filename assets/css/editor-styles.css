@@ -33,10 +33,13 @@
 	--site-title-color: #e84747;
 	--site-title-hover-color: #333;
 	--navi-background-color: #333;
-	--navi-color: #fff;
-	--navi-hover-color: rgba(255, 255, 255, 0.5);
-	--navi-border-color: rgba(255, 255, 255, 0.1);
-	--navi-current-color: rgba(255, 255, 255, 0.075);
+	--navi-text-color: #fff;
+	--navi-hover-color: #e84747;
+	--navi-hover-text-color: #fff;
+	--navi-border-color: #fff;
+	--submenu-background-color: #fff;
+	--submenu-text-color: #333;
+	--submenu-border-color: rgba(0, 0, 0, 0.5);
 	--title-color: #333;
 	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;

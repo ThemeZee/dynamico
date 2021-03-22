@@ -112,7 +112,7 @@ function dynamico_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) && ! dynamico_is_amp() ) {
-		wp_enqueue_script( 'dynamico-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20201112', true );
+		wp_enqueue_script( 'dynamico-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '20201113', true );
 		$dynamico_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'dynamico' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'dynamico' ),
