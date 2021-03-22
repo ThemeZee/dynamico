@@ -1,7 +1,11 @@
 /* Search & Archive Header */
+.archive-header {
+	margin: 0 0 1.25rem;
+}
+
 .archive-header .archive-title,
 .search-header .search-title {
-	@include font-size(20);
+	@include font-size(16);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
@@ -14,5 +18,5 @@
 }
 
 .archive-header .archive-description {
-	@include font-size(16);
+	@include font-size(15);
 }

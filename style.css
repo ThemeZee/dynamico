@@ -1226,8 +1226,8 @@ article .entry-header .entry-title {
 	flex-direction: column;
 	margin: 0;
 	padding: 0.6rem 1rem;
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-size: 14px;
+	font-size: 0.875rem;
 	background-color: #ededef;
 	background-color: var(--post-meta-background-color);
 }
@@ -1236,12 +1236,12 @@ article .entry-header .entry-title {
 .entry-meta a:visited {
 	color: rgba(0, 0, 0, 0.6);
 	color: var(--medium-text-color);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .entry-meta a:hover,
 .entry-meta a:active {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .entry-meta .updated:not(.published) {
@@ -1389,7 +1389,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .type-post .ent
 
 /* Post Navigation */
 .post-navigation {
-	margin: 0 0 1.5rem;
+	margin: 0 0 1.25rem;
 }
 
 .post-navigation .nav-links .nav-previous,
@@ -1496,10 +1496,14 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 --------------------------------------------------------------*/
 
 /* Search & Archive Header */
+.archive-header {
+	margin: 0 0 1.25rem;
+}
+
 .archive-header .archive-title,
 .search-header .search-title {
-	font-size: 20px;
-	font-size: 1.25rem;
+	font-size: 16px;
+	font-size: 1rem;
 	font-family: "Fira Sans", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
@@ -1515,8 +1519,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 }
 
 .archive-header .archive-description {
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 @media only screen and (min-width: 640px) {
@@ -1591,18 +1595,19 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 /* Theme Pagination */
 .pagination {
-	margin: 0 0 1.5rem;
+	margin: 0 0 1.25rem;
 }
 
 .pagination .page-numbers,
 .pagination .current {
 	display: inline-block;
 	margin: 0 0.5rem 0 0;
-	padding: 0.4rem 1rem;
+	padding: 0.4rem 0.6rem;
 	text-align: center;
 	text-decoration: none;
-	background-color: #ededef;
-	background-color: var(--post-meta-background-color);
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 }
 
 .pagination .page-numbers.dots {
@@ -1611,17 +1616,11 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 }
 
 .pagination a:hover,
-.pagination a:active {
-	color: #e84747;
-	color: var(--link-hover-color);
-	text-decoration: underline;
-}
-
+.pagination a:active,
 .pagination .current {
-	color: #fff;
-	color: var(--button-text-color);
-	background-color: #e84747;
-	background-color: var(--button-color);
+	color: #e84747;
+	color: var(--link-color);
+	text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -3342,27 +3341,27 @@ figcaption,
 
 	.archive-header .archive-title,
 	.search-header .search-title {
-		font-size: 22px;
-		font-size: 1.375rem;
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 
 	.archive-header .archive-description,
 	.comment {
-		font-size: 17px;
-		font-size: 1.0625rem;
+		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	button,
 	input[type="button"],
 	input[type="reset"],
 	input[type="submit"],
-	.entry-meta,
 	.more-link,
 	.pagination {
 		font-size: 16px;
 		font-size: 1rem;
 	}
 
+	.entry-meta,
 	.entry-categories,
 	.entry-tags,
 	.comment-meta .comment-metadata,
@@ -3408,6 +3407,7 @@ figcaption,
 	.type-page,
 	.type-attachment,
 	.post-navigation,
+	.archive-header.entry-header,
 	.pagination,
 	.widget,
 	.comments-area,
@@ -3419,6 +3419,7 @@ figcaption,
 	.has-sidebar .type-page,
 	.has-sidebar .type-attachment,
 	.has-sidebar .post-navigation,
+	.has-sidebar .archive-header,
 	.has-sidebar .pagination,
 	.has-sidebar .comments-area,
 	.has-sidebar .themezee-related-posts {
@@ -3426,6 +3427,11 @@ figcaption,
 		border: 1px solid;
 		border-color: rgba(0, 0, 0, 0.1);
 		border-color: var(--content-border-color);
+	}
+
+	.has-sidebar .archive-header,
+	.has-sidebar .pagination {
+		padding: 0.75rem 1rem;
 	}
 
 	.entry-header,

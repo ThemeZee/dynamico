@@ -4,19 +4,19 @@
 	flex-direction: column;
 	margin: 0;
 	padding: 0.6rem 1rem;
-	@include font-size(15);
+	@include font-size(14);
 	@include background(--post-meta-background-color);
 }
 
 .entry-meta a:link,
 .entry-meta a:visited {
 	@include color(--medium-text-color);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .entry-meta a:hover,
 .entry-meta a:active {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .entry-meta .updated:not(.published) {

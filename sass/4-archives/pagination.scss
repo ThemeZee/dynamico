@@ -1,16 +1,17 @@
 /* Theme Pagination */
 .pagination {
-	margin: 0 0 1.5rem;
+	margin: 0 0 1.25rem;
 }
 
 .pagination .page-numbers,
 .pagination .current {
 	display: inline-block;
 	margin: 0 0.5rem 0 0;
-	padding: 0.4rem 1rem;
+	padding: 0.4rem 0.6rem;
 	text-align: center;
 	text-decoration: none;
-	@include background(--post-meta-background-color);
+	font-weight: bold;
+	@include color(--text-color);
 }
 
 .pagination .page-numbers.dots {
@@ -19,12 +20,8 @@
 }
 
 .pagination a:hover,
-.pagination a:active {
-	@include color(--link-hover-color);
-	text-decoration: underline;
-}
-
+.pagination a:active,
 .pagination .current {
-	@include color(--button-text-color);
-	@include background(--button-color);
+	@include color(--link-color);
+	text-decoration: underline;
 }

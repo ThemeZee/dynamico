@@ -27,24 +27,24 @@
 
 	.archive-header .archive-title,
 	.search-header .search-title {
-		@include font-size(22);
+		@include font-size(17);
 	}
 
 	.archive-header .archive-description,
 	.comment {
-		@include font-size(17);
+		@include font-size(16);
 	}
 
 	button,
 	input[type="button"],
 	input[type="reset"],
 	input[type="submit"],
-	.entry-meta,
 	.more-link,
 	.pagination {
 		@include font-size(16);
 	}
 
+	.entry-meta,
 	.entry-categories,
 	.entry-tags,
 	.comment-meta .comment-metadata,
