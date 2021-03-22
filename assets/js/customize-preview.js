@@ -57,6 +57,17 @@
 		} );
 	} );
 
+	// Box Shadow checkbox.
+	wp.customize( 'dynamico_theme_options[box_shadow]', function( value ) {
+		value.bind( function( newval ) {
+			if ( true === newval ) {
+				$( 'body' ).addClass( 'has-box-shadow' );
+			} else {
+				$( 'body' ).removeClass( 'has-box-shadow' );
+			}
+		} );
+	} );
+
 	// Sidebar Position.
 	wp.customize( 'dynamico_theme_options[sidebar_position]', function( value ) {
 		value.bind( function( newval ) {

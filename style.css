@@ -1091,15 +1091,19 @@ body.site-description-hidden .site-header .site-description {
 }
 
 @media only screen and (min-width: 480px) {
-	.sidebar .widget {
+	.has-sidebar .sidebar .widget {
 		padding: 1.5rem;
 		border: 1px solid;
 		border-color: rgba(0, 0, 0, 0.1);
 		border-color: var(--widget-border-color);
 	}
 
-	.sidebar .widget .widget-title {
+	.has-sidebar .sidebar .widget .widget-title {
 		margin: -0.5rem -0.5rem 1rem;
+	}
+
+	.has-sidebar.has-box-shadow .sidebar .widget {
+		box-shadow: 0 0 4px #ddd;
 	}
 }
 
@@ -3432,6 +3436,17 @@ figcaption,
 	.has-sidebar .archive-header,
 	.has-sidebar .pagination {
 		padding: 0.75rem 1rem;
+	}
+
+	.has-sidebar.has-box-shadow .type-post,
+	.has-sidebar.has-box-shadow .type-page,
+	.has-sidebar.has-box-shadow .type-attachment,
+	.has-sidebar.has-box-shadow .post-navigation,
+	.has-sidebar.has-box-shadow .archive-header,
+	.has-sidebar.has-box-shadow .pagination,
+	.has-sidebar.has-box-shadow .comments-area,
+	.has-sidebar.has-box-shadow .themezee-related-posts {
+		box-shadow: 0 0 4px #ddd;
 	}
 
 	.entry-header,

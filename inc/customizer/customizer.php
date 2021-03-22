@@ -48,7 +48,7 @@ add_action( 'customize_register', 'dynamico_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function dynamico_customize_preview_js() {
-	wp_enqueue_script( 'dynamico-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.min.js', array( 'customize-preview' ), '20201112', true );
+	wp_enqueue_script( 'dynamico-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20201113', true );
 }
 add_action( 'customize_preview_init', 'dynamico_customize_preview_js' );
 
@@ -66,6 +66,6 @@ add_action( 'customize_controls_enqueue_scripts', 'dynamico_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function dynamico_customizer_controls_css() {
-	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201112' );
+	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201113' );
 }
 add_action( 'customize_controls_print_styles', 'dynamico_customizer_controls_css' );

@@ -23,6 +23,11 @@ function dynamico_body_classes( $classes ) {
 		$classes[] = 'centered-theme-layout';
 	}
 
+	// Enable Box Shadows.
+	if ( true === $theme_options['box_shadow'] ) {
+		$classes[] = 'has-box-shadow';
+	}
+
 	// Add Sidebar class.
 	if ( dynamico_has_sidebar() ) {
 		$classes[] = 'has-sidebar';

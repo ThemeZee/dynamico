@@ -5,14 +5,20 @@
 }
 
 @media only screen and (min-width: 480px) {
-	.sidebar {
-		.widget {
+	.has-sidebar {
+		.sidebar .widget {
 			padding: 1.5rem;
 			border: 1px solid;
 			@include border-color(--widget-border-color);
 
 			.widget-title {
 				margin: -0.5rem -0.5rem 1rem;
+			}
+		}
+
+		&.has-box-shadow {
+			.sidebar .widget {
+				box-shadow: 0 0 4px #ddd;
 			}
 		}
 	}
