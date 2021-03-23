@@ -133,10 +133,11 @@ if ( ! function_exists( 'dynamico_post_image_archives' ) ) :
 	/**
 	 * Displays the featured image on archive posts.
 	 */
-	function dynamico_post_image_archives( $image_size = 'post-thumbnail' ) {
+	function dynamico_post_image_archives() {
+		$image_size = dynamico_get_option( 'blog_image' );
 
 		// Display Post Thumbnail if activated.
-		if ( has_post_thumbnail() && true === dynamico_get_option( 'post_image_archives' ) ) :
+		if ( has_post_thumbnail() && 'hide-image' !== $image_size ) :
 			?>
 
 			<figure class="post-image post-image-archives">

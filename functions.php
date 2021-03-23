@@ -43,7 +43,7 @@ function dynamico_setup() {
 	add_image_size( 'dynamico-landscape', 1280, 720, true );
 	add_image_size( 'dynamico-classic', 900, 675, true );
 	add_image_size( 'dynamico-square', 900, 900, true );
-	add_image_size( 'dynamico-portrait', 720, 1280, true );
+	add_image_size( 'dynamico-portrait', 900, 1200, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
@@ -215,7 +215,7 @@ function dynamico_add_image_size_names( $sizes ) {
 		'dynamico-landscape'  => esc_html__( 'Dynamico Landscape (16:9)', 'dynamico' ),
 		'dynamico-classic'    => esc_html__( 'Dynamico Classic (4:3)', 'dynamico' ),
 		'dynamico-square'     => esc_html__( 'Dynamico Square (1:1)', 'dynamico' ),
-		'dynamico-portrait'   => esc_html__( 'Dynamico Portrait (9:16)', 'dynamico' ),
+		'dynamico-portrait'   => esc_html__( 'Dynamico Portrait (3:4)', 'dynamico' ),
 	) );
 }
 add_filter( 'image_size_names_choose', 'dynamico_add_image_size_names' );

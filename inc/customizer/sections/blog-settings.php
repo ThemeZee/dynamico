@@ -48,6 +48,31 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		),
 	) );
 
+	// Add Settings and Controls for blog image.
+	$wp_customize->add_setting( 'dynamico_theme_options[blog_image]', array(
+		'default'           => $default['blog_image'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'dynamico_sanitize_select',
+	) );
+
+	$wp_customize->add_control( 'dynamico_theme_options[blog_image]', array(
+		'label'    => esc_html__( 'Blog Image', 'dynamico' ),
+		'section'  => 'dynamico_section_blog',
+		'settings' => 'dynamico_theme_options[blog_image]',
+		'type'     => 'select',
+		'priority' => 20,
+		'choices'  => array(
+			'dynamico-ultra-wide' => esc_html__( 'Ultra Wide (3:1)', 'dynamico' ),
+			'dynamico-landscape'  => esc_html__( 'Landscape (16:9)', 'dynamico' ),
+			'dynamico-classic'    => esc_html__( 'Classic (4:3)', 'dynamico' ),
+			'dynamico-square'     => esc_html__( 'Square (1:1)', 'dynamico' ),
+			'dynamico-portrait'   => esc_html__( 'Portrait (3:4)', 'dynamico' ),
+			'post-thumbnail'      => esc_html__( 'Flexible Height', 'dynamico' ),
+			'hide-image'          => esc_html__( 'Hide Image', 'dynamico' ),
+		),
+	) );
+
 	// Add Settings and Controls for blog content.
 	$wp_customize->add_setting( 'dynamico_theme_options[blog_content]', array(
 		'default'           => $default['blog_content'],
@@ -61,7 +86,7 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_blog',
 		'settings' => 'dynamico_theme_options[blog_content]',
 		'type'     => 'radio',
-		'priority' => 20,
+		'priority' => 30,
 		'choices'  => array(
 			'full'    => esc_html__( 'Full post', 'dynamico' ),
 			'excerpt' => esc_html__( 'Post excerpt', 'dynamico' ),
@@ -81,7 +106,7 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_blog',
 		'settings' => 'dynamico_theme_options[excerpt_length]',
 		'type'     => 'number',
-		'priority' => 30,
+		'priority' => 40,
 	) );
 
 	// Add Setting and Control for Excerpt More Text.
@@ -97,7 +122,7 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_blog',
 		'settings' => 'dynamico_theme_options[excerpt_more_text]',
 		'type'     => 'text',
-		'priority' => 40,
+		'priority' => 50,
 	) );
 
 	// Add Partial for Blog Layout and Excerpt Length.
@@ -105,6 +130,7 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		'selector'         => '.site-main .post-wrapper',
 		'settings'         => array(
 			'dynamico_theme_options[blog_layout]',
+			'dynamico_theme_options[blog_image]',
 			'dynamico_theme_options[blog_content]',
 			'dynamico_theme_options[excerpt_length]',
 			'dynamico_theme_options[excerpt_more_text]',
@@ -127,7 +153,7 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_blog',
 		'settings' => 'dynamico_theme_options[read_more_link]',
 		'type'     => 'text',
-		'priority' => 50,
+		'priority' => 60,
 	) );
 
 	// Add Setting and Control for Number of posts.
@@ -143,7 +169,7 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_blog',
 		'settings' => 'posts_per_page',
 		'type'     => 'number',
-		'priority' => 60,
+		'priority' => 70,
 	) );
 }
 add_action( 'customize_register', 'dynamico_customize_register_blog_settings' );
