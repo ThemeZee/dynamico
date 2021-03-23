@@ -140,9 +140,12 @@ if ( ! function_exists( 'dynamico_post_image_archives' ) ) :
 			?>
 
 			<figure class="post-image post-image-archives">
-				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark" aria-hidden="true">
+				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 					<?php the_post_thumbnail( $image_size ); ?>
 				</a>
+				<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) ) : ?>
+					<figcaption class="wp-caption-text"><?php echo wp_kses_post( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></figcaption>
+				<?php endif; ?>
 			</figure>
 
 			<?php
@@ -163,7 +166,11 @@ if ( ! function_exists( 'dynamico_post_image_single' ) ) :
 
 			<figure class="post-image post-image-single">
 				<?php the_post_thumbnail(); ?>
-			</figure>
+
+				<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) ) : ?>
+					<figcaption class="wp-caption-text"><?php echo wp_kses_post( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></figcaption>
+				<?php endif; ?>
+			</figure><!-- .post-image -->
 
 			<?php
 		endif;
@@ -181,7 +188,11 @@ if ( ! function_exists( 'dynamico_post_image_page' ) ) :
 
 			<figure class="post-image post-image-single">
 				<?php the_post_thumbnail(); ?>
-			</figure>
+
+				<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) ) : ?>
+					<figcaption class="wp-caption-text"><?php echo wp_kses_post( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></figcaption>
+				<?php endif; ?>
+			</figure><!-- .post-image -->
 
 			<?php
 		endif;

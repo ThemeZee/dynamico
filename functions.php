@@ -36,10 +36,14 @@ function dynamico_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 880, 320, true );
+	set_post_thumbnail_size( 900, 9999 );
 
-	// Add image size for posts with the Horizontal Blog layout enabled.
-	add_image_size( 'dynamico-horizontal-list-post', 400, 400, true );
+	// Add custom image sizes.
+	add_image_size( 'dynamico-ultra-wide', 900, 300, true );
+	add_image_size( 'dynamico-landscape', 1280, 720, true );
+	add_image_size( 'dynamico-classic', 900, 675, true );
+	add_image_size( 'dynamico-square', 900, 900, true );
+	add_image_size( 'dynamico-portrait', 720, 1280, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
@@ -206,8 +210,12 @@ add_action( 'widgets_init', 'dynamico_widgets_init', 30 );
  */
 function dynamico_add_image_size_names( $sizes ) {
 	return array_merge( $sizes, array(
-		'post-thumbnail'                => esc_html__( 'Dynamico Single Post', 'dynamico' ),
-		'dynamico-horizontal-list-post' => esc_html__( 'Dynamico List Post', 'dynamico' ),
+		'post-thumbnail'      => esc_html__( 'Post Thumbnail', 'dynamico' ),
+		'dynamico-ultra-wide' => esc_html__( 'Dynamico Ultra Wide (3:1)', 'dynamico' ),
+		'dynamico-landscape'  => esc_html__( 'Dynamico Landscape (16:9)', 'dynamico' ),
+		'dynamico-classic'    => esc_html__( 'Dynamico Classic (4:3)', 'dynamico' ),
+		'dynamico-square'     => esc_html__( 'Dynamico Square (1:1)', 'dynamico' ),
+		'dynamico-portrait'   => esc_html__( 'Dynamico Portrait (9:16)', 'dynamico' ),
 	) );
 }
 add_filter( 'image_size_names_choose', 'dynamico_add_image_size_names' );
