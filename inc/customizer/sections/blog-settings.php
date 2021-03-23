@@ -39,10 +39,12 @@ function dynamico_customize_register_blog_settings( $wp_customize ) {
 		'type'     => 'select',
 		'priority' => 10,
 		'choices'  => array(
-			'horizontal-list'   => esc_html__( 'Horizontal List', 'dynamico' ),
-			'vertical-list'     => esc_html__( 'Vertical List', 'dynamico' ),
-			'two-column-grid'   => esc_html__( 'Two Column Grid', 'dynamico' ),
-			'three-column-grid' => esc_html__( 'Three Column Grid', 'dynamico' ),
+			'horizontal-list'     => esc_html__( 'Horizontal List', 'dynamico' ),
+			'horizontal-list-alt' => esc_html__( 'Horizontal List (alternative)', 'dynamico' ),
+			'vertical-list'       => esc_html__( 'Vertical List', 'dynamico' ),
+			'vertical-list-alt'   => esc_html__( 'Vertical List (alternative)', 'dynamico' ),
+			'two-column-grid'     => esc_html__( 'Two Column Grid', 'dynamico' ),
+			'three-column-grid'   => esc_html__( 'Three Column Grid', 'dynamico' ),
 		),
 	) );
 

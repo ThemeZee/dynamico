@@ -91,7 +91,7 @@ add_action( 'after_setup_theme', 'dynamico_setup' );
 function dynamico_content_width() {
 
 	// Default content width.
-	$content_width = 800;
+	$content_width = 900;
 
 	// Set global variable for content width.
 	$GLOBALS['content_width'] = apply_filters( 'dynamico_content_width', $content_width );
@@ -206,7 +206,7 @@ add_action( 'widgets_init', 'dynamico_widgets_init', 30 );
  */
 function dynamico_add_image_size_names( $sizes ) {
 	return array_merge( $sizes, array(
-		'post-thumbnail'               => esc_html__( 'Dynamico Single Post', 'dynamico' ),
+		'post-thumbnail'                => esc_html__( 'Dynamico Single Post', 'dynamico' ),
 		'dynamico-horizontal-list-post' => esc_html__( 'Dynamico List Post', 'dynamico' ),
 	) );
 }

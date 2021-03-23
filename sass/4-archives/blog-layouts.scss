@@ -23,6 +23,22 @@
 		}
 	}
 
+	.blog-layout-horizontal-list-alt {
+		.post-wrapper .type-post:nth-of-type(even) {
+			flex-direction: row-reverse;
+
+			.post-image {
+				margin-right: 0;
+				margin-left: 1rem;
+			}
+
+			.entry-wrap {
+				margin-left: 0;
+				margin-right: 1rem;
+			}
+		}
+	}
+
 	.blog-layout-two-column-grid,
 	.blog-layout-three-column-grid {
 		.post-wrapper {

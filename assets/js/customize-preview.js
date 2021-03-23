@@ -85,18 +85,23 @@
 	wp.customize( 'dynamico_theme_options[blog_layout]', function( value ) {
 		value.bind( function( newval ) {
 			$( 'body' ).removeClass( 'blog-layout-horizontal-list' );
+			$( 'body' ).removeClass( 'blog-layout-horizontal-list-alt' );
 			$( 'body' ).removeClass( 'blog-layout-vertical-list' );
 			$( 'body' ).removeClass( 'blog-layout-two-column-grid' );
 			$( 'body' ).removeClass( 'blog-layout-three-column-grid' );
 
-			if ( 'horizontal-list' === newval ) {
+			if ( 'horizontal-list' === newval || 'horizontal-list-alt' === newval ) {
 				$( 'body' ).addClass( 'blog-layout-horizontal-list' );
-			} else if ( 'vertical-list' === newval ) {
+			} else if ( 'vertical-list' === newval || 'vertical-list-alt' === newval ) {
 				$( 'body' ).addClass( 'blog-layout-vertical-list' );
 			} else if ( 'two-column-grid' === newval ) {
 				$( 'body' ).addClass( 'blog-layout-two-column-grid' );
 			} else if ( 'three-column-grid' === newval ) {
 				$( 'body' ).addClass( 'blog-layout-three-column-grid' );
+			}
+
+			if ( 'horizontal-list-alt' === newval ) {
+				$( 'body' ).addClass( 'blog-layout-horizontal-list-alt' );
 			}
 		} );
 	} );

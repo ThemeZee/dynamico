@@ -48,7 +48,7 @@ add_action( 'customize_register', 'dynamico_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function dynamico_customize_preview_js() {
-	wp_enqueue_script( 'dynamico-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20201113', true );
+	wp_enqueue_script( 'dynamico-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20201114', true );
 }
 add_action( 'customize_preview_init', 'dynamico_customize_preview_js' );
 
