@@ -24,67 +24,13 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 	// Get Default Settings.
 	$default = dynamico_default_options();
 
-	// Add Featured Images Headline.
-	$wp_customize->add_control( new Dynamico_Customize_Header_Control(
-		$wp_customize, 'dynamico_theme_options[featured_images]', array(
-			'label'    => esc_html__( 'Featured Images', 'dynamico' ),
-			'section'  => 'dynamico_section_post',
-			'settings' => array(),
-			'priority' => 10,
-		)
-	) );
-
-	// Add Setting and Control for featured images on blog and archives.
-	$wp_customize->add_setting( 'dynamico_theme_options[post_image_archives]', array(
-		'default'           => $default['post_image_archives'],
-		'type'              => 'option',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'dynamico_sanitize_checkbox',
-	) );
-
-	$wp_customize->add_control( 'dynamico_theme_options[post_image_archives]', array(
-		'label'    => esc_html__( 'Display images on blog and archives', 'dynamico' ),
-		'section'  => 'dynamico_section_post',
-		'settings' => 'dynamico_theme_options[post_image_archives]',
-		'type'     => 'checkbox',
-		'priority' => 20,
-	) );
-
-	$wp_customize->selective_refresh->add_partial( 'dynamico_theme_options[post_image_archives]', array(
-		'selector'         => '.site-main .post-wrapper',
-		'render_callback'  => 'dynamico_customize_partial_blog_layout',
-		'fallback_refresh' => false,
-	) );
-
-	// Add Setting and Control for featured images on single posts.
-	$wp_customize->add_setting( 'dynamico_theme_options[post_image_single]', array(
-		'default'           => $default['post_image_single'],
-		'type'              => 'option',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'dynamico_sanitize_checkbox',
-	) );
-
-	$wp_customize->add_control( 'dynamico_theme_options[post_image_single]', array(
-		'label'    => esc_html__( 'Display images on single posts', 'dynamico' ),
-		'section'  => 'dynamico_section_post',
-		'settings' => 'dynamico_theme_options[post_image_single]',
-		'type'     => 'checkbox',
-		'priority' => 30,
-	) );
-
-	$wp_customize->selective_refresh->add_partial( 'dynamico_theme_options[post_image_single]', array(
-		'selector'         => '.single-post .site-main',
-		'render_callback'  => 'dynamico_customize_partial_single_post',
-		'fallback_refresh' => false,
-	) );
-
 	// Add Post Details Headline.
 	$wp_customize->add_control( new Dynamico_Customize_Header_Control(
 		$wp_customize, 'dynamico_theme_options[post_details_blog]', array(
 			'label'    => esc_html__( 'Post Details on blog and archives', 'dynamico' ),
 			'section'  => 'dynamico_section_post',
 			'settings' => array(),
-			'priority' => 40,
+			'priority' => 10,
 		)
 	) );
 
@@ -101,7 +47,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[meta_date]',
 		'type'     => 'checkbox',
-		'priority' => 50,
+		'priority' => 20,
 	) );
 
 	// Add Setting and Control for showing post author.
@@ -117,7 +63,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[meta_author]',
 		'type'     => 'checkbox',
-		'priority' => 60,
+		'priority' => 30,
 	) );
 
 	// Add Setting and Control for showing post categories.
@@ -133,7 +79,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[meta_categories]',
 		'type'     => 'checkbox',
-		'priority' => 70,
+		'priority' => 40,
 	) );
 
 	// Add Setting and Control for showing post comments.
@@ -149,7 +95,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[meta_comments]',
 		'type'     => 'checkbox',
-		'priority' => 80,
+		'priority' => 50,
 	) );
 
 	// Add Post Details Headline.
@@ -158,7 +104,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 			'label'    => esc_html__( 'Post Details on single posts', 'dynamico' ),
 			'section'  => 'dynamico_section_post',
 			'settings' => array(),
-			'priority' => 90,
+			'priority' => 60,
 		)
 	) );
 
@@ -175,7 +121,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[single_meta_date]',
 		'type'     => 'checkbox',
-		'priority' => 100,
+		'priority' => 70,
 	) );
 
 	// Add Setting and Control for showing post author.
@@ -191,7 +137,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[single_meta_author]',
 		'type'     => 'checkbox',
-		'priority' => 110,
+		'priority' => 80,
 	) );
 
 	// Add Setting and Control for showing post categories.
@@ -207,7 +153,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[single_meta_categories]',
 		'type'     => 'checkbox',
-		'priority' => 120,
+		'priority' => 90,
 	) );
 
 	// Add Setting and Control for showing post comments.
@@ -223,16 +169,61 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[single_meta_comments]',
 		'type'     => 'checkbox',
-		'priority' => 130,
+		'priority' => 100,
+	) );
+
+	// Add Settings and Controls for post layout.
+	$wp_customize->add_setting( 'dynamico_theme_options[post_layout]', array(
+		'default'           => $default['post_layout'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'dynamico_sanitize_select',
+	) );
+
+	$wp_customize->add_control( 'dynamico_theme_options[post_layout]', array(
+		'label'    => esc_html__( 'Single Post Layout', 'dynamico' ),
+		'section'  => 'dynamico_section_post',
+		'settings' => 'dynamico_theme_options[post_layout]',
+		'type'     => 'select',
+		'priority' => 110,
+		'choices'  => array(
+			'above-title' => esc_html__( 'Featured image above title', 'dynamico' ),
+			'below-title' => esc_html__( 'Featured image below title', 'dynamico' ),
+			'hide-image'  => esc_html__( 'Hide Image', 'dynamico' ),
+		),
+	) );
+
+	// Add Settings and Controls for blog image.
+	$wp_customize->add_setting( 'dynamico_theme_options[post_image]', array(
+		'default'           => $default['post_image'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'dynamico_sanitize_select',
+	) );
+
+	$wp_customize->add_control( 'dynamico_theme_options[post_image]', array(
+		'label'    => esc_html__( 'Single Post Image', 'dynamico' ),
+		'section'  => 'dynamico_section_post',
+		'settings' => 'dynamico_theme_options[post_image]',
+		'type'     => 'select',
+		'priority' => 120,
+		'choices'  => array(
+			'dynamico-ultra-wide' => esc_html__( 'Ultra Wide (3:1)', 'dynamico' ),
+			'dynamico-landscape'  => esc_html__( 'Landscape (16:9)', 'dynamico' ),
+			'dynamico-classic'    => esc_html__( 'Classic (4:3)', 'dynamico' ),
+			'dynamico-square'     => esc_html__( 'Square (1:1)', 'dynamico' ),
+			'dynamico-portrait'   => esc_html__( 'Portrait (3:4)', 'dynamico' ),
+			'post-thumbnail'      => esc_html__( 'Flexible Height', 'dynamico' ),
+		),
 	) );
 
 	// Add Single Post Headline.
 	$wp_customize->add_control( new Dynamico_Customize_Header_Control(
 		$wp_customize, 'dynamico_theme_options[single_post]', array(
-			'label'    => esc_html__( 'Single Post', 'dynamico' ),
+			'label'    => esc_html__( 'Single Post Footer', 'dynamico' ),
 			'section'  => 'dynamico_section_post',
 			'settings' => array(),
-			'priority' => 140,
+			'priority' => 130,
 		)
 	) );
 

@@ -66,6 +66,6 @@ add_action( 'customize_controls_enqueue_scripts', 'dynamico_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function dynamico_customizer_controls_css() {
-	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201114' );
+	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201117' );
 }
 add_action( 'customize_controls_print_styles', 'dynamico_customizer_controls_css' );

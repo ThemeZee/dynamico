@@ -69,6 +69,8 @@ function dynamico_default_options() {
 		'single_meta_author'     => true,
 		'single_meta_comments'   => true,
 		'single_meta_categories' => true,
+		'post_layout'            => 'above-title',
+		'post_image'             => 'dynamico-ultra-wide',
 		'meta_tags'              => true,
 		'post_navigation'        => true,
 		'post_image_archives'    => true,
