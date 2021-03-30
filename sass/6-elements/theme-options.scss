@@ -10,12 +10,33 @@ body.wide-theme-layout .site {
 	}
 
 	.header-main {
-		max-width: $contentFullwidth;
+		max-width: calc(#{$themeWidth} + 3rem);
 	}
 
 	.site-content,
 	.site-footer {
 		max-width: $themeWidth;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	body.wide-theme-layout .site {
+		.site-content {
+			background: none;
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	body.wide-theme-layout .site {
+		.primary-navigation-wrap {
+			display: flex;
+			justify-content: center;
+
+			.primary-navigation {
+				max-width: $themeWidth;
+			}
+		}
 	}
 }
 

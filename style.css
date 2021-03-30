@@ -861,7 +861,6 @@ body.site-description-hidden .site-header .site-description {
 --------------------------------------------------------------*/
 .primary-navigation-wrap {
 	position: relative;
-	margin-top: -1px;
 	background-color: #333;
 	background-color: var(--navi-background-color);
 }
@@ -1137,6 +1136,7 @@ body.site-description-hidden .site-header .site-description {
 		border: 1px solid;
 		border-color: rgba(0, 0, 0, 0.1);
 		border-color: var(--widget-border-color);
+		background: #fff;
 	}
 
 	.has-sidebar .sidebar .widget .widget-title {
@@ -3486,6 +3486,7 @@ figcaption,
 		border: 1px solid;
 		border-color: rgba(0, 0, 0, 0.1);
 		border-color: var(--content-border-color);
+		background: #fff;
 	}
 
 	.has-sidebar .archive-header,
@@ -3575,14 +3576,14 @@ figcaption,
 /*--------------------------------------------------------------
 ## - Media Queries for Navigation
 --------------------------------------------------------------*/
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 480px) {
 	.primary-menu-toggle .menu-toggle-text {
 		display: inline-block;
 		margin-left: 0.75em;
 	}
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 960px) {
 	.primary-menu-toggle,
 	.main-navigation .dropdown-toggle {
 		display: none;
@@ -3595,8 +3596,6 @@ figcaption,
 
 	.primary-navigation {
 		display: flex;
-		margin-left: auto;
-		width: auto;
 		align-items: center;
 	}
 
@@ -3793,12 +3792,29 @@ body.wide-theme-layout .site .site-footer {
 }
 
 body.wide-theme-layout .site .header-main {
-	max-width: 1160px;
+	max-width: calc(1340px + 3rem);
 }
 
 body.wide-theme-layout .site .site-content,
 body.wide-theme-layout .site .site-footer {
 	max-width: 1340px;
+}
+
+@media only screen and (min-width: 480px) {
+	body.wide-theme-layout .site .site-content {
+		background: none;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	body.wide-theme-layout .site .primary-navigation-wrap {
+		display: flex;
+		justify-content: center;
+	}
+
+	body.wide-theme-layout .site .primary-navigation-wrap .primary-navigation {
+		max-width: 1340px;
+	}
 }
 
 /* Hide Elements in Customizer for instant live preview */
