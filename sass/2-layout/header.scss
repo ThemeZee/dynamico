@@ -5,6 +5,7 @@
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	padding: 1.25rem;
 }
 
@@ -90,4 +91,16 @@ body.site-description-hidden .site-header .site-description {
 	clip: rect(1px, 1px, 1px, 1px);
 	width: 1px;
 	height: 1px;
+}
+
+/* Header Content */
+.header-content {
+	.header-widget {
+		margin: 1rem 0 0;
+
+		.header-widget-title {
+			margin: 0 0 0.5rem;
+			@include font-size(16);
+		}
+	}
 }

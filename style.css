@@ -759,6 +759,7 @@ textarea {
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	padding: 1.25rem;
 }
 
@@ -854,6 +855,17 @@ body.site-description-hidden .site-header .site-description {
 	clip: rect(1px, 1px, 1px, 1px);
 	width: 1px;
 	height: 1px;
+}
+
+/* Header Content */
+.header-content .header-widget {
+	margin: 1rem 0 0;
+}
+
+.header-content .header-widget .header-widget-title {
+	margin: 0 0 0.5rem;
+	font-size: 16px;
+	font-size: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -3536,6 +3548,15 @@ figcaption,
 @media only screen and (min-width: 640px) {
 	.header-main {
 		padding: 2rem;
+		flex-direction: row;
+	}
+
+	.header-content {
+		margin-left: auto;
+	}
+
+	.header-content .header-widget {
+		margin: 0;
 	}
 
 	.site-content {

@@ -191,6 +191,17 @@ function dynamico_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 
+	// Register Header widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header', 'dynamico' ),
+		'id'            => 'header',
+		'description'   => esc_html__( 'Appears on header area. You can use a search or ad widget here.', 'dynamico' ),
+		'before_widget' => '<aside id="%1$s" class="header-widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="header-widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
 	// Register Footer Copyright widget area.
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Copyright', 'dynamico' ),
@@ -198,7 +209,7 @@ function dynamico_widgets_init() {
 		'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'dynamico' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
+		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
 }
