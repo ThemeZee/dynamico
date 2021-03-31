@@ -162,11 +162,11 @@ if ( ! function_exists( 'dynamico_post_image_single' ) ) :
 	function dynamico_post_image_single() {
 
 		// Display Post Thumbnail if activated.
-		if ( has_post_thumbnail() && true === dynamico_get_option( 'post_image_single' ) ) :
+		if ( has_post_thumbnail() ) :
 			?>
 
 			<figure class="post-image post-image-single">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail( dynamico_get_option( 'post_image' ) ); ?>
 
 				<?php if ( wp_get_attachment_caption( get_post_thumbnail_id() ) ) : ?>
 					<figcaption class="wp-caption-text"><?php echo wp_kses_post( wp_get_attachment_caption( get_post_thumbnail_id() ) ); ?></figcaption>

@@ -195,8 +195,6 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 			'dynamico-ultra-wide' => esc_html__( 'Ultra Wide (3:1)', 'dynamico' ),
 			'dynamico-landscape'  => esc_html__( 'Landscape (16:9)', 'dynamico' ),
 			'dynamico-classic'    => esc_html__( 'Classic (4:3)', 'dynamico' ),
-			'dynamico-square'     => esc_html__( 'Square (1:1)', 'dynamico' ),
-			'dynamico-portrait'   => esc_html__( 'Portrait (3:4)', 'dynamico' ),
 			'post-thumbnail'      => esc_html__( 'Flexible Height', 'dynamico' ),
 		),
 	) );
