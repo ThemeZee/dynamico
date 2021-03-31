@@ -66,22 +66,6 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'priority' => 30,
 	) );
 
-	// Add Setting and Control for showing post categories.
-	$wp_customize->add_setting( 'dynamico_theme_options[meta_categories]', array(
-		'default'           => $default['meta_categories'],
-		'type'              => 'option',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'dynamico_sanitize_checkbox',
-	) );
-
-	$wp_customize->add_control( 'dynamico_theme_options[meta_categories]', array(
-		'label'    => esc_html__( 'Display categories', 'dynamico' ),
-		'section'  => 'dynamico_section_post',
-		'settings' => 'dynamico_theme_options[meta_categories]',
-		'type'     => 'checkbox',
-		'priority' => 40,
-	) );
-
 	// Add Setting and Control for showing post comments.
 	$wp_customize->add_setting( 'dynamico_theme_options[meta_comments]', array(
 		'default'           => $default['meta_comments'],
@@ -94,6 +78,22 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'label'    => esc_html__( 'Display comments', 'dynamico' ),
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[meta_comments]',
+		'type'     => 'checkbox',
+		'priority' => 40,
+	) );
+
+	// Add Setting and Control for showing post categories.
+	$wp_customize->add_setting( 'dynamico_theme_options[meta_categories]', array(
+		'default'           => $default['meta_categories'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'dynamico_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'dynamico_theme_options[meta_categories]', array(
+		'label'    => esc_html__( 'Display categories', 'dynamico' ),
+		'section'  => 'dynamico_section_post',
+		'settings' => 'dynamico_theme_options[meta_categories]',
 		'type'     => 'checkbox',
 		'priority' => 50,
 	) );
@@ -140,22 +140,6 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'priority' => 80,
 	) );
 
-	// Add Setting and Control for showing post categories.
-	$wp_customize->add_setting( 'dynamico_theme_options[single_meta_categories]', array(
-		'default'           => $default['single_meta_categories'],
-		'type'              => 'option',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'dynamico_sanitize_checkbox',
-	) );
-
-	$wp_customize->add_control( 'dynamico_theme_options[single_meta_categories]', array(
-		'label'    => esc_html__( 'Display categories', 'dynamico' ),
-		'section'  => 'dynamico_section_post',
-		'settings' => 'dynamico_theme_options[single_meta_categories]',
-		'type'     => 'checkbox',
-		'priority' => 90,
-	) );
-
 	// Add Setting and Control for showing post comments.
 	$wp_customize->add_setting( 'dynamico_theme_options[single_meta_comments]', array(
 		'default'           => $default['single_meta_comments'],
@@ -169,7 +153,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[single_meta_comments]',
 		'type'     => 'checkbox',
-		'priority' => 100,
+		'priority' => 90,
 	) );
 
 	// Add Settings and Controls for post layout.
@@ -185,7 +169,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[post_layout]',
 		'type'     => 'select',
-		'priority' => 110,
+		'priority' => 100,
 		'choices'  => array(
 			'above-title' => esc_html__( 'Featured image above title', 'dynamico' ),
 			'below-title' => esc_html__( 'Featured image below title', 'dynamico' ),
@@ -206,7 +190,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[post_image]',
 		'type'     => 'select',
-		'priority' => 120,
+		'priority' => 110,
 		'choices'  => array(
 			'dynamico-ultra-wide' => esc_html__( 'Ultra Wide (3:1)', 'dynamico' ),
 			'dynamico-landscape'  => esc_html__( 'Landscape (16:9)', 'dynamico' ),
@@ -223,7 +207,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 			'label'    => esc_html__( 'Single Post Footer', 'dynamico' ),
 			'section'  => 'dynamico_section_post',
 			'settings' => array(),
-			'priority' => 130,
+			'priority' => 120,
 		)
 	) );
 
@@ -240,7 +224,23 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[meta_tags]',
 		'type'     => 'checkbox',
-		'priority' => 150,
+		'priority' => 130,
+	) );
+
+	// Add Setting and Control for showing post categories.
+	$wp_customize->add_setting( 'dynamico_theme_options[single_meta_categories]', array(
+		'default'           => $default['single_meta_categories'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'dynamico_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'dynamico_theme_options[single_meta_categories]', array(
+		'label'    => esc_html__( 'Display categories', 'dynamico' ),
+		'section'  => 'dynamico_section_post',
+		'settings' => 'dynamico_theme_options[single_meta_categories]',
+		'type'     => 'checkbox',
+		'priority' => 140,
 	) );
 
 	// Add Setting and Control for showing post navigation.
@@ -256,7 +256,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[post_navigation]',
 		'type'     => 'checkbox',
-		'priority' => 160,
+		'priority' => 150,
 	) );
 }
 add_action( 'customize_register', 'dynamico_customize_register_post_settings' );
