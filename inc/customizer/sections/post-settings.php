@@ -173,7 +173,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'choices'  => array(
 			'above-title' => esc_html__( 'Featured image above title', 'dynamico' ),
 			'below-title' => esc_html__( 'Featured image below title', 'dynamico' ),
-			'hide-image'  => esc_html__( 'Hide Image', 'dynamico' ),
+			'no-image'    => esc_html__( 'Hide Image', 'dynamico' ),
 		),
 	) );
 
@@ -199,6 +199,17 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 			'dynamico-portrait'   => esc_html__( 'Portrait (3:4)', 'dynamico' ),
 			'post-thumbnail'      => esc_html__( 'Flexible Height', 'dynamico' ),
 		),
+	) );
+
+	// Add Partial for Blog Layout and Excerpt Length.
+	$wp_customize->selective_refresh->add_partial( 'dynamico_single_post_partial', array(
+		'selector'         => '.single-post .site-main',
+		'settings'         => array(
+			'dynamico_theme_options[post_layout]',
+			'dynamico_theme_options[post_image]',
+		),
+		'render_callback'  => 'dynamico_customize_partial_single_post',
+		'fallback_refresh' => false,
 	) );
 
 	// Add Single Post Headline.
@@ -266,8 +277,18 @@ add_action( 'customize_register', 'dynamico_customize_register_post_settings' );
  * Render single posts partial
  */
 function dynamico_customize_partial_single_post() {
-	while ( have_posts() ) {
+	while ( have_posts() ) :
 		the_post();
-		get_template_part( 'template-parts/post/content', 'single' );
-	}
+
+		get_template_part( 'template-parts/post/content', esc_html( dynamico_get_option( 'post_layout' ) ) );
+
+		dynamico_post_navigation();
+		dynamico_related_posts();
+
+		// If comments are open or we have at least one comment, load up the comment template.
+		if ( comments_open() || get_comments_number() ) :
+			comments_template();
+		endif;
+
+	endwhile;
 }
