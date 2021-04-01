@@ -90,13 +90,21 @@
 	.header-main {
 		padding: 2rem;
 		flex-direction: row;
+		align-items: center;
 	}
 
 	.header-content {
+		display: flex;
+		flex-wrap: wrap;
 		margin-left: auto;
 
 		.header-widget {
 			margin: 0;
+		}
+
+		.header-social-menu {
+			margin-top: 0;
+			margin-left: 1.5rem;
 		}
 	}
 

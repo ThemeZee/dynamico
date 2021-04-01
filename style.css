@@ -647,22 +647,23 @@ textarea {
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0.75rem 1rem;
+	padding: 0.8rem;
 	min-width: 100px;
 	width: 100%;
 	-webkit-appearance: none;
+	line-height: 1;
 }
 
 .search-form .search-submit {
 	display: flex;
 	margin-left: 0.5rem;
-	padding: 0.75rem 1rem;
+	padding: 0.8rem;
 	align-items: center;
 }
 
 .search-form .search-submit .icon-search {
-	width: 24px;
-	height: 24px;
+	width: 20px;
+	height: 20px;
 	fill: currentColor;
 }
 
@@ -1131,6 +1132,57 @@ body.site-description-hidden .site-header .site-description {
 .main-navigation ul ul .dropdown-toggle .icon {
 	width: 20px;
 	height: 20px;
+}
+
+/*--------------------------------------------------------------
+# - Social Icons Menu
+--------------------------------------------------------------*/
+.header-social-menu {
+	margin-top: 1rem;
+}
+
+.header-social-menu .social-icons-menu {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	justify-content: center;
+}
+
+.header-social-menu .social-icons-menu li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+.header-social-menu .social-icons-menu li a {
+	display: flex;
+	align-items: center;
+	margin: 0 3px 3px 0;
+	padding: 0.8rem;
+	color: #fff;
+	color: var(--button-text-color);
+	background-color: #e84747;
+	background-color: var(--button-color);
+}
+
+.header-social-menu .social-icons-menu li a:hover,
+.header-social-menu .social-icons-menu li a:active {
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background-color: #333;
+	background-color: var(--button-hover-color);
+	text-decoration: none;
+}
+
+.header-social-menu .social-icons-menu li a .icon {
+	margin: 0;
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
 }
 
 /*--------------------------------------------------------------
@@ -3549,14 +3601,22 @@ figcaption,
 	.header-main {
 		padding: 2rem;
 		flex-direction: row;
+		align-items: center;
 	}
 
 	.header-content {
+		display: flex;
+		flex-wrap: wrap;
 		margin-left: auto;
 	}
 
 	.header-content .header-widget {
 		margin: 0;
+	}
+
+	.header-content .header-social-menu {
+		margin-top: 0;
+		margin-left: 1.5rem;
 	}
 
 	.site-content {
