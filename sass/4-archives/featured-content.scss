@@ -1,0 +1,86 @@
+.site-main .featured-posts {
+	margin: 0 0 1.25rem;
+
+	.type-post {
+		margin: 0 0 1px;
+		padding: 0;
+		border: none;
+		box-shadow: none !important;
+		background: none;
+
+		.post-image {
+			margin: 0 0 1px;
+		}
+
+		.post-content {
+			padding: 1.5rem;
+			border-top: 10px solid;
+			@include border-color(--featured-border-color);
+			@include color(--featured-text-color);
+			@include background(--featured-background-color);
+		}
+
+		.entry-title {
+			padding: 0;
+			border: none;
+			@include color(--featured-text-color);
+			@include border-color(--featured-text-color);
+		}
+
+		.entry-title a:link,
+		.entry-title a:visited {
+			@include color(--featured-text-color);
+		}
+
+		.entry-title a:hover,
+		.entry-title a:active {
+			@include color(--featured-hover-color);
+		}
+
+		.entry-meta {
+			padding: 0.5rem 0 0;
+			@include color(--featured-text-color);
+			background: none;
+		}
+
+		.entry-meta > span::after {
+			@include color(--featured-text-color);
+		}
+
+		.entry-meta a:link,
+		.entry-meta a:visited {
+			@include color(--featured-hover-color);
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.featured-posts-grid {
+		display: flex;
+		margin-right: -1px;
+
+		.post-column {
+			margin-right: 1px;
+			@include background(--featured-background-color);
+		}
+
+		.type-post {
+			.post-content {
+				border: none;
+			}
+
+			.entry-header {
+				margin: 0;
+			}
+
+			.entry-title {
+				margin: 0;
+				padding: 0;
+				border: none;
+				@include font-size(17);
+			}
+		}
+	}
+}

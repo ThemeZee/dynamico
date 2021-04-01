@@ -75,6 +75,8 @@ function dynamico_default_options() {
 		'post_navigation'        => true,
 		'post_image_archives'    => true,
 		'post_image_single'      => true,
+		'featured_content'       => false,
+		'featured_category'      => 0,
 		'footer_text'            => '',
 		'credit_link'            => true,
 	);

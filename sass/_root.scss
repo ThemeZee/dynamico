@@ -42,6 +42,12 @@
 	@include variable(--submenu-text-color, $themeColors);
 	@include variable(--submenu-border-color, $themeColors);
 
+	// Featured
+	@include variable(--featured-background-color, $themeColors);
+	@include variable(--featured-text-color, $themeColors);
+	@include variable(--featured-hover-color, $themeColors);
+	@include variable(--featured-border-color, $themeColors);
+
 	// Posts
 	@include variable(--title-color, $themeColors);
 	@include variable(--title-hover-color, $themeColors);

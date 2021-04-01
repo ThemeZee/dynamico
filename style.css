@@ -80,6 +80,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--submenu-background-color: #fff;
 	--submenu-text-color: #333;
 	--submenu-border-color: rgba(0, 0, 0, 0.5);
+	--featured-background-color: #333;
+	--featured-text-color: #fff;
+	--featured-hover-color: rgba(255, 255, 255, 0.75);
+	--featured-border-color: #e84747;
 	--title-color: #333;
 	--title-hover-color: #e84747;
 	--post-meta-background-color: #ededef;
@@ -351,7 +355,7 @@ h6 {
 }
 
 p {
-	margin: 1.75rem 0;
+	margin: 1rem 0 1.5rem;
 }
 
 dfn,
@@ -1714,6 +1718,103 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 	.blog-layout-three-column-grid .post-wrapper .post-column {
 		width: 33.3333333333333%;
 	}
+}
+
+.site-main .featured-posts {
+	margin: 0 0 1.25rem;
+}
+
+.site-main .featured-posts .type-post {
+	margin: 0 0 1px;
+	padding: 0;
+	border: none;
+	box-shadow: none !important;
+	background: none;
+}
+
+.site-main .featured-posts .type-post .post-image {
+	margin: 0 0 1px;
+}
+
+.site-main .featured-posts .type-post .post-content {
+	padding: 1.5rem;
+	border-top: 10px solid;
+	border-color: #e84747;
+	border-color: var(--featured-border-color);
+	color: #fff;
+	color: var(--featured-text-color);
+	background-color: #333;
+	background-color: var(--featured-background-color);
+}
+
+.site-main .featured-posts .type-post .entry-title {
+	padding: 0;
+	border: none;
+	color: #fff;
+	color: var(--featured-text-color);
+	border-color: #fff;
+	border-color: var(--featured-text-color);
+}
+
+.site-main .featured-posts .type-post .entry-title a:link,
+.site-main .featured-posts .type-post .entry-title a:visited {
+	color: #fff;
+	color: var(--featured-text-color);
+}
+
+.site-main .featured-posts .type-post .entry-title a:hover,
+.site-main .featured-posts .type-post .entry-title a:active {
+	color: rgba(255, 255, 255, 0.75);
+	color: var(--featured-hover-color);
+}
+
+.site-main .featured-posts .type-post .entry-meta {
+	padding: 0.5rem 0 0;
+	color: #fff;
+	color: var(--featured-text-color);
+	background: none;
+}
+
+.site-main .featured-posts .type-post .entry-meta > span::after {
+	color: #fff;
+	color: var(--featured-text-color);
+}
+
+.site-main .featured-posts .type-post .entry-meta a:link,
+.site-main .featured-posts .type-post .entry-meta a:visited {
+	color: rgba(255, 255, 255, 0.75);
+	color: var(--featured-hover-color);
+}
+
+.site-main .featured-posts .type-post p:last-child {
+	margin-bottom: 0;
+}
+
+.site-main .featured-posts .featured-posts-grid {
+	display: flex;
+	margin-right: -1px;
+}
+
+.site-main .featured-posts .featured-posts-grid .post-column {
+	margin-right: 1px;
+	background-color: #333;
+	background-color: var(--featured-background-color);
+}
+
+.site-main .featured-posts .featured-posts-grid .type-post .post-content {
+	border: none;
+}
+
+.site-main .featured-posts .featured-posts-grid .type-post .entry-header {
+	margin: 0;
+}
+
+.site-main .featured-posts .featured-posts-grid .type-post .entry-title {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 17px;
+	font-size: 1.0625rem;
 }
 
 /* Theme Pagination */
@@ -3531,6 +3632,7 @@ figcaption,
 	.type-attachment,
 	.post-navigation,
 	.archive-header.entry-header,
+	.featured-posts,
 	.pagination,
 	.widget,
 	.comments-area,
