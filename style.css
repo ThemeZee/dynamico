@@ -651,7 +651,7 @@ textarea {
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0.8rem;
+	padding: 0.78rem;
 	min-width: 100px;
 	width: 100%;
 	-webkit-appearance: none;
@@ -660,8 +660,8 @@ textarea {
 
 .search-form .search-submit {
 	display: flex;
-	margin-left: 0.5rem;
-	padding: 0.8rem;
+	margin-left: -1px;
+	padding: 0.78rem;
 	align-items: center;
 }
 
@@ -1165,7 +1165,7 @@ body.site-description-hidden .site-header .site-description {
 .header-social-menu .social-icons-menu li a {
 	display: flex;
 	align-items: center;
-	margin: 0 3px 3px 0;
+	margin: 0 1px 1px 0;
 	padding: 0.8rem;
 	color: #fff;
 	color: var(--button-text-color);
