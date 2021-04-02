@@ -51,6 +51,24 @@
 		wp.customize.control( 'dynamico_theme_options[excerpt_more_text]', setupControl );
 	} );
 
+	// Based on https://make.xwp.co/2016/07/24/dependently-contextual-customizer-controls/
+	wp.customize( 'dynamico_theme_options[featured_posts]', function( setting ) {
+		var setupControl = function( control ) {
+			var setActiveState, isDisplayed;
+			isDisplayed = function() {
+				return true === setting.get();
+			};
+			setActiveState = function() {
+				control.active.set( isDisplayed() );
+			};
+			setActiveState();
+			setting.bind( setActiveState );
+			control.active.validate = isDisplayed;
+		};
+		wp.customize.control( 'dynamico_theme_options[featured_category]', setupControl );
+		wp.customize.control( 'dynamico_theme_options[featured_layout]', setupControl );
+	} );
+
 	/**
 	 * The Customizer looks for wp.customizer.controlConstructor[type] functions
 	 * where type == the type member of a WP_Customize_Control

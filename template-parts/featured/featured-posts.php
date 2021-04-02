@@ -10,14 +10,15 @@
 
 // Get Featured Posts category from Database.
 $featured_category = dynamico_get_option( 'featured_category' );
+$featured_layout   = dynamico_get_option( 'featured_layout' );
 
 // Get cached post ids.
-$post_ids = dynamico_get_featured_post_ids( 'featured-content', $featured_category, 4 );
+$post_ids = dynamico_get_featured_post_ids( 'featured-content', $featured_category, $featured_layout );
 
 // Fetch posts from database.
 $featured_query = new WP_Query( array(
 	'post__in'            => $post_ids,
-	'posts_per_page'      => 4,
+	'posts_per_page'      => $featured_layout,
 	'ignore_sticky_posts' => true,
 	'no_found_rows'       => true,
 ) );

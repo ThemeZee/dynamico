@@ -66,12 +66,33 @@ function dynamico_customize_register_featured_settings( $wp_customize ) {
 		)
 	) );
 
+	// Add Settings and Controls for blog image.
+	$wp_customize->add_setting( 'dynamico_theme_options[featured_layout]', array(
+		'default'           => $default['featured_layout'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'dynamico_sanitize_select',
+	) );
+
+	$wp_customize->add_control( 'dynamico_theme_options[featured_layout]', array(
+		'label'    => esc_html__( 'Featured Posts Layout', 'dynamico' ),
+		'section'  => 'dynamico_section_featured',
+		'settings' => 'dynamico_theme_options[featured_layout]',
+		'type'     => 'select',
+		'priority' => 40,
+		'choices'  => array(
+			1 => esc_html__( 'One Post', 'dynamico' ),
+			4 => esc_html__( 'Four Posts', 'dynamico' ),
+		),
+	) );
+
 	// Add Partial for Featured Post Settings.
 	$wp_customize->selective_refresh->add_partial( 'dynamico_featured_posts_partial', array(
 		'selector'         => '.site #featured-posts',
 		'settings'         => array(
 			'dynamico_theme_options[featured_posts]',
 			'dynamico_theme_options[featured_category]',
+			'dynamico_theme_options[featured_layout]',
 		),
 		'render_callback'  => 'dynamico_customize_partial_featured_posts',
 		'fallback_refresh' => false,

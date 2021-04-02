@@ -59,7 +59,7 @@ add_action( 'customize_preview_init', 'dynamico_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function dynamico_customizer_controls_js() {
-	wp_enqueue_script( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.min.js', array(), '20201112', true );
+	wp_enqueue_script( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20201116', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'dynamico_customizer_controls_js' );
 
@@ -68,6 +68,6 @@ add_action( 'customize_controls_enqueue_scripts', 'dynamico_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function dynamico_customizer_controls_css() {
-	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201118' );
+	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201119' );
 }
 add_action( 'customize_controls_print_styles', 'dynamico_customizer_controls_css' );
