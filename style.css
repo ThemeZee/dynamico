@@ -82,7 +82,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--submenu-border-color: rgba(0, 0, 0, 0.5);
 	--featured-background-color: #333;
 	--featured-text-color: #fff;
-	--featured-hover-color: rgba(255, 255, 255, 0.75);
+	--featured-hover-color: rgba(255, 255, 255, 0.6);
 	--featured-border-color: #e84747;
 	--title-color: #333;
 	--title-hover-color: #e84747;
@@ -1725,7 +1725,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 }
 
 .site-main .featured-posts .type-post {
-	margin: 0 0 1px;
+	margin: 0;
 	padding: 0;
 	border: none;
 	box-shadow: none !important;
@@ -1764,7 +1764,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 .site-main .featured-posts .type-post .entry-title a:hover,
 .site-main .featured-posts .type-post .entry-title a:active {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--featured-hover-color);
 }
 
@@ -1782,7 +1782,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 .site-main .featured-posts .type-post .entry-meta a:link,
 .site-main .featured-posts .type-post .entry-meta a:visited {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--featured-hover-color);
 }
 
@@ -1793,6 +1793,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 .site-main .featured-posts .featured-posts-grid {
 	display: flex;
 	margin-right: -1px;
+	margin-top: 1px;
 }
 
 .site-main .featured-posts .featured-posts-grid .post-column {
@@ -1803,6 +1804,9 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 .site-main .featured-posts .featured-posts-grid .type-post .post-content {
 	border: none;
+	border-left: 8px solid;
+	border-color: #e84747;
+	border-color: var(--featured-border-color);
 }
 
 .site-main .featured-posts .featured-posts-grid .type-post .entry-header {

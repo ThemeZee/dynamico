@@ -2,7 +2,7 @@
 	margin: 0 0 1.25rem;
 
 	.type-post {
-		margin: 0 0 1px;
+		margin: 0;
 		padding: 0;
 		border: none;
 		box-shadow: none !important;
@@ -60,6 +60,7 @@
 	.featured-posts-grid {
 		display: flex;
 		margin-right: -1px;
+		margin-top: 1px;
 
 		.post-column {
 			margin-right: 1px;
@@ -69,6 +70,8 @@
 		.type-post {
 			.post-content {
 				border: none;
+				border-left: 8px solid;
+				@include border-color(--featured-border-color);
 			}
 
 			.entry-header {
