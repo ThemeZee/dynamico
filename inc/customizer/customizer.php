@@ -9,6 +9,7 @@
 require( get_template_directory() . '/inc/customizer/sanitize-functions.php' );
 
 // Load Custom Controls.
+require( get_template_directory() . '/inc/customizer/controls/category-dropdown-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/headline-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/links-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/plugin-control.php' );
@@ -17,6 +18,7 @@ require( get_template_directory() . '/inc/customizer/controls/upgrade-control.ph
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/layout-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/featured-posts-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/blog-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/post-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/footer-settings.php' );
@@ -66,6 +68,6 @@ add_action( 'customize_controls_enqueue_scripts', 'dynamico_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function dynamico_customizer_controls_css() {
-	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201117' );
+	wp_enqueue_style( 'dynamico-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201118' );
 }
 add_action( 'customize_controls_print_styles', 'dynamico_customizer_controls_css' );

@@ -4004,3 +4004,7 @@ body.wide-theme-layout .site .site-footer {
 .credit-link-hidden .site-info .credit-link {
 	display: none;
 }
+
+.customize-partial-edit-shortcut-dynamico_featured_posts_partial button {
+	top: -30px;
+}

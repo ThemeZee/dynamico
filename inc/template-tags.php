@@ -361,6 +361,24 @@ if ( ! function_exists( 'dynamico_post_navigation' ) ) :
 endif;
 
 
+/**
+* Display Featured Posts section
+*/
+function dynamico_featured_posts() {
+
+	// Display post slider only if activated.
+	if ( true === dynamico_get_option( 'featured_posts' ) ) :
+
+		echo '<div id="featured-posts" class="featured-posts-wrap">';
+		get_template_part( 'template-parts/featured/featured-posts' );
+		echo '</div>';
+
+	elseif ( is_customize_preview() ) :
+		echo '<div id="featured-posts" class="featured-posts-wrap"></div>';
+	endif;
+}
+
+
 if ( ! function_exists( 'dynamico_pagination' ) ) :
 	/**
 	 * Displays pagination on archive pages

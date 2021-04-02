@@ -17,7 +17,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 	// Add Sections for Post Settings.
 	$wp_customize->add_section( 'dynamico_section_post', array(
 		'title'    => esc_html__( 'Post Settings', 'dynamico' ),
-		'priority' => 50,
+		'priority' => 40,
 		'panel'    => 'dynamico_options_panel',
 	) );
 

@@ -11,9 +11,9 @@
 get_header();
 
 if ( have_posts() ) :
-	do_action( 'dynamico_before_featured_content' );
 
-	get_template_part( 'template-parts/featured/featured-content' );
+	do_action( 'dynamico_before_featured_content' );
+	dynamico_featured_posts();
 
 	do_action( 'dynamico_before_blog' );
 	?>
