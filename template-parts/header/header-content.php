@@ -22,7 +22,7 @@ if ( has_nav_menu( 'social-header' ) || is_active_sidebar( 'header' ) ) : ?>
 
 		<?php if ( has_nav_menu( 'social-header' ) ) : ?>
 
-			<div id="header-social-icons" class="header-social-menu">
+			<div id="header-social-icons" class="header-social-menu-wrap social-menu-wrap">
 
 				<?php
 				wp_nav_menu( array(

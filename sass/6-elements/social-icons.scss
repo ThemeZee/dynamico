@@ -1,8 +1,4 @@
-.header-social-menu {
-	margin-top: 1rem;
-}
-
-.header-social-menu .social-icons-menu {
+.social-menu-wrap .social-icons-menu {
 	display: flex;
 	flex-flow: row wrap;
 	margin: 0;
@@ -12,14 +8,37 @@
 	justify-content: center;
 }
 
-.header-social-menu .social-icons-menu li {
+.social-menu-wrap .social-icons-menu li {
 	margin: 0;
 	padding: 0;
 	border: none;
 	list-style: none;
 }
 
-.header-social-menu .social-icons-menu li a {
+.social-menu-wrap .social-icons-menu li a {
+	margin: 0;
+	padding: 0.6rem;
+}
+
+.social-menu-wrap .social-icons-menu li a:hover,
+.social-menu-wrap .social-icons-menu li a:active {
+	text-decoration: none;
+}
+
+.social-menu-wrap .social-icons-menu li a .icon {
+	margin: 0;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	fill: currentColor;
+}
+
+/* Header Social Menu */
+.header-social-menu-wrap {
+	margin-top: 1rem;
+}
+
+.header-social-menu-wrap .social-icons-menu li a {
 	display: flex;
 	align-items: center;
 	margin: 0 1px 1px 0;
@@ -28,16 +47,13 @@
 	@include background(--button-color);
 }
 
-.header-social-menu .social-icons-menu li a:hover,
-.header-social-menu .social-icons-menu li a:active {
+.header-social-menu-wrap .social-icons-menu li a:hover,
+.header-social-menu-wrap .social-icons-menu li a:active {
 	@include color(--button-hover-text-color);
 	@include background(--button-hover-color);
-	text-decoration: none;
 }
 
-.header-social-menu .social-icons-menu li a .icon {
-	margin: 0;
+.header-social-menu-wrap .social-icons-menu li a .icon {
 	width: 20px;
 	height: 20px;
-	fill: currentColor;
 }
