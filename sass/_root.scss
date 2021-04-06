@@ -61,6 +61,7 @@
 
 	// Footer
 	@include variable(--footer-background-color, $themeColors);
+	@include variable(--footer-overlay-color, $themeColors);
 	@include variable(--footer-text-color, $themeColors);
 	@include variable(--footer-link-color, $themeColors);
 	@include variable(--footer-link-hover-color, $themeColors);

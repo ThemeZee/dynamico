@@ -4,7 +4,9 @@
 }
 
 .site-footer {
+	padding: 0.5rem 1.25rem;
 	@include font-size(14);
+	@include background(--footer-overlay-color);
 }
 
 .site-footer a:link,

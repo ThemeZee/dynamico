@@ -52,6 +52,7 @@
 	--widget-title-text-color: #fff;
 	--widget-border-color: rgba(0, 0, 0, 0.1);
 	--footer-background-color: #333;
+	--footer-overlay-color: rgba(255, 255, 255, 0.05);
 	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
 	--footer-link-hover-color: rgba(255, 255, 255, 0.6);

@@ -92,6 +92,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--widget-title-text-color: #fff;
 	--widget-border-color: rgba(0, 0, 0, 0.1);
 	--footer-background-color: #333;
+	--footer-overlay-color: rgba(255, 255, 255, 0.05);
 	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
 	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
@@ -747,10 +748,6 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 900px;
-}
-
-.site-footer {
-	padding: 1.25rem;
 }
 
 /*--------------------------------------------------------------
@@ -2833,8 +2830,11 @@ figcaption,
 }
 
 .site-footer {
+	padding: 0.5rem 1.25rem;
 	font-size: 14px;
 	font-size: 0.875rem;
+	background-color: rgba(255, 255, 255, 0.05);
+	background-color: var(--footer-overlay-color);
 }
 
 .site-footer a:link,
@@ -3646,10 +3646,6 @@ figcaption,
 	.site-content,
 	.has-sidebar .site-content {
 		padding: 1.5rem 1.5rem 1px;
-	}
-
-	.site-footer {
-		padding: 1.5rem;
 	}
 
 	.type-post,

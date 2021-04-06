@@ -79,13 +79,16 @@ $themeColors: (
 
 	// Footer Widgets
 	--footer-widgets-background-color: #333,
+	--footer-widgets-overlay-color   : rgba(255, 255, 255, 0.05),
 	--footer-widgets-text-color      : #fff,
 	--footer-widgets-link-color      : rgba(255, 255, 255, 0.6),
-	--footer-widgets-link-hover-color: #fff,
+	--footer-widgets-link-hover-color: rgba(255, 255, 255, 0.8),
 	--footer-widgets-border-color    : rgba(255, 255, 255, 0.1),
+	--footer-widgets-title-color     : rgba(255, 255, 255, 0.1),
 
 	// Footer
 	--footer-background-color        : #333,
+	--footer-overlay-color           : rgba(255, 255, 255, 0.05),
 	--footer-text-color              : rgba(255, 255, 255, 0.6),
 	--footer-link-color              : #fff,
 	--footer-link-hover-color        : rgba(255, 255, 255, 0.6),
