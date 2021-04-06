@@ -47,8 +47,8 @@ function dynamico_setup() {
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Main Navigation', 'dynamico' ),
-		'social'  => esc_html__( 'Social Icons', 'dynamico' ),
+		'primary'       => esc_html__( 'Main Navigation', 'dynamico' ),
+		'social-header' => esc_html__( 'Social Icons (Header)', 'dynamico' ),
 	) );
 
 	// Switch default core markup for galleries and captions to output valid HTML5.

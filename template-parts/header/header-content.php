@@ -6,7 +6,7 @@
  * @package Dynamico
  */
 
-if ( has_nav_menu( 'social' ) || is_active_sidebar( 'header' ) ) : ?>
+if ( has_nav_menu( 'social-header' ) || is_active_sidebar( 'header' ) ) : ?>
 
 	<div class="header-content">
 
@@ -20,13 +20,13 @@ if ( has_nav_menu( 'social' ) || is_active_sidebar( 'header' ) ) : ?>
 
 		<?php endif; ?>
 
-		<?php if ( has_nav_menu( 'social' ) ) : ?>
+		<?php if ( has_nav_menu( 'social-header' ) ) : ?>
 
 			<div id="header-social-icons" class="header-social-menu">
 
 				<?php
 				wp_nav_menu( array(
-					'theme_location' => 'social',
+					'theme_location' => 'social-header',
 					'container'      => false,
 					'menu_class'     => 'social-icons-menu',
 					'echo'           => true,

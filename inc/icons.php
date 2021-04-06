@@ -85,7 +85,7 @@ function dynamico_social_icons_menu( $item_output, $item, $depth, $args ) {
 	$social_icons = dynamico_supported_social_icons();
 
 	// Change SVG icon inside social links menu if there is supported URL.
-	if ( 'social' === $args->theme_location ) {
+	if ( 'social-header' === $args->theme_location || 'social-header-bar' === $args->theme_location || 'social-footer' === $args->theme_location ) {
 		$icon = 'star';
 		foreach ( $social_icons as $attr => $value ) {
 			if ( false !== strpos( $item_output, $attr ) ) {
