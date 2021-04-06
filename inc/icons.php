@@ -131,6 +131,7 @@ function dynamico_supported_social_icons() {
 		'mailto:'         => 'envelope',
 		'medium.com'      => 'medium-m',
 		'meetup.com'      => 'meetup',
+		'patreon'         => 'patreon',
 		'pinterest'       => 'pinterest-p',
 		'getpocket.com'   => 'get-pocket',
 		'reddit.com'      => 'reddit-alien',
