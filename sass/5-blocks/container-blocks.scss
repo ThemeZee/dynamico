@@ -26,3 +26,8 @@
 	@include color(--light-text-color);
 	@include font-size(14);
 }
+
+/* Search Block */
+.wp-block-search .wp-block-search__label {
+	width: auto;
+}

@@ -20,9 +20,26 @@ body.wide-theme-layout .site {
 }
 
 @media only screen and (min-width: 480px) {
-	body.wide-theme-layout .site {
+	body.wide-theme-layout {
 		.site-content {
 			background: none;
+		}
+
+		&:not(.is-blog-page):not(.has-sidebar) {
+			.site-content {
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
+				border: 1px solid;
+				@include border-color(--content-border-color);
+				background: #fff;
+				max-width: calc(#{$themeWidth} - 3rem);
+			}
+
+			&.has-box-shadow {
+				.site-content {
+					box-shadow: 0 0 4px #ddd;
+				}
+			}
 		}
 	}
 }
@@ -35,6 +52,29 @@ body.wide-theme-layout .site {
 
 			.primary-navigation {
 				max-width: $themeWidth;
+			}
+		}
+	}
+}
+
+@media only screen and ( min-width: calc( #{$themeWidth} ) ) {
+	body.wide-theme-layout {
+		&:not(.is-blog-page):not(.has-sidebar) {
+			.entry-content > .alignfull {
+				margin-left: calc(100% / 2 - calc(#{$themeWidth} - 3rem) / 2);
+				margin-right: calc(100% / 2 - calc(#{$themeWidth} - 3rem) / 2);
+				max-width: calc(#{$themeWidth} - 3rem);
+			}
+		}
+	}
+
+	body.wide-theme-layout.page-template-template-fullwidth,
+	body.wide-theme-layout.page-template-template-fullwidth-no-title {
+		&:not(.is-blog-page):not(.has-sidebar) {
+			.entry-content > .alignwide {
+				margin-left: calc(100% / 2 - calc(#{$themeWidth} - 3rem) / 2);
+				margin-right: calc(100% / 2 - calc(#{$themeWidth} - 3rem) / 2);
+				max-width: calc(#{$themeWidth} - 3rem);
 			}
 		}
 	}
