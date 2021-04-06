@@ -1145,7 +1145,6 @@ body.site-description-hidden .site-header .site-description {
 	padding: 0;
 	border: none;
 	list-style: none;
-	justify-content: center;
 }
 
 .social-menu-wrap .social-icons-menu li {
@@ -1209,6 +1208,25 @@ body.site-description-hidden .site-header .site-description {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 900px;
+}
+
+.sidebar .widget .widget-title {
+	margin: 0 0 1rem;
+	padding: 0.5rem 0.75rem;
+	color: #fff;
+	color: var(--widget-title-text-color);
+	background-color: #333;
+	background-color: var(--widget-title-background-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: var(--widget-title-font);
+	font-weight: normal;
+	font-weight: var(--widget-title-font-weight);
+	text-transform: uppercase;
+	text-transform: var(--widget-title-text-transform);
+	line-height: 1.4;
+	line-height: var(--title-line-height);
 }
 
 @media only screen and (min-width: 480px) {
@@ -2374,24 +2392,10 @@ p.has-background {
 }
 
 .widget .widget-title {
-	margin: 0 0 1rem;
-	padding: 0.5rem 0.75rem;
-	color: #fff;
-	color: var(--widget-title-text-color);
-	background-color: #333;
-	background-color: var(--widget-title-background-color);
+	font-size: 20px;
+	font-size: 1.25rem;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	font-family: "Ubuntu", arial, helvetica, sans-serif;
-	font-family: var(--widget-title-font);
-	font-weight: normal;
-	font-weight: var(--widget-title-font-weight);
-	text-transform: uppercase;
-	text-transform: var(--widget-title-text-transform);
-	line-height: 1.4;
-	line-height: var(--title-line-height);
 }
 
 .widget ul {
