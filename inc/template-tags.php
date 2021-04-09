@@ -201,6 +201,26 @@ if ( ! function_exists( 'dynamico_post_image_page' ) ) :
 endif;
 
 
+if ( ! function_exists( 'dynamico_post_image_featured_content' ) ) :
+	/**
+	 * Displays the featured image in the featured content section.
+	 */
+	function dynamico_post_image_featured_content() {
+		if ( has_post_thumbnail() ) :
+			?>
+
+			<figure class="post-image post-image-featured-content">
+				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+					<?php the_post_thumbnail( 'dynamico-featured-content' ); ?>
+				</a>
+			</figure>
+
+			<?php
+		endif;
+	}
+endif;
+
+
 if ( ! function_exists( 'dynamico_entry_meta' ) ) :
 	/**
 	 * Displays the date and author of a post

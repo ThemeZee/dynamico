@@ -39,6 +39,7 @@ function dynamico_setup() {
 	set_post_thumbnail_size( 900, 9999 );
 
 	// Add custom image sizes.
+	add_image_size( 'dynamico-featured-content', 900, 300, true );
 	add_image_size( 'dynamico-ultra-wide', 900, 300, true );
 	add_image_size( 'dynamico-landscape', 1280, 720, true );
 	add_image_size( 'dynamico-classic', 900, 675, true );

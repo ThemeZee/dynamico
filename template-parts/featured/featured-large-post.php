@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php dynamico_post_image_archives(); ?>
+	<?php dynamico_post_image_featured_content(); ?>
 
 	<div class="post-content">
 
