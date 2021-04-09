@@ -1817,8 +1817,31 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 	color: var(--featured-hover-color);
 }
 
-.site-main .featured-posts .type-post p:last-child {
-	margin-bottom: 0;
+.site-main .featured-posts .type-post p {
+	margin-bottom: 0.75rem;
+}
+
+.site-main .featured-posts .type-post .more-link {
+	padding: 0;
+	font-size: inherit;
+	font-style: italic;
+	color: #fff;
+	color: var(--featured-text-color);
+	background: none;
+}
+
+.site-main .featured-posts .type-post .more-link:link,
+.site-main .featured-posts .type-post .more-link:visited {
+	color: #fff;
+	color: var(--featured-text-color);
+}
+
+.site-main .featured-posts .type-post .more-link:hover,
+.site-main .featured-posts .type-post .more-link:active,
+.site-main .featured-posts .type-post .more-link:focus {
+	color: rgba(255, 255, 255, 0.6);
+	color: var(--featured-hover-color);
+	background: none;
 }
 
 .site-main .featured-posts .featured-posts-grid {

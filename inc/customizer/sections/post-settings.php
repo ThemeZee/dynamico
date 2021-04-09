@@ -233,7 +233,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[meta_tags]',
 		'type'     => 'checkbox',
-		'priority' => 130,
+		'priority' => 140,
 	) );
 
 	// Add Setting and Control for showing post categories.
@@ -249,7 +249,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[single_meta_categories]',
 		'type'     => 'checkbox',
-		'priority' => 140,
+		'priority' => 150,
 	) );
 
 	// Add Setting and Control for showing post navigation.
@@ -265,7 +265,7 @@ function dynamico_customize_register_post_settings( $wp_customize ) {
 		'section'  => 'dynamico_section_post',
 		'settings' => 'dynamico_theme_options[post_navigation]',
 		'type'     => 'checkbox',
-		'priority' => 150,
+		'priority' => 160,
 	) );
 }
 add_action( 'customize_register', 'dynamico_customize_register_post_settings' );

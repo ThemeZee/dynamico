@@ -52,8 +52,28 @@
 			@include color(--featured-hover-color);
 		}
 
-		p:last-child {
-			margin-bottom: 0;
+		p {
+			margin-bottom: 0.75rem;
+		}
+
+		.more-link {
+			padding: 0;
+			font-size: inherit;
+			font-style: italic;
+			@include color(--featured-text-color);
+			background: none;
+		}
+
+		.more-link:link,
+		.more-link:visited {
+			@include color(--featured-text-color);
+		}
+
+		.more-link:hover,
+		.more-link:active,
+		.more-link:focus {
+			@include color(--featured-hover-color);
+			background: none;
 		}
 	}
 
