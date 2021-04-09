@@ -36,13 +36,13 @@ function dynamico_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 900, 9999 );
+	set_post_thumbnail_size( 1800, 9999 );
 
 	// Add custom image sizes.
-	add_image_size( 'dynamico-featured-content', 900, 300, true );
-	add_image_size( 'dynamico-ultra-wide', 900, 300, true );
-	add_image_size( 'dynamico-landscape', 1280, 720, true );
-	add_image_size( 'dynamico-classic', 900, 675, true );
+	add_image_size( 'dynamico-featured-content', 1800, 600, true );
+	add_image_size( 'dynamico-ultra-wide', 1800, 600, true );
+	add_image_size( 'dynamico-landscape', 1840, 1035, true );
+	add_image_size( 'dynamico-classic', 1800, 1350, true );
 	add_image_size( 'dynamico-square', 900, 900, true );
 	add_image_size( 'dynamico-portrait', 900, 1200, true );
 
@@ -71,8 +71,8 @@ function dynamico_setup() {
 	// Set up the WordPress core custom header feature.
 	add_theme_support( 'custom-header', apply_filters( 'dynamico_custom_header_args', array(
 		'header-text' => false,
-		'width'       => 1240,
-		'height'      => 200,
+		'width'       => 2680,
+		'height'      => 600,
 		'flex-width'  => true,
 		'flex-height' => true,
 	) ) );
