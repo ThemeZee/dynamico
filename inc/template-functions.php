@@ -270,3 +270,25 @@ add_action( 'save_post', 'dynamico_flush_featured_post_ids' );
 add_action( 'deleted_post', 'dynamico_flush_featured_post_ids' );
 add_action( 'customize_save_after', 'dynamico_flush_featured_post_ids' );
 add_action( 'switch_theme', 'dynamico_flush_featured_post_ids' );
+
+
+/**
+ * Exclude Featured Post IDs from main query
+ *
+ * @return array Post IDs
+ */
+function dynamico_exclude_featured_post_ids_from_blog( $query ) {
+	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+
+		// Get Featured Posts category from Database.
+		$featured_category = dynamico_get_option( 'featured_category' );
+		$featured_layout   = dynamico_get_option( 'featured_layout' );
+
+		// Get cached post ids.
+		$post_ids = dynamico_get_featured_post_ids( 'featured-content', $featured_category, $featured_layout );
+
+		// Exclude Posts
+		$query->set( 'post__not_in', $post_ids );
+	}
+}
+add_action( 'pre_get_posts', 'dynamico_exclude_featured_post_ids_from_blog' );
