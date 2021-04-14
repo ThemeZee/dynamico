@@ -97,7 +97,7 @@ $themeColors: (
 
 // Theme Fonts
 $baseFont: "Ubuntu", arial, helvetica, sans-serif;
-$titleFont: "Fira Sans", arial, helvetica, sans-serif;
+$titleFont: "Francois One", arial, helvetica, sans-serif;
 $themeFonts: (
 	--text-font: $baseFont,
 	--title-font: $titleFont,
@@ -107,8 +107,8 @@ $themeFonts: (
 
 // Font Weight.
 $fontWeight: (
-	--title-font-weight: bold,
-	--navi-font-weight: bold,
+	--title-font-weight: normal,
+	--navi-font-weight: normal,
 	--widget-title-font-weight: normal,
 );
 

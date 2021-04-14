@@ -58,11 +58,11 @@
 	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
 	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: "Ubuntu", arial, helvetica, sans-serif;
-	--title-font: "Fira Sans", arial, helvetica, sans-serif;
-	--navi-font: "Fira Sans", arial, helvetica, sans-serif;
+	--title-font: "Francois One", arial, helvetica, sans-serif;
+	--navi-font: "Francois One", arial, helvetica, sans-serif;
 	--widget-title-font: "Ubuntu", arial, helvetica, sans-serif;
-	--title-font-weight: bold;
-	--navi-font-weight: bold;
+	--title-font-weight: normal;
+	--navi-font-weight: normal;
 	--widget-title-font-weight: normal;
 	--title-text-transform: none;
 	--navi-text-transform: uppercase;
@@ -120,9 +120,9 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: "Fira Sans", arial, helvetica, sans-serif;
+	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
-	font-weight: bold;
+	font-weight: normal;
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
@@ -270,7 +270,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	margin-bottom: 0.75em;
 	color: #333;
 	color: var(--title-color);
-	font-family: "Fira Sans", arial, helvetica, sans-serif;
+	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	line-height: 1.4;
 	line-height: var(--title-line-height);
@@ -1054,9 +1054,9 @@ p.has-background {
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: "Fira Sans", arial, helvetica, sans-serif;
+	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
-	font-weight: bold;
+	font-weight: normal;
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
