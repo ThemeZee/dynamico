@@ -18,14 +18,15 @@ function dynamico_gutenberg_support() {
 
 	// Define block color palette.
 	$color_palette = apply_filters( 'dynamico_color_palette', array(
-		'primary_color'    => '#2a4861',
-		'secondary_color'  => '#5d7b94',
-		'tertiary_color'   => '#90aec7',
-		'accent_color'     => '#60945d',
-		'highlight_color'  => '#915d94',
-		'light_gray_color' => '#ededef',
-		'gray_color'       => '#84848f',
-		'dark_gray_color'  => '#24242f',
+		'primary_color'    => '#e84747',
+		'secondary_color'  => '#cb3e3e',
+		'tertiary_color'   => '#ae3535',
+		'contrast_color'   => '#4747e8',
+		'accent_color'     => '#47e897',
+		'highlight_color'  => '#e8e847',
+		'light_gray_color' => '#eeeeee',
+		'gray_color'       => '#777777',
+		'dark_gray_color'  => '#333333',
 	) );
 
 	// Add theme support for block color palette.
@@ -44,6 +45,11 @@ function dynamico_gutenberg_support() {
 			'name'  => esc_html_x( 'Tertiary', 'block color', 'dynamico' ),
 			'slug'  => 'tertiary',
 			'color' => esc_html( $color_palette['tertiary_color'] ),
+		),
+		array(
+			'name'  => esc_html_x( 'Contrast', 'block color', 'dynamico' ),
+			'slug'  => 'contrast',
+			'color' => esc_html( $color_palette['contrast_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Accent', 'block color', 'dynamico' ),

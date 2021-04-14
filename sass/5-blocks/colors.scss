@@ -14,6 +14,11 @@
 	@include color(--tertiary-color);
 }
 
+.has-contrast-color,
+.wp-block-button__link.has-contrast-color {
+	@include color(--contrast-color);
+}
+
 .has-accent-color,
 .wp-block-button__link.has-accent-color {
 	@include color(--accent-color);
@@ -63,6 +68,11 @@
 .has-tertiary-background-color,
 .has-tertiary-background-color[class] {
 	@include background(--tertiary-color);
+}
+
+.has-contrast-background-color,
+.has-contrast-background-color[class] {
+	@include background(--contrast-color);
 }
 
 .has-accent-background-color,

@@ -17,7 +17,7 @@ function dynamico_customize_register_footer_settings( $wp_customize ) {
 	// Add Sections for Post Settings.
 	$wp_customize->add_section( 'dynamico_section_footer', array(
 		'title'    => esc_html__( 'Footer Settings', 'dynamico' ),
-		'priority' => 90,
+		'priority' => 190,
 		'panel'    => 'dynamico_options_panel',
 	) );
 
