@@ -54,7 +54,7 @@ function dynamico_default_options() {
 		'site_description'       => true,
 		'theme_layout'           => 'centered',
 		'sidebar_position'       => 'right-sidebar',
-		'box_shadow'             => true,
+		'box_shadow'             => false,
 		'blog_layout'            => 'two-column-grid',
 		'blog_image'             => 'dynamico-ultra-wide',
 		'blog_content'           => 'excerpt',

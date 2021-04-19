@@ -1781,8 +1781,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 }
 
 .site-main .featured-posts .type-post .entry-title {
-	padding: 0;
-	border: none;
+	border-bottom: 2px solid;
 	color: #fff;
 	color: var(--featured-text-color);
 	border-color: #fff;

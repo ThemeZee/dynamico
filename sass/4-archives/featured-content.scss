@@ -21,8 +21,7 @@
 		}
 
 		.entry-title {
-			padding: 0;
-			border: none;
+			border-bottom: 2px solid;
 			@include color(--featured-text-color);
 			@include border-color(--featured-text-color);
 		}
