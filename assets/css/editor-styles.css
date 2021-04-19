@@ -17,6 +17,7 @@
 	--light-gray-color: #eeeeee;
 	--gray-color: #777777;
 	--dark-gray-color: #333333;
+	--page-background-color: #fff;
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.6);
 	--light-text-color: rgba(0, 0, 0, 0.4);
@@ -74,6 +75,11 @@
 /*--------------------------------------------------------------
 # - Layout
 --------------------------------------------------------------*/
+.edit-post-visual-editor {
+	background-color: #fff;
+	background-color: var(--page-background-color);
+}
+
 .wp-block {
 	max-width: 900px;
 }
@@ -106,20 +112,12 @@
 	max-width: 1340px;
 }
 
-/* Centered Theme Layout */
-.dynamico-centered-theme-layout .editor-styles-wrapper {
-	max-width: 1340px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	color: #333;
 	color: var(--title-color);
-	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 20px;
+	font-size: 1.25rem;
 	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: normal;
@@ -127,26 +125,32 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.4;
+	line-height: var(--title-line-height);
+	padding-bottom: 0.5rem;
+	border: none;
+	border-bottom: 5px solid;
+	border-color: #333;
+	border-color: var(--title-color);
 }
 
 @media only screen and (min-width: 640px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 22px;
+		font-size: 1.375rem;
 	}
 }
 
 @media only screen and (min-width: 960px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		font-size: 32px;
-		font-size: 2rem;
+		font-size: 24px;
+		font-size: 1.5rem;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		font-size: 36px;
-		font-size: 2.25rem;
+		font-size: 28px;
+		font-size: 1.75rem;
 	}
 }
 
@@ -156,6 +160,11 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	background-image: linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd), linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
 	background-size: 20px 20px;
 	background-position: 0 0, 10px 10px;
+}
+
+body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input {
+	border-bottom: none;
+	padding-bottom: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -178,8 +187,8 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	font-size: inherit;
 	line-height: 1.75;
 	line-height: var(--text-line-height);
-	margin-top: 1.75rem;
-	margin-bottom: 1.75rem;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .editor-styles-wrapper .mce-content-body {
@@ -187,24 +196,10 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	line-height: var(--text-line-height);
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 960px) {
 	.editor-styles-wrapper {
 		font-size: 17px;
 		font-size: 1.0625rem;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.editor-styles-wrapper {
-		font-size: 18px;
-		font-size: 1.125rem;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.editor-styles-wrapper {
-		font-size: 19px;
-		font-size: 1.1875rem;
 	}
 }
 
@@ -272,6 +267,10 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	color: var(--title-color);
 	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
+	font-weight: normal;
+	font-weight: var(--title-font-weight);
+	text-transform: none;
+	text-transform: var(--title-text-transform);
 	line-height: 1.4;
 	line-height: var(--title-line-height);
 }
@@ -287,33 +286,33 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 }
 
 .editor-styles-wrapper h1 {
-	font-size: 36px;
-	font-size: 2.25rem;
-}
-
-.editor-styles-wrapper h2 {
 	font-size: 28px;
 	font-size: 1.75rem;
 }
 
-.editor-styles-wrapper h3 {
+.editor-styles-wrapper h2 {
 	font-size: 24px;
 	font-size: 1.5rem;
 }
 
-.editor-styles-wrapper h4 {
+.editor-styles-wrapper h3 {
 	font-size: 22px;
 	font-size: 1.375rem;
 }
 
-.editor-styles-wrapper h5 {
+.editor-styles-wrapper h4 {
 	font-size: 20px;
 	font-size: 1.25rem;
 }
 
-.editor-styles-wrapper h6 {
+.editor-styles-wrapper h5 {
 	font-size: 19px;
 	font-size: 1.1875rem;
+}
+
+.editor-styles-wrapper h6 {
+	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 /* Blockquotes */

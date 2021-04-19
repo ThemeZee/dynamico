@@ -57,6 +57,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--light-gray-color: #eeeeee;
 	--gray-color: #777777;
 	--dark-gray-color: #333333;
+	--page-background-color: #fff;
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.6);
 	--light-text-color: rgba(0, 0, 0, 0.4);
@@ -326,33 +327,33 @@ h6 {
 }
 
 h1 {
-	font-size: 36px;
-	font-size: 2.25rem;
-}
-
-h2 {
 	font-size: 28px;
 	font-size: 1.75rem;
 }
 
-h3 {
+h2 {
 	font-size: 24px;
 	font-size: 1.5rem;
 }
 
-h4 {
+h3 {
 	font-size: 22px;
 	font-size: 1.375rem;
 }
 
-h5 {
+h4 {
 	font-size: 20px;
 	font-size: 1.25rem;
 }
 
-h6 {
+h5 {
 	font-size: 19px;
 	font-size: 1.1875rem;
+}
+
+h6 {
+	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 p {
@@ -741,7 +742,8 @@ textarea {
 
 .site-content {
 	padding: 1.25rem 1.25rem 1px;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .site-main {

@@ -14,7 +14,7 @@
 
 .site-content {
 	padding: 1.25rem 1.25rem 1px;
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .site-main {

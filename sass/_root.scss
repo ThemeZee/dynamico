@@ -11,6 +11,9 @@
 	@include variable(--gray-color, $themeColors);
 	@include variable(--dark-gray-color, $themeColors);
 
+	// Background Colors
+	@include variable(--page-background-color, $themeColors);
+
 	// Text Colors
 	@include variable(--text-color, $themeColors);
 	@include variable(--medium-text-color, $themeColors);

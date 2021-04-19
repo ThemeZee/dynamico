@@ -9,29 +9,17 @@
 .editor-styles-wrapper p {
 	font-size: inherit;
 	@include line-height(--text-line-height);
-	margin-top: 1.75rem;
-	margin-bottom: 1.75rem;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .editor-styles-wrapper .mce-content-body {
 	@include line-height(--text-line-height);
 }
 
-@media only screen and (min-width: 640px) {
-	.editor-styles-wrapper {
-		@include font-size(17);
-	}
-}
-
 @media only screen and (min-width: 960px) {
 	.editor-styles-wrapper {
-		@include font-size(18);
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.editor-styles-wrapper {
-		@include font-size(19);
+		@include font-size(17);
 	}
 }
 
@@ -90,6 +78,8 @@
 	margin-bottom: 0.75em;
 	@include color(--title-color);
 	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
 	@include line-height(--title-line-height);
 
 	&.mce-content-body {
@@ -98,27 +88,27 @@
 }
 
 .editor-styles-wrapper h1 {
-	@include font-size(36);
-}
-
-.editor-styles-wrapper h2 {
 	@include font-size(28);
 }
 
-.editor-styles-wrapper h3 {
+.editor-styles-wrapper h2 {
 	@include font-size(24);
 }
 
-.editor-styles-wrapper h4 {
+.editor-styles-wrapper h3 {
 	@include font-size(22);
 }
 
-.editor-styles-wrapper h5 {
+.editor-styles-wrapper h4 {
 	@include font-size(20);
 }
 
-.editor-styles-wrapper h6 {
+.editor-styles-wrapper h5 {
 	@include font-size(19);
+}
+
+.editor-styles-wrapper h6 {
+	@include font-size(18);
 }
 
 /* Blockquotes */

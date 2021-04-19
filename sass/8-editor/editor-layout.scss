@@ -1,3 +1,7 @@
+.edit-post-visual-editor {
+	@include background(--page-background-color);
+}
+
 .wp-block {
 	max-width: $contentWidth;
 }
@@ -30,39 +34,35 @@
 	max-width: $wideBlockFullwidth;
 }
 
-/* Centered Theme Layout */
-.dynamico-centered-theme-layout .editor-styles-wrapper {
-	max-width: $themeWidth;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	@include color(--title-color);
-	@include font-size(24);
+	@include font-size(20);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
-	line-height: 1.4;
+	@include line-height(--title-line-height);
+	padding-bottom: 0.5rem;
+	border: none;
+	border-bottom: 5px solid;
+	@include border-color(--title-color);
 }
 
 @media only screen and (min-width: 640px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		@include font-size(28);
+		@include font-size(22);
 	}
 }
 
 @media only screen and (min-width: 960px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		@include font-size(32);
+		@include font-size(24);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		@include font-size(36);
+		@include font-size(28);
 	}
 }
 
@@ -74,4 +74,9 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 		linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
 	background-size: 20px 20px;
 	background-position: 0 0, 10px 10px;
+
+	.editor-post-title__block .editor-post-title__input {
+		border-bottom: none;
+		padding-bottom: 1rem;
+	}
 }
