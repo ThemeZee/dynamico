@@ -27,8 +27,12 @@
 }
 
 .tz-magazine-block .tz-entry-meta {
-	margin-top: 0.5rem;
-	@include font-size(15);
+	@include font-size(14);
+}
+
+.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-meta {
+	@include font-size(13);
+	padding: 0.3rem 0.8rem;
 }
 
 .tz-magazine-block .tz-meta-field {
@@ -51,11 +55,6 @@
 	.tz-magazine-post .tz-entry-image,
 	.tz-magazine-post .tz-entry-header {
 		margin-bottom: 0;
-	}
-
-	.tz-magazine-post .tz-entry-meta {
-		margin-top: 0.25rem;
-		@include font-size(15);
 	}
 }
 
@@ -82,7 +81,11 @@
 	}
 
 	.tz-magazine-block .tz-entry-meta {
-		@include font-size(16);
+		@include font-size(15);
+	}
+
+	.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-meta {
+		@include font-size(14);
 	}
 
 	.tz-magazine-block .tz-entry-content {

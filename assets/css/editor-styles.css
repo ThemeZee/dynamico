@@ -966,9 +966,14 @@ p.has-background {
 }
 
 .tz-magazine-block .tz-entry-meta {
-	margin-top: 0.5rem;
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-meta {
+	font-size: 13px;
+	font-size: 0.8125rem;
+	padding: 0.3rem 0.8rem;
 }
 
 .tz-magazine-block .tz-meta-field {
@@ -992,12 +997,6 @@ p.has-background {
 .tz-magazine-thumbnail-list .tz-magazine-post .tz-entry-image,
 .tz-magazine-thumbnail-list .tz-magazine-post .tz-entry-header {
 	margin-bottom: 0;
-}
-
-.tz-magazine-thumbnail-list .tz-magazine-post .tz-entry-meta {
-	margin-top: 0.25rem;
-	font-size: 15px;
-	font-size: 0.9375rem;
 }
 
 @media only screen and (min-width: 960px) {
@@ -1026,8 +1025,13 @@ p.has-background {
 	}
 
 	.tz-magazine-block .tz-entry-meta {
-		font-size: 16px;
-		font-size: 1rem;
+		font-size: 15px;
+		font-size: 0.9375rem;
+	}
+
+	.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-meta {
+		font-size: 14px;
+		font-size: 0.875rem;
 	}
 
 	.tz-magazine-block .tz-entry-content {
