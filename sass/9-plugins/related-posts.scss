@@ -2,6 +2,18 @@
 .themezee-related-posts {
 	margin: 0 0 1.5rem;
 
+	.related-posts-title {
+		margin: 0 0 1rem;
+		padding: 0.5rem 0.75rem;
+		@include color(--widget-title-text-color);
+		@include background(--widget-title-background-color);
+		@include font-size(15);
+		@include font-family(--widget-title-font);
+		@include font-weight(--widget-title-font-weight);
+		@include text-transform(--widget-title-text-transform);
+		@include line-height(--title-line-height);
+	}
+
 	.entry-meta > span:last-child::after {
 		content: "";
 	}
@@ -23,7 +35,7 @@
 	}
 
 	.related-posts-list li .entry-header {
-		margin-bottom: 0.5rem;
+		margin-bottom: 0;
 	}
 
 	.related-posts-list li .entry-title {
@@ -49,7 +61,7 @@
 	}
 
 	.related-posts-columns .related-post-column .entry-header {
-		margin-bottom: 0.5rem;
+		margin-bottom: 0;
 	}
 
 	.related-posts-columns .related-post-column .entry-title {
@@ -90,8 +102,10 @@
 		}
 
 		.related-posts-list li .entry-meta {
-			margin: 0;
+			margin: 0.5rem 0 0;
+			padding: 0;
 			align-content: flex-start;
+			background: none;
 		}
 
 		.related-posts-two-columns,

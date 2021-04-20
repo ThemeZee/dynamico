@@ -486,7 +486,7 @@ if ( ! function_exists( 'dynamico_related_posts' ) ) :
 			themezee_related_posts( array(
 				'container'    => 'div',
 				'class'        => 'related-posts',
-				'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
+				'before_title' => '<header class="related-posts-header"><h2 class="related-posts-title entry-title">',
 				'after_title'  => '</h2></header>',
 			) );
 

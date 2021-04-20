@@ -3175,6 +3175,25 @@ figcaption,
 	margin: 0 0 1.5rem;
 }
 
+.themezee-related-posts .related-posts-title {
+	margin: 0 0 1rem;
+	padding: 0.5rem 0.75rem;
+	color: #fff;
+	color: var(--widget-title-text-color);
+	background-color: #333;
+	background-color: var(--widget-title-background-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: var(--widget-title-font);
+	font-weight: normal;
+	font-weight: var(--widget-title-font-weight);
+	text-transform: uppercase;
+	text-transform: var(--widget-title-text-transform);
+	line-height: 1.4;
+	line-height: var(--title-line-height);
+}
+
 .themezee-related-posts .entry-meta > span:last-child::after {
 	content: "";
 }
@@ -3196,7 +3215,7 @@ figcaption,
 }
 
 .themezee-related-posts .related-posts-list li .entry-header {
-	margin-bottom: 0.5rem;
+	margin-bottom: 0;
 }
 
 .themezee-related-posts .related-posts-list li .entry-title {
@@ -3224,7 +3243,7 @@ figcaption,
 }
 
 .themezee-related-posts .related-posts-columns .related-post-column .entry-header {
-	margin-bottom: 0.5rem;
+	margin-bottom: 0;
 }
 
 .themezee-related-posts .related-posts-columns .related-post-column .entry-title {
@@ -3266,8 +3285,10 @@ figcaption,
 	}
 
 	.themezee-related-posts .related-posts-list li .entry-meta {
-		margin: 0;
+		margin: 0.5rem 0 0;
+		padding: 0;
 		align-content: flex-start;
+		background: none;
 	}
 
 	.themezee-related-posts .related-posts-two-columns,
