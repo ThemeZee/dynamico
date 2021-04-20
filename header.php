@@ -49,10 +49,10 @@
 
 		<?php dynamico_header_image(); ?>
 
+		<?php dynamico_breadcrumbs(); ?>
+
 		<div id="content" class="site-content">
 
 			<main id="main" class="site-main" role="main">
-
-				<?php dynamico_breadcrumbs(); ?>
 
 				<?php do_action( 'dynamico_before_content' ); ?>

@@ -2975,15 +2975,20 @@ figcaption,
 
 /* Styling for ThemeZee Breadcrumbs Plugin */
 .breadcrumbs {
-	margin: 0 0 1.25rem;
-	padding: 0;
+	margin: 0;
+	padding: 0.5rem 0.75rem;
 	word-wrap: break-word;
 	box-sizing: border-box;
+	background-color: #fff;
+	background-color: var(--header-background-color);
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--content-border-color);
 }
 
 .breadcrumbs-container {
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 13px;
+	font-size: 0.8125rem;
 }
 
 .breadcrumbs .trail-browse,
@@ -2996,9 +3001,12 @@ figcaption,
 
 .breadcrumbs .trail-browse {
 	margin-right: 0.5rem;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: var(--text-font);
 	font-weight: normal;
-	font-size: 14px;
-	font-size: 0.875rem;
+	text-transform: none;
 }
 
 .breadcrumbs .trail-items {
@@ -3045,8 +3053,8 @@ figcaption,
 @media only screen and (min-width: 640px) {
 	.breadcrumbs-container,
 	.breadcrumbs .trail-browse {
-		font-size: 15px;
-		font-size: 0.9375rem;
+		font-size: 14px;
+		font-size: 0.875rem;
 	}
 }
 
