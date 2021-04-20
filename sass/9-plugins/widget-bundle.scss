@@ -1,7 +1,7 @@
 /* ThemeZee Widget Bundle Plugin */
 .tzwb-posts-list {
 	margin: 0;
-	padding: 0;
+	padding-left: 0.75rem;
 }
 
 .tzwb-posts-list li {
@@ -23,14 +23,16 @@
 .tzwb-posts-list .wp-post-image {
 	float: left;
 	margin: 0 1rem 0 0;
-	max-width: 55px;
+	max-width: 75px;
 	height: auto;
 }
 
 .tzwb-posts-list .tzwb-entry-meta {
 	margin: 0;
-	@include font-size(14);
-	@include color(--light-text-color);
+	padding: 0;
+	@include font-size(13);
+	@include color(--medium-text-color);
+	background: none;
 }
 
 .tzwb-posts-list .tzwb-entry-meta span:last-child::after {
@@ -39,13 +41,13 @@
 
 .tzwb-posts-list .tzwb-entry-meta a:link,
 .tzwb-posts-list .tzwb-entry-meta a:visited {
-	@include color(--light-text-color);
+	@include color(--medium-text-color);
 	text-decoration: none;
 }
 
 .tzwb-posts-list .tzwb-entry-meta a:hover,
 .tzwb-posts-list .tzwb-entry-meta a:active {
-	@include color(--text-color);
+	text-decoration: underline;
 }
 
 /* Comments List */
@@ -86,7 +88,7 @@
 
 .tzwb-tabbed-content .tzwb-tabnavi {
 	display: flex;
-	margin: 0;
+	margin: -0.5rem -0.5rem 0;
 	padding: 0;
 	flex-flow: row wrap;
 	list-style: none;

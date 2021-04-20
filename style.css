@@ -3401,7 +3401,7 @@ figcaption,
 /* ThemeZee Widget Bundle Plugin */
 .tzwb-posts-list {
 	margin: 0;
-	padding: 0;
+	padding-left: 0.75rem;
 }
 
 .tzwb-posts-list li {
@@ -3423,16 +3423,18 @@ figcaption,
 .tzwb-posts-list .wp-post-image {
 	float: left;
 	margin: 0 1rem 0 0;
-	max-width: 55px;
+	max-width: 75px;
 	height: auto;
 }
 
 .tzwb-posts-list .tzwb-entry-meta {
 	margin: 0;
-	font-size: 14px;
-	font-size: 0.875rem;
-	color: rgba(0, 0, 0, 0.4);
-	color: var(--light-text-color);
+	padding: 0;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	color: rgba(0, 0, 0, 0.6);
+	color: var(--medium-text-color);
+	background: none;
 }
 
 .tzwb-posts-list .tzwb-entry-meta span:last-child::after {
@@ -3441,15 +3443,14 @@ figcaption,
 
 .tzwb-posts-list .tzwb-entry-meta a:link,
 .tzwb-posts-list .tzwb-entry-meta a:visited {
-	color: rgba(0, 0, 0, 0.4);
-	color: var(--light-text-color);
+	color: rgba(0, 0, 0, 0.6);
+	color: var(--medium-text-color);
 	text-decoration: none;
 }
 
 .tzwb-posts-list .tzwb-entry-meta a:hover,
 .tzwb-posts-list .tzwb-entry-meta a:active {
-	color: rgba(0, 0, 0, 0.9);
-	color: var(--text-color);
+	text-decoration: underline;
 }
 
 /* Comments List */
@@ -3492,7 +3493,7 @@ figcaption,
 
 .tzwb-tabbed-content .tzwb-tabnavi {
 	display: flex;
-	margin: 0;
+	margin: -0.5rem -0.5rem 0;
 	padding: 0;
 	flex-flow: row wrap;
 	list-style: none;
