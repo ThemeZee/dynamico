@@ -2,17 +2,17 @@
 Author URI: https://themezee.com/
 Theme URI: https://themezee.com/themes/dynamico/
 Contributors: themezee
-Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
+Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, block-patterns, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
-Tested up to: 5.7
+Tested up to: 5.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Dynamico is a sleek and modern Blogging & Magazine WordPress Theme.
+A responsive, multipurpose WordPress theme with bold colors and fonts.
 
 == Description ==
 
-Dynamico is a sleek and modern Blogging & Magazine WordPress Theme, carefully designed for writers using the Gutenberg Block Editor. The theme supports several blog layouts, extensive post settings and various page templates. It is also AMP-ready and accessible. Start your blog now!
+A responsive, multipurpose Blogging and Magazine WordPress theme with bold colors and fonts. It comes with a featured content area, various blog layouts and extensive post settings. Dynamico is the successor of the popular Dynamic News theme.
 For more information about Dynamico please go to https://themezee.com/themes/dynamico/
 
 == Installation ==
@@ -23,7 +23,7 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
-= 1.0 - 2020-11-12 =
+= 1.0 - 2021-04-21 =
 * Initial Release
 
 == Copyright ==
@@ -49,15 +49,19 @@ Dynamico bundles and uses the following third-party resources:
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
 Copyright: 2017 Automattic, Inc., https://automattic.com/
 
-2. Underscores - http://underscores.me/
+2. Font Awesome (for our social icons subset) - https://github.com/FortAwesome/Font-Awesome
+License: Distributed under the terms of the CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+Copyright: Fonticons, Inc, https://fontawesome.com/
+
+3. Underscores - http://underscores.me/
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
 Copyright: 2012-2015 Automattic, Inc., https://automattic.com/
 
-3. normalize.css - http://necolas.github.io/normalize.css/
+4. normalize.css - http://necolas.github.io/normalize.css/
 License: Distributed under the terms of the MIT License (http://opensource.org/licenses/MIT)
 Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 
-4. svgxuse - https://github.com/Keyamoon/svgxuse
+5. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
 
@@ -65,24 +69,24 @@ Copyright: 2017 IcoMoon.io
 License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
 Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
 
-7. Barlow Font - https://fonts.google.com/specimen/Barlow
+7. Ubuntu Font - https://fonts.google.com/specimen/Ubuntu
+License: Distributed under the terms of the Ubuntu Font License (https://ubuntu.com/legal/font-licence)
+Copyright: Dalton Maag
+
+8. Francios One Font - https://fonts.google.com/specimen/Francois+One
 License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
-Copyright: Jeremy Tribby
+Copyright: Vernon Adams
 
-8. Images used in screenshot.jpg are from StockSnap
+9. Images used in screenshot.jpg are from StockSnap
 
-a) https://stocksnap.io/photo/umbrellas-sky-MIFDXUR2VY
+a) https://stocksnap.io/photo/butterfly-moth-JQG2TZ4QJ4
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: Adrianna Calvo (https://stocksnap.io/author/16808)
+Copyright: Boris Smokrovic (https://stocksnap.io/author/34602)
 
-b) https://stocksnap.io/photo/modern-building-8KGCJNXKCJ
+b) https://stocksnap.io/photo/water-shore-18BHSLBEPX
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: Bob Richards (https://stocksnap.io/author/bobrichards)
+Copyright: Mike Moloney (https://stocksnap.io/author/mjmolo)
 
-c) https://stocksnap.io/photo/lake-mountains-XX0FZY0UPY
+c) https://stocksnap.io/photo/white-petal-NCOE271H0D
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: Eberhard Grossgasteiger (https://stocksnap.io/author/eberhardgross)
-
-d) https://stocksnap.io/photo/food-dragonfruit-DVR50CKWR7
-License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: Brooke Lark (https://stocksnap.io/author/29623)
+Copyright: Jeffrey Betts (https://stocksnap.io/author/403)
