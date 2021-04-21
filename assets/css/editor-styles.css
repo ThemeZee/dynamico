@@ -8,68 +8,68 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #e84747;
-	--secondary-color: #cb3e3e;
-	--tertiary-color: #ae3535;
-	--accent-color: #47e897;
-	--contrast-color: #4747e8;
-	--highlight-color: #e8e847;
-	--light-gray-color: #eeeeee;
-	--gray-color: #777777;
-	--dark-gray-color: #333333;
-	--page-background-color: #fff;
-	--text-color: rgba(0, 0, 0, 0.9);
-	--medium-text-color: rgba(0, 0, 0, 0.6);
-	--light-text-color: rgba(0, 0, 0, 0.4);
-	--medium-border-color: rgba(0, 0, 0, 0.3);
-	--light-border-color: rgba(0, 0, 0, 0.1);
-	--link-color: #e84747;
-	--link-hover-color: #e84747;
-	--button-color: #e84747;
-	--button-text-color: #fff;
-	--button-hover-color: #333;
-	--button-hover-text-color: #fff;
-	--header-background-color: #fff;
-	--header-text-color: #333;
-	--site-title-color: #e84747;
-	--site-title-hover-color: #333;
-	--navi-background-color: #333;
-	--navi-text-color: #fff;
-	--navi-hover-color: #e84747;
-	--navi-hover-text-color: #fff;
-	--navi-border-color: #fff;
-	--submenu-background-color: #fff;
-	--submenu-text-color: #333;
-	--submenu-border-color: rgba(0, 0, 0, 0.5);
-	--featured-background-color: #333;
-	--featured-text-color: #fff;
-	--featured-hover-color: rgba(255, 255, 255, 0.6);
-	--featured-border-color: #e84747;
-	--title-color: #333;
-	--title-hover-color: #e84747;
-	--post-meta-background-color: #eeeeee;
-	--content-border-color: rgba(0, 0, 0, 0.1);
-	--widget-title-background-color: #333;
-	--widget-title-text-color: #fff;
-	--widget-border-color: rgba(0, 0, 0, 0.1);
-	--footer-background-color: #333;
-	--footer-overlay-color: rgba(255, 255, 255, 0.05);
-	--footer-text-color: rgba(255, 255, 255, 0.6);
-	--footer-link-color: #fff;
-	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
-	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: "Ubuntu", arial, helvetica, sans-serif;
-	--title-font: "Francois One", arial, helvetica, sans-serif;
-	--navi-font: "Francois One", arial, helvetica, sans-serif;
-	--widget-title-font: "Ubuntu", arial, helvetica, sans-serif;
-	--title-font-weight: normal;
-	--navi-font-weight: normal;
-	--widget-title-font-weight: normal;
-	--title-text-transform: none;
-	--navi-text-transform: uppercase;
-	--widget-title-text-transform: uppercase;
-	--text-line-height: 1.75;
-	--title-line-height: 1.4;
+	--dynamico--primary-color: #e84747;
+	--dynamico--secondary-color: #cb3e3e;
+	--dynamico--tertiary-color: #ae3535;
+	--dynamico--accent-color: #47e897;
+	--dynamico--contrast-color: #4747e8;
+	--dynamico--highlight-color: #e8e847;
+	--dynamico--light-gray-color: #eeeeee;
+	--dynamico--gray-color: #777777;
+	--dynamico--dark-gray-color: #333333;
+	--dynamico--page-background-color: #fff;
+	--dynamico--text-color: rgba(0, 0, 0, 0.9);
+	--dynamico--medium-text-color: rgba(0, 0, 0, 0.6);
+	--dynamico--light-text-color: rgba(0, 0, 0, 0.4);
+	--dynamico--medium-border-color: rgba(0, 0, 0, 0.3);
+	--dynamico--light-border-color: rgba(0, 0, 0, 0.1);
+	--dynamico--link-color: #e84747;
+	--dynamico--link-hover-color: #e84747;
+	--dynamico--button-color: #e84747;
+	--dynamico--button-text-color: #fff;
+	--dynamico--button-hover-color: #333;
+	--dynamico--button-hover-text-color: #fff;
+	--dynamico--header-background-color: #fff;
+	--dynamico--header-text-color: #333;
+	--dynamico--site-title-color: #e84747;
+	--dynamico--site-title-hover-color: #333;
+	--dynamico--navi-background-color: #333;
+	--dynamico--navi-text-color: #fff;
+	--dynamico--navi-hover-color: #e84747;
+	--dynamico--navi-hover-text-color: #fff;
+	--dynamico--navi-border-color: #fff;
+	--dynamico--submenu-background-color: #fff;
+	--dynamico--submenu-text-color: #333;
+	--dynamico--submenu-border-color: rgba(0, 0, 0, 0.5);
+	--dynamico--featured-background-color: #333;
+	--dynamico--featured-text-color: #fff;
+	--dynamico--featured-hover-color: rgba(255, 255, 255, 0.6);
+	--dynamico--featured-border-color: #e84747;
+	--dynamico--title-color: #333;
+	--dynamico--title-hover-color: #e84747;
+	--dynamico--post-meta-background-color: #eeeeee;
+	--dynamico--content-border-color: rgba(0, 0, 0, 0.1);
+	--dynamico--widget-title-background-color: #333;
+	--dynamico--widget-title-text-color: #fff;
+	--dynamico--widget-border-color: rgba(0, 0, 0, 0.1);
+	--dynamico--footer-background-color: #333;
+	--dynamico--footer-overlay-color: rgba(255, 255, 255, 0.05);
+	--dynamico--footer-text-color: rgba(255, 255, 255, 0.6);
+	--dynamico--footer-link-color: #fff;
+	--dynamico--footer-link-hover-color: rgba(255, 255, 255, 0.6);
+	--dynamico--footer-border-color: rgba(255, 255, 255, 0.1);
+	--dynamico--text-font: "Ubuntu", arial, helvetica, sans-serif;
+	--dynamico--title-font: "Francois One", arial, helvetica, sans-serif;
+	--dynamico--navi-font: "Francois One", arial, helvetica, sans-serif;
+	--dynamico--widget-title-font: "Ubuntu", arial, helvetica, sans-serif;
+	--dynamico--title-font-weight: normal;
+	--dynamico--navi-font-weight: normal;
+	--dynamico--widget-title-font-weight: normal;
+	--dynamico--title-text-transform: none;
+	--dynamico--navi-text-transform: uppercase;
+	--dynamico--widget-title-text-transform: uppercase;
+	--dynamico--text-line-height: 1.75;
+	--dynamico--title-line-height: 1.4;
 }
 
 /*--------------------------------------------------------------
@@ -77,7 +77,7 @@
 --------------------------------------------------------------*/
 .edit-post-visual-editor {
 	background-color: #fff;
-	background-color: var(--page-background-color);
+	background-color: var(--dynamico--page-background-color);
 }
 
 .wp-block {
@@ -115,22 +115,22 @@
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	color: #333;
-	color: var(--title-color);
+	color: var(--dynamico--title-color);
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-family: "Francois One", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--dynamico--title-font);
 	font-weight: normal;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--dynamico--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--dynamico--title-text-transform);
 	line-height: 1.4;
-	line-height: var(--title-line-height);
+	line-height: var(--dynamico--title-line-height);
 	padding-bottom: 0.5rem;
 	border: none;
 	border-bottom: 5px solid;
 	border-color: #333;
-	border-color: var(--title-color);
+	border-color: var(--dynamico--title-color);
 }
 
 @media only screen and (min-width: 640px) {
@@ -174,26 +174,26 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 /* Typography */
 .editor-styles-wrapper {
 	color: rgba(0, 0, 0, 0.9);
-	color: var(--text-color);
+	color: var(--dynamico--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: "Ubuntu", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--dynamico--text-font);
 	line-height: 1.75;
-	line-height: var(--text-line-height);
+	line-height: var(--dynamico--text-line-height);
 }
 
 .editor-styles-wrapper p {
 	font-size: inherit;
 	line-height: 1.75;
-	line-height: var(--text-line-height);
+	line-height: var(--dynamico--text-line-height);
 	margin-top: 1rem;
 	margin-bottom: 1.5rem;
 }
 
 .editor-styles-wrapper .mce-content-body {
 	line-height: 1.75;
-	line-height: var(--text-line-height);
+	line-height: var(--dynamico--text-line-height);
 }
 
 @media only screen and (min-width: 960px) {
@@ -205,7 +205,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 
 .editor-styles-wrapper a {
 	color: #e84747;
-	color: var(--link-color);
+	color: var(--dynamico--link-color);
 }
 
 .editor-styles-wrapper hr {
@@ -214,7 +214,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	height: 1px;
 	border: 0;
 	background-color: rgba(0, 0, 0, 0.1);
-	background-color: var(--light-border-color);
+	background-color: var(--dynamico--light-border-color);
 }
 
 .editor-styles-wrapper pre {
@@ -223,15 +223,15 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	padding: 1rem 1.25rem;
 	border: 1px solid;
 	color: rgba(0, 0, 0, 0.9);
-	color: var(--text-color);
+	color: var(--dynamico--text-color);
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--dynamico--light-border-color);
 	background: rgba(0, 0, 0, 0.05);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.75;
-	line-height: var(--text-line-height);
+	line-height: var(--dynamico--text-line-height);
 }
 
 .editor-styles-wrapper code,
@@ -264,15 +264,15 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	margin-top: 1em;
 	margin-bottom: 0.75em;
 	color: #333;
-	color: var(--title-color);
+	color: var(--dynamico--title-color);
 	font-family: "Francois One", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--dynamico--title-font);
 	font-weight: normal;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--dynamico--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--dynamico--title-text-transform);
 	line-height: 1.4;
-	line-height: var(--title-line-height);
+	line-height: var(--dynamico--title-line-height);
 }
 
 .editor-styles-wrapper h1.mce-content-body,
@@ -282,7 +282,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 .editor-styles-wrapper h5.mce-content-body,
 .editor-styles-wrapper h6.mce-content-body {
 	line-height: 1.4;
-	line-height: var(--title-line-height);
+	line-height: var(--dynamico--title-line-height);
 }
 
 .editor-styles-wrapper h1 {
@@ -323,9 +323,9 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	padding-left: 1.5rem;
 	border-left: 5px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--dynamico--light-border-color);
 	color: rgba(0, 0, 0, 0.4);
-	color: var(--light-text-color);
+	color: var(--dynamico--light-text-color);
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -340,9 +340,9 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 .wp-block-pullquote cite {
 	display: block;
 	color: rgba(0, 0, 0, 0.9);
-	color: var(--text-color);
+	color: var(--dynamico--text-color);
 	font-family: "Ubuntu", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--dynamico--text-font);
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -356,7 +356,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 
 .wp-block-pullquote:not(.is-style-solid-color) .wp-block-pullquote__citation {
 	color: rgba(0, 0, 0, 0.9);
-	color: var(--text-color);
+	color: var(--dynamico--text-color);
 	text-transform: none;
 }
 
@@ -397,7 +397,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	padding: 0.4em 0.6em;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--dynamico--light-border-color);
 }
 
 .editor-styles-wrapper th {
@@ -425,7 +425,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	font-size: 16px;
 	font-size: 1rem;
 	color: rgba(0, 0, 0, 0.6);
-	color: var(--medium-text-color);
+	color: var(--dynamico--medium-text-color);
 }
 
 .wp-block-image figcaption {
@@ -498,7 +498,7 @@ p.has-background {
 .wp-block-table.is-style-stripes thead,
 .wp-block-table.is-style-stripes tfoot {
 	border-color: rgba(0, 0, 0, 0.9);
-	border-color: var(--text-color);
+	border-color: var(--dynamico--text-color);
 }
 
 .wp-block-table.is-style-stripes thead th,
@@ -541,18 +541,18 @@ p.has-background {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--dynamico--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #e84747;
-	background-color: var(--button-color);
+	background-color: var(--dynamico--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	background-color: #333;
-	background-color: var(--button-hover-color);
+	background-color: var(--dynamico--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -596,7 +596,7 @@ p.has-background {
 	padding-right: 1.5rem;
 	border-right: 5px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--dynamico--light-border-color);
 }
 
 .wp-block-quote.is-style-large {
@@ -626,7 +626,7 @@ p.has-background {
 	border-bottom: 5px solid;
 	border-top: 5px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--dynamico--light-border-color);
 }
 
 .wp-block-pullquote blockquote {
@@ -643,7 +643,7 @@ p.has-background {
 
 .wp-block-pullquote blockquote cite {
 	color: rgba(0, 0, 0, 0.9);
-	color: var(--text-color);
+	color: var(--dynamico--text-color);
 }
 
 .wp-block-pullquote.is-style-solid-color {
@@ -722,7 +722,7 @@ p.has-background {
 .wp-block-latest-posts__post-date,
 .wp-block-latest-posts__post-author {
 	color: rgba(0, 0, 0, 0.4);
-	color: var(--light-text-color);
+	color: var(--dynamico--light-text-color);
 	font-size: 14px;
 	font-size: 0.875rem;
 }
@@ -778,37 +778,37 @@ p.has-background {
 .has-primary-color,
 .wp-block-button__link.has-primary-color {
 	color: #e84747;
-	color: var(--primary-color);
+	color: var(--dynamico--primary-color);
 }
 
 .has-secondary-color,
 .wp-block-button__link.has-secondary-color {
 	color: #cb3e3e;
-	color: var(--secondary-color);
+	color: var(--dynamico--secondary-color);
 }
 
 .has-tertiary-color,
 .wp-block-button__link.has-tertiary-color {
 	color: #ae3535;
-	color: var(--tertiary-color);
+	color: var(--dynamico--tertiary-color);
 }
 
 .has-contrast-color,
 .wp-block-button__link.has-contrast-color {
 	color: #4747e8;
-	color: var(--contrast-color);
+	color: var(--dynamico--contrast-color);
 }
 
 .has-accent-color,
 .wp-block-button__link.has-accent-color {
 	color: #47e897;
-	color: var(--accent-color);
+	color: var(--dynamico--accent-color);
 }
 
 .has-highlight-color,
 .wp-block-button__link.has-highlight-color {
 	color: #e8e847;
-	color: var(--highlight-color);
+	color: var(--dynamico--highlight-color);
 }
 
 .has-white-color,
@@ -819,19 +819,19 @@ p.has-background {
 .has-light-gray-color,
 .wp-block-button__link.has-light-gray-color {
 	color: #eeeeee;
-	color: var(--light-gray-color);
+	color: var(--dynamico--light-gray-color);
 }
 
 .has-gray-color,
 .wp-block-button__link.has-gray-color {
 	color: #777777;
-	color: var(--gray-color);
+	color: var(--dynamico--gray-color);
 }
 
 .has-dark-gray-color,
 .wp-block-button__link.has-dark-gray-color {
 	color: #333333;
-	color: var(--dark-gray-color);
+	color: var(--dynamico--dark-gray-color);
 }
 
 .has-black-color,
@@ -843,37 +843,37 @@ p.has-background {
 .has-primary-background-color,
 .has-primary-background-color[class] {
 	background-color: #e84747;
-	background-color: var(--primary-color);
+	background-color: var(--dynamico--primary-color);
 }
 
 .has-secondary-background-color,
 .has-secondary-background-color[class] {
 	background-color: #cb3e3e;
-	background-color: var(--secondary-color);
+	background-color: var(--dynamico--secondary-color);
 }
 
 .has-tertiary-background-color,
 .has-tertiary-background-color[class] {
 	background-color: #ae3535;
-	background-color: var(--tertiary-color);
+	background-color: var(--dynamico--tertiary-color);
 }
 
 .has-contrast-background-color,
 .has-contrast-background-color[class] {
 	background-color: #4747e8;
-	background-color: var(--contrast-color);
+	background-color: var(--dynamico--contrast-color);
 }
 
 .has-accent-background-color,
 .has-accent-background-color[class] {
 	background-color: #47e897;
-	background-color: var(--accent-color);
+	background-color: var(--dynamico--accent-color);
 }
 
 .has-highlight-background-color,
 .has-highlight-background-color[class] {
 	background-color: #e8e847;
-	background-color: var(--highlight-color);
+	background-color: var(--dynamico--highlight-color);
 }
 
 .has-white-background-color,
@@ -884,19 +884,19 @@ p.has-background {
 .has-light-gray-background-color,
 .has-light-gray-background-color[class] {
 	background-color: #eeeeee;
-	background-color: var(--light-gray-color);
+	background-color: var(--dynamico--light-gray-color);
 }
 
 .has-gray-background-color,
 .has-gray-background-color[class] {
 	background-color: #777777;
-	background-color: var(--gray-color);
+	background-color: var(--dynamico--gray-color);
 }
 
 .has-dark-gray-background-color,
 .has-dark-gray-background-color[class] {
 	background-color: #333333;
-	background-color: var(--dark-gray-color);
+	background-color: var(--dynamico--dark-gray-color);
 }
 
 .has-black-background-color,
@@ -988,7 +988,7 @@ p.has-background {
 
 .tz-magazine-block .tz-magazine-thumbnail-list .tz-magazine-post {
 	background-color: #eeeeee;
-	background-color: var(--post-meta-background-color);
+	background-color: var(--dynamico--post-meta-background-color);
 }
 
 .tz-magazine-block .tz-magazine-thumbnail-list .tz-magazine-post .tz-post-image {
@@ -1055,22 +1055,22 @@ p.has-background {
 	margin-bottom: 0.25rem;
 	padding: 0;
 	color: #333;
-	color: var(--title-color);
+	color: var(--dynamico--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-family: "Francois One", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--dynamico--title-font);
 	font-weight: normal;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--dynamico--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--dynamico--title-text-transform);
 	line-height: 1.4;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:link,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:visited {
 	color: #333;
-	color: var(--title-color);
+	color: var(--dynamico--title-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
 }
@@ -1078,7 +1078,7 @@ p.has-background {
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:active {
 	color: #e84747;
-	color: var(--title-hover-color);
+	color: var(--dynamico--title-hover-color);
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
@@ -1095,7 +1095,7 @@ p.has-background {
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta {
 	margin: 0.5rem 0 0;
 	color: rgba(0, 0, 0, 0.4);
-	color: var(--light-text-color);
+	color: var(--dynamico--light-text-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1104,7 +1104,7 @@ p.has-background {
 	display: inline-block;
 	margin: 0 1rem;
 	color: rgba(0, 0, 0, 0.4);
-	color: var(--light-text-color);
+	color: var(--dynamico--light-text-color);
 	content: "\2013";
 }
 
@@ -1115,14 +1115,14 @@ p.has-background {
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:link,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:visited {
 	color: rgba(0, 0, 0, 0.4);
-	color: var(--light-text-color);
+	color: var(--dynamico--light-text-color);
 	text-decoration: none;
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:active {
 	color: rgba(0, 0, 0, 0.9);
-	color: var(--text-color);
+	color: var(--dynamico--text-color);
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-content {
@@ -1141,9 +1141,9 @@ p.has-background {
 	margin: 0;
 	padding: 0.6em 1.2em;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--dynamico--button-text-color);
 	background-color: #e84747;
-	background-color: var(--button-color);
+	background-color: var(--dynamico--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1151,7 +1151,7 @@ p.has-background {
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:link,
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--dynamico--button-text-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
 }
@@ -1159,9 +1159,9 @@ p.has-background {
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--dynamico--button-hover-text-color);
 	background-color: #333;
-	background-color: var(--button-hover-color);
+	background-color: var(--dynamico--button-hover-color);
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-more-link::after {
