@@ -23,6 +23,10 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.1 - 2021-05-18 =
+* fixed typo in pagination function
+* updated localization strings
+
 = 1.0 - 2021-04-21 =
 * Initial Release
 
