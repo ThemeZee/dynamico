@@ -197,7 +197,7 @@ function dynamico_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Header', 'dynamico' ),
 		'id'            => 'header',
-		'description'   => esc_html__( 'Appears on header area. You can use a search or ad widget here.', 'dynamico' ),
+		'description'   => esc_html__( 'Appears on header area. You can add a search or an ad widget here.', 'dynamico' ),
 		'before_widget' => '<aside id="%1$s" class="header-widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="header-widget-title">',

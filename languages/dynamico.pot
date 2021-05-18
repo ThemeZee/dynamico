@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dynamico\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2021-03-12 17:05+0100\n"
+"POT-Creation-Date: 2021-05-18 14:34+0200\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -44,42 +44,70 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:46
+#: functions.php:51
 msgid "Main Navigation"
 msgstr ""
 
-#: functions.php:117 inc/addons.php:138 inc/addons.php:139
+#: functions.php:52
+msgid "Social Icons (Header)"
+msgstr ""
+
+#: functions.php:123 inc/addons.php:138 inc/addons.php:139
 msgid "Expand child menu"
 msgstr ""
 
-#: functions.php:118 inc/addons.php:138 inc/addons.php:139
+#: functions.php:124 inc/addons.php:138 inc/addons.php:139
 msgid "Collapse child menu"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:187
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:189
 msgctxt "widget area description"
 msgid "Appears on blog pages and single posts."
 msgstr ""
 
-#: functions.php:191
+#: functions.php:198
+msgid "Header"
+msgstr ""
+
+#: functions.php:200
+msgid "Appears on header area. You can add a search or an ad widget here."
+msgstr ""
+
+#: functions.php:209
 msgid "Footer Copyright"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:211
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr ""
 
-#: functions.php:208
-msgid "Dynamico Single Post"
+#: functions.php:226
+msgid "Post Thumbnail"
 msgstr ""
 
-#: functions.php:209
-msgid "Dynamico List Post"
+#: functions.php:227
+msgid "Dynamico Ultra Wide (3:1)"
+msgstr ""
+
+#: functions.php:228
+msgid "Dynamico Landscape (16:9)"
+msgstr ""
+
+#: functions.php:229
+msgid "Dynamico Classic (4:3)"
+msgstr ""
+
+#: functions.php:230
+msgid "Dynamico Square (1:1)"
+msgstr ""
+
+#: functions.php:231
+msgid "Dynamico Portrait (3:4)"
 msgstr ""
 
 #: header.php:28
@@ -91,6 +119,10 @@ msgstr ""
 msgid ""
 "%1$s requires at least WordPress version %2$s. You are running version %3$s. "
 "Please upgrade and try again."
+msgstr ""
+
+#: inc/customizer/controls/category-dropdown-control.php:31
+msgid "All Categories"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:25 inc/theme-info.php:46
@@ -163,16 +195,16 @@ msgstr ""
 msgid "Learn more about %s Pro"
 msgstr ""
 
-#: inc/customizer/customizer.php:37 inc/theme-info.php:78
+#: inc/customizer/customizer.php:39 inc/theme-info.php:78
 msgid "Theme Options"
 msgstr ""
 
-#: inc/customizer/customizer.php:42
+#: inc/customizer/customizer.php:44
 msgid "Background"
 msgstr ""
 
-#: inc/customizer/default-options.php:61
-msgid "Continue reading"
+#: inc/customizer/default-options.php:63
+msgid "Read more"
 msgstr ""
 
 #: inc/customizer/sections/blog-settings.php:19
@@ -188,43 +220,116 @@ msgid "Horizontal List"
 msgstr ""
 
 #: inc/customizer/sections/blog-settings.php:43
-msgid "Vertical List"
+msgid "Horizontal List (alternative)"
 msgstr ""
 
 #: inc/customizer/sections/blog-settings.php:44
-msgid "Two Column Grid"
+msgid "Vertical List"
 msgstr ""
 
 #: inc/customizer/sections/blog-settings.php:45
+msgid "Vertical List (alternative)"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:46
+msgid "Two Column Grid"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:47
 msgid "Three Column Grid"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:58
+#: inc/customizer/sections/blog-settings.php:60
+msgid "Blog Image"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:66
+#: inc/customizer/sections/post-settings.php:195
+msgid "Ultra Wide (3:1)"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:67
+#: inc/customizer/sections/post-settings.php:196
+msgid "Landscape (16:9)"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:68
+#: inc/customizer/sections/post-settings.php:197
+msgid "Classic (4:3)"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:69
+msgid "Square (1:1)"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:70
+msgid "Portrait (3:4)"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:71
+#: inc/customizer/sections/post-settings.php:198
+msgid "Flexible Height"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:72
+#: inc/customizer/sections/post-settings.php:176
+msgid "Hide Image"
+msgstr ""
+
+#: inc/customizer/sections/blog-settings.php:85
 msgid "Blog Content"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:64
+#: inc/customizer/sections/blog-settings.php:91
 msgid "Full post"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:65
+#: inc/customizer/sections/blog-settings.php:92
 msgid "Post excerpt"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:78
+#: inc/customizer/sections/blog-settings.php:105
 msgid "Excerpt Length"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:94
+#: inc/customizer/sections/blog-settings.php:121
 msgid "Excerpt More Text"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:124
+#: inc/customizer/sections/blog-settings.php:155
 msgid "Read More Link"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:140
+#: inc/customizer/sections/blog-settings.php:171
 msgid "Number of Posts"
+msgstr ""
+
+#: inc/customizer/sections/featured-posts-settings.php:19
+msgid "Featured Posts"
+msgstr ""
+
+#: inc/customizer/sections/featured-posts-settings.php:30
+msgid "Display Featured Posts"
+msgstr ""
+
+#: inc/customizer/sections/featured-posts-settings.php:45
+msgid "Show Featured Posts on blog page"
+msgstr ""
+
+#: inc/customizer/sections/featured-posts-settings.php:62
+msgid "Featured Posts Category"
+msgstr ""
+
+#: inc/customizer/sections/featured-posts-settings.php:78
+msgid "Featured Posts Layout"
+msgstr ""
+
+#: inc/customizer/sections/featured-posts-settings.php:84
+msgid "One Post"
+msgstr ""
+
+#: inc/customizer/sections/featured-posts-settings.php:85
+msgid "Four Posts"
 msgstr ""
 
 #: inc/customizer/sections/footer-settings.php:19
@@ -267,55 +372,67 @@ msgstr ""
 msgid "Right Sidebar"
 msgstr ""
 
+#: inc/customizer/sections/layout-settings.php:70
+msgid "Box Shadows"
+msgstr ""
+
+#: inc/customizer/sections/layout-settings.php:86
+msgid "Display shadows on content boxes"
+msgstr ""
+
 #: inc/customizer/sections/post-settings.php:19
 msgid "Post Settings"
 msgstr ""
 
 #: inc/customizer/sections/post-settings.php:30
-msgid "Featured Images"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:46
-msgid "Display images on blog and archives"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:68
-msgid "Display images on single posts"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:84
 msgid "Post Details on blog and archives"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:100
-#: inc/customizer/sections/post-settings.php:174
+#: inc/customizer/sections/post-settings.php:46
+#: inc/customizer/sections/post-settings.php:120
 msgid "Display date"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:116
-#: inc/customizer/sections/post-settings.php:190
+#: inc/customizer/sections/post-settings.php:62
+#: inc/customizer/sections/post-settings.php:136
 msgid "Display author"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:132
-#: inc/customizer/sections/post-settings.php:206
-msgid "Display categories"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:148
-#: inc/customizer/sections/post-settings.php:222
+#: inc/customizer/sections/post-settings.php:78
+#: inc/customizer/sections/post-settings.php:152
 msgid "Display comments"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:158
+#: inc/customizer/sections/post-settings.php:94
+#: inc/customizer/sections/post-settings.php:248
+msgid "Display categories"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:104
 msgid "Post Details on single posts"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:232
-msgid "Single Post"
+#: inc/customizer/sections/post-settings.php:168
+msgid "Single Post Layout"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:248
+#: inc/customizer/sections/post-settings.php:174
+msgid "Featured image above title"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:175
+msgid "Featured image below title"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:189
+msgid "Single Post Image"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:216
+msgid "Single Post Footer"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:232
 msgid "Display tags"
 msgstr ""
 
@@ -353,79 +470,104 @@ msgstr ""
 msgid "Display Tagline"
 msgstr ""
 
-#: inc/gutenberg.php:34
+#: inc/gutenberg.php:35
 msgctxt "block color"
 msgid "Primary"
 msgstr ""
 
-#: inc/gutenberg.php:39
+#: inc/gutenberg.php:40
 msgctxt "block color"
 msgid "Secondary"
 msgstr ""
 
-#: inc/gutenberg.php:44
+#: inc/gutenberg.php:45
 msgctxt "block color"
 msgid "Tertiary"
 msgstr ""
 
-#: inc/gutenberg.php:49
+#: inc/gutenberg.php:50
+msgctxt "block color"
+msgid "Contrast"
+msgstr ""
+
+#: inc/gutenberg.php:55
 msgctxt "block color"
 msgid "Accent"
 msgstr ""
 
-#: inc/gutenberg.php:54
+#: inc/gutenberg.php:60
 msgctxt "block color"
 msgid "Highlight"
 msgstr ""
 
-#: inc/gutenberg.php:59
+#: inc/gutenberg.php:65
 msgctxt "block color"
 msgid "White"
 msgstr ""
 
-#: inc/gutenberg.php:64
+#: inc/gutenberg.php:70
 msgctxt "block color"
 msgid "Light Gray"
 msgstr ""
 
-#: inc/gutenberg.php:69
+#: inc/gutenberg.php:75
 msgctxt "block color"
 msgid "Gray"
 msgstr ""
 
-#: inc/gutenberg.php:74
+#: inc/gutenberg.php:80
 msgctxt "block color"
 msgid "Dark Gray"
 msgstr ""
 
-#: inc/gutenberg.php:79
+#: inc/gutenberg.php:85
 msgctxt "block color"
 msgid "Black"
 msgstr ""
 
-#: inc/gutenberg.php:88
+#: inc/gutenberg.php:94
 msgctxt "block font size"
 msgid "Small"
 msgstr ""
 
-#: inc/gutenberg.php:93
+#: inc/gutenberg.php:99
 msgctxt "block font size"
 msgid "Medium"
 msgstr ""
 
-#: inc/gutenberg.php:98
+#: inc/gutenberg.php:104
 msgctxt "block font size"
 msgid "Large"
 msgstr ""
 
-#: inc/gutenberg.php:103
+#: inc/gutenberg.php:109
 msgctxt "block font size"
 msgid "Extra Large"
 msgstr ""
 
-#: inc/gutenberg.php:108
+#: inc/gutenberg.php:114
 msgctxt "block font size"
 msgid "Huge"
+msgstr ""
+
+#: inc/gutenberg.php:124 inc/template-tags.php:448
+msgid "Dynamico"
+msgstr ""
+
+#: inc/gutenberg.php:128
+msgid "Portfolio"
+msgstr ""
+
+#: inc/gutenberg.php:134
+msgid "Services"
+msgstr ""
+
+#: inc/gutenberg.php:140
+msgid "About"
+msgstr ""
+
+#: inc/gutenberg.php:146
+msgid "Projects"
 msgstr ""
 
 #: inc/template-tags.php:120
@@ -433,55 +575,51 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-tags.php:242
+#: inc/template-tags.php:273
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: inc/template-tags.php:285
+#: inc/template-tags.php:298
 msgid "No comments"
 msgstr ""
 
-#: inc/template-tags.php:286
+#: inc/template-tags.php:299
 msgid "1 comment"
 msgstr ""
 
-#: inc/template-tags.php:287
+#: inc/template-tags.php:300
 #, php-format
 msgid "% comments"
 msgstr ""
 
-#: inc/template-tags.php:305
-msgid "Tags"
+#: inc/template-tags.php:336
+msgid "Tagged with"
 msgstr ""
 
-#: inc/template-tags.php:344
+#: inc/template-tags.php:375
 msgctxt "post navigation"
 msgid "Previous Post"
 msgstr ""
 
-#: inc/template-tags.php:345
+#: inc/template-tags.php:376
 msgctxt "post navigation"
 msgid "Next Post"
 msgstr ""
 
-#: inc/template-tags.php:361
+#: inc/template-tags.php:410
 msgctxt "pagination"
 msgid "Previous Posts"
 msgstr ""
 
-#: inc/template-tags.php:362
+#: inc/template-tags.php:411
 msgctxt "pagination"
 msgid "Next Posts"
 msgstr ""
 
-#: inc/template-tags.php:398
+#: inc/template-tags.php:447
 #, php-format
 msgid "WordPress Theme: %1$s by %2$s."
-msgstr ""
-
-#: inc/template-tags.php:399
-msgid "Dynamico"
 msgstr ""
 
 #: inc/theme-info.php:19 inc/theme-info.php:40
@@ -569,11 +707,11 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: template-parts/header/site-navigation.php:17
+#: template-parts/header/site-navigation.php:21
 msgid "Menu"
 msgstr ""
 
-#: template-parts/header/site-navigation.php:22
+#: template-parts/header/site-navigation.php:26
 msgid "Primary Menu"
 msgstr ""
 
