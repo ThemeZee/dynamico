@@ -80,20 +80,27 @@ function dynamico_get_social_svg( $icon = null ) {
  * @return string  $item_output The menu item output with social icon.
  */
 function dynamico_social_icons_menu( $item_output, $item, $depth, $args ) {
+	// Return early if no social menu is filtered.
+	if ( ! ( 'social-header' === $args->theme_location || 'social-header-bar' === $args->theme_location || 'social-footer' === $args->theme_location ) ) {
+		return $item_output;
+	}
 
 	// Get supported social icons.
 	$social_icons = dynamico_supported_social_icons();
 
-	// Change SVG icon inside social links menu if there is supported URL.
-	if ( 'social-header' === $args->theme_location || 'social-header-bar' === $args->theme_location || 'social-footer' === $args->theme_location ) {
-		$icon = 'star';
-		foreach ( $social_icons as $attr => $value ) {
-			if ( false !== strpos( $item_output, $attr ) ) {
-				$icon = esc_attr( $value );
-			}
+	// Search if menu URL is in supported icons.
+	$icon = 'star';
+	foreach ( $social_icons as $attr => $value ) {
+		if ( false !== strpos( $item_output, $attr ) ) {
+			$icon = esc_attr( $value );
 		}
-		$item_output = str_replace( $args->link_after, '</span>' . dynamico_get_social_svg( $icon ), $item_output );
 	}
+
+	// Get SVG.
+	$svg = apply_filters( 'dynamico_get_social_svg', dynamico_get_social_svg( $icon ), $item_output );
+
+	// Add SVG to menu item.
+	$item_output = str_replace( $args->link_after, $args->link_after . $svg, $item_output );
 
 	return $item_output;
 }
@@ -141,6 +148,7 @@ function dynamico_supported_social_icons() {
 		'snapchat.com'    => 'snapchat',
 		'soundcloud.com'  => 'soundcloud',
 		'spotify.com'     => 'spotify',
+		'strava'          => 'strava',
 		'stumbleupon.com' => 'stumbleupon',
 		'telegram'        => 'telegram',
 		't.me'            => 'telegram',
@@ -159,5 +167,5 @@ function dynamico_supported_social_icons() {
 		'youtube.com'     => 'youtube',
 	);
 
-	return $supported_social_icons;
+	return apply_filters( 'dynamico_supported_social_icons', $supported_social_icons );
 }
