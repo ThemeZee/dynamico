@@ -1,5 +1,6 @@
 /* Search & Archive Header */
-.archive-header {
+.archive-header,
+.search-results .site-content .search-form {
 	margin: 0 0 1.25rem;
 }
 
@@ -12,11 +13,7 @@
 	line-height: 1.4;
 }
 
-.archive-header .archive-description,
-.search-header .search-form {
-	margin-top: 1rem;
-}
-
 .archive-header .archive-description {
+	margin-top: 1rem;
 	@include font-size(15);
 }

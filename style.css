@@ -1642,7 +1642,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 --------------------------------------------------------------*/
 
 /* Search & Archive Header */
-.archive-header {
+.archive-header,
+.search-results .site-content .search-form {
 	margin: 0 0 1.25rem;
 }
 
@@ -1659,12 +1660,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 	line-height: 1.4;
 }
 
-.archive-header .archive-description,
-.search-header .search-form {
-	margin-top: 1rem;
-}
-
 .archive-header .archive-description {
+	margin-top: 1rem;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -3728,6 +3725,8 @@ figcaption,
 	.type-attachment,
 	.post-navigation,
 	.archive-header.entry-header,
+	.search-header.entry-header,
+	.search-results .site-content .search-form,
 	.featured-posts,
 	.pagination,
 	.widget,
@@ -3741,6 +3740,7 @@ figcaption,
 	.has-sidebar .type-attachment,
 	.has-sidebar .post-navigation,
 	.has-sidebar .archive-header,
+	.has-sidebar .search-header,
 	.has-sidebar .pagination,
 	.has-sidebar .comments-area,
 	.has-sidebar .themezee-related-posts {
@@ -3752,6 +3752,7 @@ figcaption,
 	}
 
 	.has-sidebar .archive-header,
+	.has-sidebar .search-header,
 	.has-sidebar .pagination {
 		padding: 0.75rem 1rem;
 	}
@@ -3761,6 +3762,7 @@ figcaption,
 	.has-sidebar.has-box-shadow .type-attachment,
 	.has-sidebar.has-box-shadow .post-navigation,
 	.has-sidebar.has-box-shadow .archive-header,
+	.has-sidebar.has-box-shadow .search-header,
 	.has-sidebar.has-box-shadow .pagination,
 	.has-sidebar.has-box-shadow .comments-area,
 	.has-sidebar.has-box-shadow .themezee-related-posts {

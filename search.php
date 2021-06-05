@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @version 1.0
+ * @version 1.1
  * @package Dynamico
  */
 
@@ -13,6 +13,7 @@ get_header();
 if ( have_posts() ) :
 
 	dynamico_search_header();
+	get_search_form();
 
 	while ( have_posts() ) :
 		the_post();

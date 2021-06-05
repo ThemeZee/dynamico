@@ -13,6 +13,8 @@
 	.type-attachment,
 	.post-navigation,
 	.archive-header.entry-header,
+	.search-header.entry-header,
+	.search-results .site-content .search-form,
 	.featured-posts,
 	.pagination,
 	.widget,
@@ -27,6 +29,7 @@
 		.type-attachment,
 		.post-navigation,
 		.archive-header,
+		.search-header,
 		.pagination,
 		.comments-area,
 		.themezee-related-posts {
@@ -37,6 +40,7 @@
 		}
 
 		.archive-header,
+		.search-header,
 		.pagination {
 			padding: 0.75rem 1rem;
 		}
@@ -47,6 +51,7 @@
 			.type-attachment,
 			.post-navigation,
 			.archive-header,
+			.search-header,
 			.pagination,
 			.comments-area,
 			.themezee-related-posts {

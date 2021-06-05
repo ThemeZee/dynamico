@@ -120,7 +120,6 @@ if ( ! function_exists( 'dynamico_search_header' ) ) :
 				printf( esc_html__( 'Search Results for: %s', 'dynamico' ), '<span>' . get_search_query() . '</span>' );
 				?>
 			</h1>
-			<?php get_search_form(); ?>
 
 		</header><!-- .search-header -->
 
