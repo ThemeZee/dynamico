@@ -154,7 +154,11 @@ function dynamico_has_sidebar() {
 		return true;
 	}
 
-	return false;
+	if ( is_page() ) {
+		return false;
+	}
+
+	return true;
 }
 
 
