@@ -278,6 +278,13 @@ add_action( 'switch_theme', 'dynamico_flush_featured_post_ids' );
  * @return array Post IDs
  */
 function dynamico_exclude_featured_post_ids_from_blog( $query ) {
+
+	// Return early if featured content is deactivated.
+	if ( true !== dynamico_get_option( 'featured_posts' ) ) {
+		return;
+	}
+
+	// Filter for home.php template.
 	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
 
 		// Get Featured Posts category from Database.
@@ -287,7 +294,7 @@ function dynamico_exclude_featured_post_ids_from_blog( $query ) {
 		// Get cached post ids.
 		$post_ids = dynamico_get_featured_post_ids( 'featured-content', $featured_category, $featured_layout );
 
-		// Exclude Posts
+		// Exclude Posts.
 		$query->set( 'post__not_in', $post_ids );
 	}
 }
