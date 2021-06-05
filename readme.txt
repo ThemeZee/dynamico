@@ -23,6 +23,14 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.2 - 2021-06-05 =
+* updated social icons menu to be extendable
+* added Strava to social icons
+* fixed exclude posts function of featured content area
+* adjusted styling of horizontal blog layout
+* added sidebar on search template and custom post types
+* updated styling of search results template
+
 = 1.0.1 - 2021-05-18 =
 * fixed typo in pagination function
 * updated localization strings
