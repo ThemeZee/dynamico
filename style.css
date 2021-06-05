@@ -1670,7 +1670,6 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 	.blog-layout-horizontal-list .post-wrapper .type-post {
 		display: flex;
 		flex-wrap: nowrap;
-		align-items: center;
 	}
 
 	.blog-layout-horizontal-list .post-wrapper .type-post .post-image {
