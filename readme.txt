@@ -23,6 +23,9 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.3 - 2021-06-21 =
+* fixed RTL language stylesheet
+
 = 1.0.2 - 2021-06-05 =
 * updated social icons menu to be extendable
 * added Strava to social icons
