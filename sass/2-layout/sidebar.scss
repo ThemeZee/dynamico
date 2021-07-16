@@ -4,7 +4,8 @@
 	max-width: $contentWidth;
 }
 
-.sidebar .widget .widget-title {
+.sidebar .widget .widget-title,
+.is-style-widget-title {
 	margin: 0 0 1rem;
 	padding: 0.5rem 0.75rem;
 	@include color(--widget-title-text-color);
@@ -16,6 +17,10 @@
 	@include line-height(--title-line-height);
 }
 
+.is-style-widget-title {
+	padding: 0.5rem 0.75rem !important;
+}
+
 @media only screen and (min-width: 480px) {
 	.has-sidebar {
 		.sidebar .widget {
@@ -24,7 +29,8 @@
 			@include border-color(--widget-border-color);
 			background: #fff;
 
-			.widget-title {
+			.widget-title,
+			.is-style-widget-title {
 				margin: -0.5rem -0.5rem 1rem;
 			}
 		}

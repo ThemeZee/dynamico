@@ -117,6 +117,17 @@ function dynamico_gutenberg_support() {
 		),
 	) ) );
 
+	// Check if block style functions are available.
+	if ( function_exists( 'register_block_style' ) ) {
+
+		// Register Widget Title Block style.
+		register_block_style( 'core/heading', array(
+			'name'         => 'widget-title',
+			'label'        => esc_html__( 'Widget Title', 'dynamico' ),
+			'style_handle' => 'dynamico-stylesheet',
+		) );
+	}
+
 	// Check if block pattern functions are available.
 	if ( function_exists( 'register_block_pattern' ) && function_exists( 'register_block_pattern_category' ) ) {
 

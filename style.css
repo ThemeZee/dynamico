@@ -1212,7 +1212,8 @@ body.site-description-hidden .site-header .site-description {
 	max-width: 900px;
 }
 
-.sidebar .widget .widget-title {
+.sidebar .widget .widget-title,
+.is-style-widget-title {
 	margin: 0 0 1rem;
 	padding: 0.5rem 0.75rem;
 	color: #fff;
@@ -1231,6 +1232,10 @@ body.site-description-hidden .site-header .site-description {
 	line-height: var(--dynamico--title-line-height);
 }
 
+.is-style-widget-title {
+	padding: 0.5rem 0.75rem !important;
+}
+
 @media only screen and (min-width: 480px) {
 	.has-sidebar .sidebar .widget {
 		padding: 1.5rem;
@@ -1240,7 +1245,8 @@ body.site-description-hidden .site-header .site-description {
 		background: #fff;
 	}
 
-	.has-sidebar .sidebar .widget .widget-title {
+	.has-sidebar .sidebar .widget .widget-title,
+	.has-sidebar .sidebar .widget .is-style-widget-title {
 		margin: -0.5rem -0.5rem 1rem;
 	}
 

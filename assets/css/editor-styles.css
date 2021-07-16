@@ -770,6 +770,25 @@ p.has-background {
 	margin-bottom: 0;
 }
 
+/* Editor Block Styles */
+.editor-styles-wrapper .wp-block-heading.is-style-widget-title {
+	padding: 0.5rem 0.75rem;
+	color: #fff;
+	color: var(--dynamico--widget-title-text-color);
+	background-color: #333;
+	background-color: var(--dynamico--widget-title-background-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: var(--dynamico--widget-title-font);
+	font-weight: normal;
+	font-weight: var(--dynamico--widget-title-font-weight);
+	text-transform: uppercase;
+	text-transform: var(--dynamico--widget-title-text-transform);
+	line-height: 1.4;
+	line-height: var(--dynamico--title-line-height);
+}
+
 /*--------------------------------------------------------------
 # - Colors
 --------------------------------------------------------------*/
