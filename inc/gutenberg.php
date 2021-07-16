@@ -170,22 +170,6 @@ add_action( 'enqueue_block_editor_assets', 'dynamico_block_editor_assets' );
 
 
 /**
- * Remove inline styling in Gutenberg.
- *
- * @return array $editor_settings
- */
-function dynamico_block_editor_settings( $editor_settings ) {
-	// Remove editor styling.
-	if ( ! current_theme_supports( 'editor-styles' ) ) {
-		$editor_settings['styles'] = '';
-	}
-
-	return $editor_settings;
-}
-add_filter( 'block_editor_settings', 'dynamico_block_editor_settings', 11 );
-
-
-/**
  * Add body classes in Gutenberg Editor.
  */
 function dynamico_block_editor_body_classes( $classes ) {
@@ -193,7 +177,7 @@ function dynamico_block_editor_body_classes( $classes ) {
 	$current_screen = get_current_screen();
 
 	// Return early if we are not in the Gutenberg Editor.
-	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) ) {
+	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() && 'post' === $current_screen->base ) ) {
 		return $classes;
 	}
 
