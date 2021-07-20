@@ -23,6 +23,10 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.4 - 2021-07-20 =
+* added Widget Title block style
+* fixed error messages on new block-based Widgets Editor
+
 = 1.0.3 - 2021-06-21 =
 * fixed RTL language stylesheet
 
