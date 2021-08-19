@@ -13,7 +13,6 @@
 
 /* Latest Posts */
 .wp-block-latest-posts.wp-block-latest-posts__list {
-	margin: 0;
 	padding: 0;
 }
 
@@ -23,7 +22,7 @@
 
 .wp-block-latest-posts__post-date,
 .wp-block-latest-posts__post-author {
-	@include color(--light-text-color);
+	@include color(--medium-text-color);
 	@include font-size(14);
 }
 

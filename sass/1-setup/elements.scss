@@ -38,7 +38,7 @@ blockquote cite::before {
 hr {
 	margin: 1.75rem 0;
 	height: 1px;
-	border: 0;
+	border: none;
 	@include background(--light-border-color);
 	box-sizing: content-box;
 }

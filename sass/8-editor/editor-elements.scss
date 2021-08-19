@@ -1,5 +1,5 @@
 /* Typography */
-.editor-styles-wrapper {
+.edit-post-visual-editor__content-area .editor-styles-wrapper {
 	@include color(--text-color);
 	@include font-size(16);
 	@include font-family(--text-font);
@@ -18,7 +18,7 @@
 }
 
 @media only screen and (min-width: 960px) {
-	.editor-styles-wrapper {
+	.edit-post-visual-editor__content-area .editor-styles-wrapper {
 		@include font-size(17);
 	}
 }
