@@ -650,6 +650,15 @@ p.has-background {
 	line-height: inherit;
 }
 
+.wp-block-pullquote blockquote > p:last-of-type {
+	margin-bottom: 0;
+}
+
+.wp-block-pullquote.alignleft p,
+.wp-block-pullquote.alignright p {
+	font-size: 0.75em;
+}
+
 .wp-block-pullquote blockquote cite {
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--dynamico--text-color);

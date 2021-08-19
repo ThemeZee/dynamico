@@ -23,6 +23,9 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.5 - 2021-08-19 =
+* fixed some minor block styling issues
+
 = 1.0.4 - 2021-07-20 =
 * added Widget Title block style
 * fixed error messages on new block-based Widgets Editor
