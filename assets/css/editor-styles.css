@@ -391,7 +391,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	margin-bottom: 1.75rem;
 	width: 100%;
 	border: none;
-	table-layout: fixed;
+	table-layout: auto;
 }
 
 .editor-styles-wrapper th,
