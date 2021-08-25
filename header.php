@@ -45,11 +45,11 @@
 
 		</header><!-- #masthead -->
 
-		<?php do_action( 'dynamico_after_header' ); ?>
-
 		<?php dynamico_header_image(); ?>
 
 		<?php dynamico_breadcrumbs(); ?>
+
+		<?php do_action( 'dynamico_after_header' ); ?>
 
 		<div id="content" class="site-content">
 
