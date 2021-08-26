@@ -23,6 +23,10 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.6 - 2021-08-26 =
+* fixed table layout styling
+* changed position of after header action hook
+
 = 1.0.5 - 2021-08-19 =
 * fixed some minor block styling issues
 
