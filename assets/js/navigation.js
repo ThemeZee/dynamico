@@ -60,24 +60,24 @@
 		(function() {
 
 			// Insert dropdown toggles in navigation menu.
-			navigation.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' ).forEach( menuItem => {
+			navigation.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' ).forEach( function( menuItem ) {
 				menuItem.after( createDropdownToggle() );
 			});
 
 			// Set the active submenu dropdown toggle button initial state.
-			navigation.querySelectorAll( '.current-menu-ancestor > button' ).forEach( activeToggle => {
+			navigation.querySelectorAll( '.current-menu-ancestor > button' ).forEach( function( activeToggle ) {
 				activeToggle.classList.add( 'toggled-on' );
 				activeToggle.setAttribute( 'aria-expanded', 'true' );
 				activeToggle.querySelector( '.screen-reader-text' ).textContent = dynamicoScreenReaderText.collapse;
 			});
 
 			// Set the active submenu initial state.
-			navigation.querySelectorAll( '.current-menu-ancestor > .sub-menu' ).forEach( activeSubmenu => {
+			navigation.querySelectorAll( '.current-menu-ancestor > .sub-menu' ).forEach( function( activeSubmenu ) {
 				activeSubmenu.classList.add( 'toggled-on' );
 			});
 	
 			// Dropdown Toggles click events.
-			navigation.querySelectorAll( '.dropdown-toggle' ).forEach( dropdownItem => {
+			navigation.querySelectorAll( '.dropdown-toggle' ).forEach( function( dropdownItem ) {
 				dropdownItem.addEventListener( 'click', function() {
 					dropdownItem.classList.toggle( 'toggled-on' );
 					dropdownItem.setAttribute( 'aria-expanded', dropdownItem.classList.contains( 'toggled-on' ) );
