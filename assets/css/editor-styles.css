@@ -435,6 +435,21 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 }
 
 /*--------------------------------------------------------------
+# - Widget Areas
+--------------------------------------------------------------*/
+.blocks-widgets-container .edit-widgets-block-editor [data-widget-area-id="sidebar-1"] > .block-editor-block-list__layout {
+	background: #fff;
+}
+
+.blocks-widgets-container .edit-widgets-block-editor [data-widget-area-id="sidebar-1"] > .block-editor-block-list__layout > .wp-block {
+	padding: 1.5rem;
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--dynamico--widget-border-color);
+	background: #fff;
+}
+
+/*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
 
