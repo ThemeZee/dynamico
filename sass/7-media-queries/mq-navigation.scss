@@ -96,10 +96,10 @@
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
-		@include fill(--submenu-text-color);
+		fill: currentColor;
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon {
-		@include fill(--navi-hover-text-color);
+		fill: currentColor;
 	}
 }

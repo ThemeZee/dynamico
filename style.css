@@ -3981,13 +3981,11 @@ figcaption,
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
-		fill: #333;
-		fill: var(--dynamico--submenu-text-color);
+		fill: currentColor;
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon {
-		fill: #fff;
-		fill: var(--dynamico--navi-hover-text-color);
+		fill: currentColor;
 	}
 }
 
