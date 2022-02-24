@@ -23,6 +23,10 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.8 - 2022-02-24 =
+* added sidebar widget styling to block-based widget editor
+* fixed keyboard navigation of dropdown menus
+
 = 1.0.7 - 2021-11-04 =
 * added Steam and Discord to social icons
 * updated navigation.js to use vanilla js instead of jQuery
