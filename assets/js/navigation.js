@@ -93,7 +93,7 @@
 			function toggleFocusClass( menuItem ) {
 
 				// Loop through all parent elements up to the menus root.
-				let parent = menuItem.parentNode;
+				var parent = menuItem.parentNode;
 				while ( ! parent.classList.contains( 'menu' ) ) {
 
 					// Check if we pass any li elements which have submenus.
