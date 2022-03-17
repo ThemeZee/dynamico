@@ -23,6 +23,9 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.0.9 - 2022-03-17 =
+* fixed spacing of Widget Bundle and Magazine Blocks
+
 = 1.0.8 - 2022-02-24 =
 * added sidebar widget styling to block-based widget editor
 * fixed keyboard navigation of dropdown menus
