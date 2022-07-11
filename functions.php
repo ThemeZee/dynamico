@@ -84,6 +84,9 @@ function dynamico_setup() {
 
 	// Add Theme Support for Selective Refresh in Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	// Add support for responsive embed blocks.
+	add_theme_support( 'responsive-embeds' );
 }
 add_action( 'after_setup_theme', 'dynamico_setup' );
 
