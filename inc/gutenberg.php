@@ -16,6 +16,9 @@ function dynamico_gutenberg_support() {
 	// Add theme support for wide and full images.
 	add_theme_support( 'align-wide' );
 
+	// Add theme support for dimension controls.
+	add_theme_support( 'custom-spacing' );
+
 	// Define block color palette.
 	$color_palette = apply_filters( 'dynamico_color_palette', array(
 		'primary_color'    => '#e84747',
