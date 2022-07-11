@@ -23,6 +23,10 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.1 - 2022-07-11 =
+* added support for theme.json
+* improved styling of Columns block
+
 = 1.0.9 - 2022-03-17 =
 * fixed spacing of Widget Bundle and Magazine Blocks
 
