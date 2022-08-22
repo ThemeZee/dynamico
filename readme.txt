@@ -23,6 +23,9 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.1.1 - 2022-08-22 =
+* updated footer credit link
+
 = 1.1 - 2022-07-11 =
 * added support for theme.json
 * improved styling of Columns block
