@@ -23,6 +23,9 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.1.2 - 2022-08-24 =
+* improved accessibility of search field
+
 = 1.1.1 - 2022-08-22 =
 * updated footer credit link
 
