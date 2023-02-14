@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
  * Editor Styles
  *
@@ -134,7 +136,7 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	font-size: 1.25rem;
 	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--dynamico--title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--dynamico--title-font-weight);
 	text-transform: none;
 	text-transform: var(--dynamico--title-text-transform);
@@ -191,7 +193,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	color: var(--dynamico--text-color);
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: Ubuntu, arial, helvetica, sans-serif;
 	font-family: var(--dynamico--text-font);
 	line-height: 1.75;
 	line-height: var(--dynamico--text-line-height);
@@ -281,7 +283,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	color: var(--dynamico--title-color);
 	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--dynamico--title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--dynamico--title-font-weight);
 	text-transform: none;
 	text-transform: var(--dynamico--title-text-transform);
@@ -355,7 +357,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 	display: block;
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--dynamico--text-color);
-	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: Ubuntu, arial, helvetica, sans-serif;
 	font-family: var(--dynamico--text-font);
 	font-size: 16px;
 	font-size: 1rem;
@@ -365,7 +367,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 .wp-block-quote__citation::before,
 .wp-block-pullquote__citation::before,
 .wp-block-pullquote cite::before {
-	content: "\2014\00a0";
+	content: "— ";
 }
 
 .wp-block-pullquote:not(.is-style-solid-color) .wp-block-pullquote__citation {
@@ -415,7 +417,7 @@ body.dynamico-page-title-hidden.block-editor-page .edit-post-visual-editor .edit
 }
 
 .editor-styles-wrapper th {
-	font-weight: normal;
+	font-weight: 400;
 	text-align: initial;
 	background: rgba(0, 0, 0, 0.05);
 }
@@ -486,7 +488,7 @@ p.has-background {
 .has-drop-cap:not(:focus)::first-letter {
 	font-size: 4.5rem;
 	line-height: 0.7;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* Code Block */
@@ -820,9 +822,9 @@ div.wp-block-columns {
 	background-color: var(--dynamico--widget-title-background-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: Ubuntu, arial, helvetica, sans-serif;
 	font-family: var(--dynamico--widget-title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--dynamico--widget-title-font-weight);
 	text-transform: uppercase;
 	text-transform: var(--dynamico--widget-title-text-transform);
@@ -1121,7 +1123,7 @@ div.wp-block-columns {
 	font-size: 1.5rem;
 	font-family: "Francois One", arial, helvetica, sans-serif;
 	font-family: var(--dynamico--title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--dynamico--title-font-weight);
 	text-transform: none;
 	text-transform: var(--dynamico--title-text-transform);
@@ -1166,7 +1168,7 @@ div.wp-block-columns {
 	margin: 0 1rem;
 	color: rgba(0, 0, 0, 0.4);
 	color: var(--dynamico--light-text-color);
-	content: "\2013";
+	content: "–";
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta > .tz-meta-field:last-child::after {
@@ -1226,7 +1228,7 @@ div.wp-block-columns {
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-more-link::after {
-	content: " \00BB";
+	content: " »";
 }
 
 @media only screen and (min-width: 960px) {
