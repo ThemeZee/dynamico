@@ -23,6 +23,9 @@ For more information about Dynamico please go to https://themezee.com/themes/dyn
 
 == Changelog ==
 
+= 1.1.7 - 2026-08-06 =
+* added TikTok to social icons menu
+
 = 1.1.6 - 2026-06-13 =
 * Fix theme styling in block editor with WordPress 7.0
 
